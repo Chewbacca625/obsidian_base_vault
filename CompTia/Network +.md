@@ -1,0 +1,2148 @@
+
+### OSI Model
+- All people seem to need data processing
+	- A - Application - HTTP, FTP, DNS, POP3
+	- P - Presentation - character encoding, app encryption, often combined with App layer
+	- S - Session - communication management between devices (start, stop, restart) - control protocols, tunneling protocols
+	- T - Transport - delivery layer (post office) TCP/UDP
+	- N - Network - IP layer, routing later, fragment frames to traverse network 
+	- D - Datalink - DLC (Data link control) - Data link control protocols (MAC adder on eth), switching layer, Extended unique ID (EUI-48, EUI-64)
+	- P - Physical - signal, cable, connector - Troubleshoot punch downs, loopbacks, replace cables
+### Transmission Media
+- Wireless Networking (802.11)
+	- Wi-Fi trademark
+		- Wi-Fi alliance handles interoperability testing
+	 ![[Screenshot 2026-03-31 at 3.02.09 PM.png]]
+	- 4G and LTE
+		- LTE (long term evolution)
+			- converged standard (GSM and CDMA)
+			- 150Mbit/s download rate
+		- LTE Advanced (LTE-A)
+			- 300 Mbit/s download rate
+	- 5G
+		- introduced in 2020
+		- significant performance improvements
+			- At higher frequencies
+			- eventually 10 gigabits per sec
+			- Slower speeds from 100-900 Mbit/s
+		- significant IoT impact
+		- bandwith becomes less of a constarain
+		- larger data transfers
+		- faster monitoring and notification
+		- can be processed in the cloud
+	- Satellite networking
+		- non-terrestrial comm
+		- high cost
+			- 100 Mbps, 5 Mbps up are common
+			- remote sites
+		- high latency
+			- 250ms up/ 250ms down
+			- starlink 40ms and is working on 20 ms
+		- high frequencies - 2GHz
+			- line of sight, rain fade
+- Ethernet Standards
+	- twisted pair copper & fiber
+		![[Screenshot 2026-03-31 at 3.12.40 PM.png]]
+	- 1000, 10G - speed
+	- BASE(baseband) - single frequency using the entire medium (broadband - uses more frequencies sharing the same medium)
+	- T - twisted pair, F is fiber, SX is short wavelength light
+- Optical Fiber
+	- Transmission by light
+	- visible spectrum
+	- no RF signal
+		- very difficult to monitor or tap
+	- signal slow to degrade
+		- transmission over long distance
+	- immune to radio interference
+	![[Screenshot 2026-03-31 at 3.17.00 PM.png|403]]
+	![[Screenshot 2026-03-31 at 3.17.36 PM.png|334]]
+	- Multimode fiber
+		- short range comm
+			- up to 2km
+		- inexpensive light source
+		![[Screenshot 2026-03-31 at 3.18.30 PM.png]]
+	- Single mode fiber 
+		- long range comm
+			- 100 km without processing
+		- expensive light source
+			- lazer beams
+		![[Screenshot 2026-03-31 at 3.19.25 PM.png]]
+- Copper Cabling
+	- twisted pair
+		- balance pair operation
+			- transmit +, transmit - / receive +, receive -
+		- keeps single wire constantly moving away from the interference
+		- the opposite signals are compared on the other end
+		- pairs in the same cable have different twist rates
+	- coaxial cables
+		- two or more forms share a common axis
+			![[Screenshot 2026-03-31 at 3.25.11 PM.png]]
+		- RG-6 used in tv/digital cable
+	- twinaxial cable
+		- two inner conductors
+			- twinax
+		- common on 10 Gbit eth
+			- SFP+ cables
+			- full duplex
+			- five meters
+			- low cost
+			- low latency compared to twisted pair
+	![[Screenshot 2026-03-31 at 3.28.55 PM.png|394]]
+- Network Transceivers
+	- transmitter and receiver (single component)
+	- provide modular interface
+	- SFP (small form-factor pluggable)
+		- provide 1 Gbit/s fiber
+		- 1 Gbit/s RJ45 SFPs also available
+	- Enhance Small Form-Factor Pluggable (SFP+)
+		- supports data rates up to 16 Gbit/s
+		- common with 10Gbit eth
+	- QSFP (quad small form-factor pluggable)
+		- 4 channel SFP = 4 Gbit/s
+		- QSFP+ is 4 channel SFP+ = 10 Gbit/s x 4 = 40Gbit/s
+	![[Screenshot 2026-03-31 at 3.36.43 PM.png|322]]
+- Fiber Connector
+	- SC - Subscriber Connector 
+		![[Screenshot 2026-03-31 at 3.38.05 PM.png|275]]
+		- popular
+		- pushes on to lock
+	- LC - Local connector
+		![[Screenshot 2026-03-31 at 3.38.56 PM.png|296]]
+		- Locks in place with clip
+	- ST - Straight Tip
+		![[Screenshot 2026-03-31 at 3.39.43 PM.png|344]]
+		- twist lock in place
+	- MPO - Multi-fiber Push on
+		- twelve fibers in a single connector
+			-push to lock in place
+		- MTP-MTO another name
+		![[Screenshot 2026-03-31 at 3.40.50 PM.png|334]]
+- Copper Connectors
+	- RJ11 - 6p2c (p=postion, c=conductor)
+		- Telephone/DSL
+	- RJ45 - (8p8c)
+		- ethernet
+	- F-Connector 
+		- Coax cable
+		- DOCSIS (Data over cable service interface spec)
+		![[Screenshot 2026-03-31 at 3.43.51 PM.png|279]]
+	- BNC
+		- bayoney - neill concelman
+		- common with twinax and DS3 WAN links
+		- secure connection
+		![[Screenshot 2026-03-31 at 3.44.46 PM.png|319]]
+### Network Appliances & Application
+- Router: routes traffic between IP subnets
+	- OSI layer 3 (Network) device
+	- Routers inside of switches sometimes called layer 3 switches
+	- LAN, WAN, copper, fiber
+- Switch: bridging done in hardware
+	- Application-specific integrated circuit (ASIC)
+	- OSI layer 2 devices (datalink)
+		- forwards traffic based on data link address (MAC)
+	- PoE - Power over Eth
+	- Multilayer switch includes layer 3 routing
+- Firewall: Filter traffic by port number or app
+	- Trad allows to filter via tcp/udp port # vs NGFW can identify apps running across network and allow or disallow
+	- Encrypt traffice
+		- VPN between sites
+	- Most firewalls can be layer 3 devices
+		- Often sits on the ingress/egress of the network
+		- NAT
+		- Dynamic Routing
+- IDS & IPS:
+	- watch network traffic
+	- intrusion
+		- exploits against os, app, etc.
+		- buffer overflows, cross-site scripting, other vulnerabilities
+	- Detection - alarm or alert
+	- Prevention - stop it before it gets into the network
+- Balancing the load (load balancer)
+	- distributes the load
+		- multiple servers
+		- invisible to the end user
+	- large scale implementations
+		- web server farms, database farms
+	- fault tolerance
+		- server outages have no effect
+		- very fast to convergence 
+	- Load balancers offer
+		- configurable load: manage across servers
+		- TCP offload: remove protocol overhead
+		- SSL offload: encryption/decryption at the load balancer
+		- Caching: for fast response
+		- Prioritization: QoS
+		- Content switching: app centric balancing
+	- Proxies: sits between the users and the external network
+		- receives the users request and send the request on their behalf
+		- useful for caching info, access control, URL filtering, content scanning
+		- Applications may need to know how to use the proxy (explicit)
+		- Some proxies are invisible (transparent) - no need to let the app know how to use it
+	- NAS vs SAN
+		- Network attached storage: 
+			- connect to a shared storage device across the network
+			- file-level access
+		- Storage area network:
+			- looks and feels like a local storage device
+				- block level access
+			- very efficient reading and writing
+		- Requires a lot of bandwidth
+			- may use an isolated network and high speed network technologies
+	- Access Point
+		- not a wireless router
+			- a wireless router is a router and ap in a single device
+		- an ap is a bridge
+			- extends the wired network onto the wireless network
+		- OSI layer 2
+	- Wireless LAN controllers: centralized management of aps
+		- deploy new aps
+		- performance and sec monitoring
+		- configure and deploy changes to all sites
+		- report on ap use
+		- usually a proprietary system
+### Networking Functions
+- access to important data
+- remote access: secure network comms
+- traffic management: prioritize the important apps
+- protocol support: maintain uptime and availability
+- CDN: 
+	- it take time to get data from one place to another CDN speed up the process
+	- geographically distributed caching servers
+		- duplicate the data
+		- users get the data from a local server
+		- used on many websites
+- VPN:
+	- secure private data traversing a public network
+	- concentrator / head-end
+		- encryption/decryption access device
+		- often integrated into a firewall
+	- many deployment options
+		- specialized cryptographic hardware
+		- software-based options available
+	- often used with client software
+		- sometime built into the os
+- QoS:
+	- traffic shaping, packet shaping
+	- control by bandwidth usage or data rates
+	- set important apps to have higher priorities than other apps
+	- mangag QoS
+		- routers, switches, firewalls, and QoS devices
+- TTL (Time to live):
+	- how long should data be available?
+		- not all systems or protocols are self-regulated
+		- we sometimes need to tall a system when to stop
+	- create a timer
+		- drop a packet caught in a loop
+		- clear a cache
+- Routing loops:
+	- router A thinks the next hop is to router B
+		- router B thinks the next hop is router A
+		- and repeat
+	- Easy to misconfig
+		- especially withs static router
+	- TTL is used to stop the loop
+- IP:
+	- loop could cause a packet to live forever
+	- each pass though a router is a hop
+		- default TTL mac/linux 64 hops
+		- default TTL windows 128 hops
+	- the router decreases TTL by 1 to discard packet until it goes though default # of hops
+- DNS
+	- dns lookups
+		- resolve and IP address from a fully-qualified domain name
+		- a device caches the lookup for a certain amount of time
+			- how long? TTL seconds long
+### Network Topologies
+- Star/Hub and Spoke: most common
+	- central device connects all devices
+	- ![[Screenshot 2026-03-24 at 9.35.44 AM.png|363]]
+	- ex switched eth networks
+- Mesh Network:
+	- multiple links to the same place
+	- fully connected/partially connected
+		![[Screenshot 2026-03-24 at 9.36.42 AM.png|419]]
+	- used mostly in WANs
+- Hybrid: combination of one more physical topologies
+- Spine & Leaf arch:
+	- each leaf switch connects to each spine switch and vice versa
+	- leaf switches do not connect to each other same for spines
+		![[Screenshot 2026-03-24 at 9.39.16 AM.png|433]]
+	- commonly used for top of rack switching (each leaf is a top of rack switch)
+	- simple cabling, redundant, and fast
+	- disadvantages
+		- additional switches may be costly
+- Point to point: one-to-one connection
+	- older WAN links
+	- connections between buildings
+### IPv4 Addressing
+- IPv4 Addr
+	- IP addr - unique id for device
+	- Subnet mask ex: 255.255.255.0
+		- used by the local device to determine what subnet its on
+			- usually isn't transmitted across the network
+			- its asked often
+	- Default gateway, ex: 192.168.1.1
+		- the router that allows you to comm outside of local network
+		- default gateway must be an IP addr on local subnet
+	- Loopback addr
+		- an addr to yourself
+		- ranges from 127.0.0.1 through 127.255.255.254
+		- self-reference ping (127.0.0.1)
+	- Reserved addr
+		- set aside for future use or testing
+		- 240.0.0.1 through 254.255.255.254
+		- All Class E Addrs 
+	- Virtual IP addr (VIP)
+		- not associated with phys network adapter
+		- VM, internal router addr
+	- Automatic Private IP address (APIPA)
+		- A link-local addr
+			- can only comm to other local devices
+			- no forwarding by routers
+		- Reserved 169.254.0.1 - 169.254.255.254
+			- First and last 256 addrs are reserved
+		- functional block 169.254.1.0 - 169.254.254.255
+	- automatically assigned
+		- uses arp to confirm addr is available
+	- Private IP addr ranges
+		- 192.168.1.0/16 - 254 addrs
+		- 172.16.0.0/12 ~ 65000 addrs
+		- 10.0.0.0/8 ~ 16 million addrs
+- Classful Subnetting
+	- Specific subnetting arch, not used since 1993
+	![[Screenshot 2026-03-31 at 8.20.25 AM.png]]
+	- used as a starting point for subnetting
+	![[Screenshot 2026-03-31 at 8.22.24 AM.png]]
+	- Construction of subnet
+		- network addr
+			- the first IP addr of subnet
+			- set all host bits to 0
+		- first usable host addr
+			- one number higher than network addr
+		- network broadcast addr
+			- last ip addr of a subnet
+			- set all host bits to 1
+		- last usable host addr
+			- one number lower than broadcast addr
+		![[Screenshot 2026-03-31 at 8.29.30 AM.png]]
+		![[Screenshot 2026-03-31 at 8.31.23 AM.png]]
+		![[Screenshot 2026-03-31 at 8.32.44 AM.png]]
+- Subnet Masks
+	- Classless subnetting
+		- CIDR (Classless Inter Domain Routing)
+			- Removed the restrictions created by classful subnet masks 
+			- CIDR block notation
+		- Subnet masks can be expressed as decimal or in CIDR notation
+		![[Screenshot 2026-03-31 at 9.18.51 AM.png]]
+		- some OS are expecting decimal mask
+		- some OS are expecting CIDR notation mask
+	- The subnet mask
+		- contiguous series of ones
+			- ones on the left
+			- zeros on the right
+			![[Screenshot 2026-03-31 at 9.40.21 AM.png]]
+			![[Screenshot 2026-03-31 at 9.41.10 AM.png]]![[Screenshot 2026-03-31 at 9.42.26 AM.png]]
+			![[Screenshot 2026-03-31 at 9.42.59 AM.png]]
+			![[Screenshot 2026-03-31 at 9.44.12 AM.png]]
+			![[Screenshot 2026-03-31 at 9.46.31 AM.png]]
+	- Calculating IPv4 Subnet & Hosts
+		- VLSM (Variable Length Subnet Masks
+			- Class-based networks are inefficient
+				- subnet mask is based on the network class
+			- Allow network admin to define their own masks
+				- customize the subnet mask to specific network req
+			- use different subnet masks in the same classful network
+				- 10.0.0.0/8 is the class A network
+				- 10.0.1.0/24 and 10.0.8.0/26 would be VSLM
+			 ![[Screenshot 2026-03-31 at 9.53.50 AM.png]]
+			 ![[Screenshot 2026-03-31 at 9.56.08 AM.png]]
+			 ![[Screenshot 2026-03-31 at 9.56.59 AM.png]]
+			 ![[Screenshot 2026-03-31 at 9.58.36 AM.png]]
+			 ![[Screenshot 2026-03-31 at 10.55.04 AM.png]]
+			 ![[Screenshot 2026-03-31 at 10.57.55 AM.png]]
+	- Magic Number Subnetting
+		![[Screenshot 2026-03-31 at 11.56.32 AM.png]]
+		- For important addrs
+			- Network addr/subnet ID
+			- Broadcast addr
+			- First Available Host Addr
+			- Last Available Host Addr
+		![[Screenshot 2026-03-31 at 12.29.35 PM.png]]
+		![[Screenshot 2026-03-31 at 12.31.55 PM.png]]![[Screenshot 2026-03-31 at 12.35.15 PM.png]] ![[Screenshot 2026-03-31 at 12.36.55 PM.png]]![[Screenshot 2026-03-31 at 12.38.19 PM.png]]![[Screenshot 2026-03-31 at 12.39.04 PM.png]]![[Screenshot 2026-03-31 at 12.39.37 PM.png]]![[Screenshot 2026-03-31 at 12.42.57 PM.png]]![[Screenshot 2026-03-31 at 12.44.01 PM.png]]![[Screenshot 2026-03-31 at 12.44.37 PM.png]]![[Screenshot 2026-03-31 at 12.47.01 PM.png]]![[Screenshot 2026-03-31 at 12.48.32 PM.png]]
+### Network Architectures
+- Three tier arch
+	- core: center of network
+		- web servers, db, apps
+		- many people need access to this
+	- distribution: midpoint between core and the users
+		- comm between access switches
+		- manage the path to the end users
+	- access: where the users connect
+		- end stations, printers
+- Collapsed Core (Two Tier):
+	- simplifies the three tier arch, combines core and distro layers
+	- good for small orgs
+	- less expensive
+	- not as resilent
+	- simpler to design and support
+- Traffic flows
+	- north/south: ingress/egress
+	- east/west: internal network
+		![[Screenshot 2026-03-24 at 11.44.05 AM.png]]
+- ### Intro to IP
+![[Screenshot 2026-03-17 at 1.41.09 PM.png|697]]
+- TCP/UDP exist at the transport layer
+- Multiplexing allows one client (ip address) to manage multiple concurrent network sessions by assigning unique ports
+- #### TCP Supports:
+	- Recovery from errors
+	- Can manage out-of-order packets
+	- Flow control (how fast data is sent)
+- #### UDP
+	- Connectionless
+	- No error recovery
+	- No reordering of data or retransmission
+	- No flow control
+- #### IPv4 Sockets
+	- Server: ip addr, protocol, server app port number
+	- Client: ip addr, protocol, client port number
+- Non-ephemeral ports:
+	- Ports 0 - 1023
+	- Usual on a server or service
+- Ephemeral ports:
+	- temp port numbers
+	- 1024-65535
+- Ports are for communication, no security
+- Service port number need to be "well known"
+- TCP ports are not the same as UDP port numbers
+	![[Screenshot 2026-03-17 at 2.01.04 PM.png]]
+### Network Environments
+- Software Defined Networking
+	- Three plane:
+		- Data: Infra layer
+			- Process the network frames and packets
+			- forwarding, trunking, encrypting, NAT
+		- Control: control layer
+			- Manages the actions of the data plane
+			- routing tables, session tables, NAT tables
+			- Dynamic routing protocol updates
+		- Management: application layer
+			- configure and manage device
+			- SSH, browser, API
+	- Split the functions into separate logical units
+		- extend the functionality and mgmt of a single device
+		![[Screenshot 2026-03-24 at 11.52.17 AM.png|625]]
+	- SD-WAN: software defined networking in WAN
+		- WAN built for the cloud
+		- Application aware: know which app is in use
+			- Makes routig decisions based on the app data
+		- Zero-touch provisioning
+			- remote equipment automatically configed
+			- application traffic uses the optimal path
+			- can change based on traffic patterns
+		- Transport agnostic
+			- the underlying network can be any type
+			- cable modem, DSL, Fiber, 5G
+		- Central policy mgmt
+			- Management and config on a single console 
+			- one device to config
+			- changes are pushed to the SD-WAN routers
+- Virtual Extensible LAN
+	- DCI (Data Center Interconnect)
+		- connects multiple data centers together
+			- seamlessly span across these geo locations
+		- connect and segment different customer networks
+			- across multiple data centers
+			- all customer share the same core network
+		- distribute apps everywhere
+			- increase uptime and availability
+			- workload can be moved to best location
+	- Scaling across data centers
+		- IP addressing is different across data centers
+			- challenging to manage
+		- Data centers can be connected in different ways
+			- MPLS, high speed optical, Metro Eth
+		- Apps should have to work about ip addring, routing, or connectivity
+		- extend networks across phys locations
+			- encapsulate, send the data, decapsulate
+			- tunnel the data
+	- VXLAN
+		- design for large service providers
+		- VLANS
+			- Max of ~ 4000 possible virtual networks
+			- Fixed layer 2 domain
+			- Not designed for large scale and dynamic movement of VMs
+		- VXLAN 🚨
+			- Over 16 million possible virtual networks
+			- Tunnel frames across a layer 3 network
+			- Built to accommodate large virtual env's
+			- VNI - VXlan network identifier
+			- VTEP: Vxlan tunnel endpoint - responsible for encapsulating and decapsulating the VXLAN frames (hypervisor/hardware based)
+				- GRE Tunnel enables VXLAN: 
+					![[Screenshot 2026-03-25 at 8.22.56 AM.png]]
+					- Does not provide security
+					- VPN technology
+					- can encapsulate any type of data
+			- We connect two TOR switches that act as VXLAN Tunnel Endpoint, we can connect two TOR switches using a VXLAN Tunnel via IP network
+			- Helps with multi-tenancy
+			- Note that this offers routing functionality, not firewall capability
+			- Typically used in Data Centers
+				![[Pasted image 20260324124141.png|553]]
+			- VMs may think they are in the same data center (they can be in different geographical location)
+			- VLANS are added to VSwitch and mapped to TOR once mapped VLANS also need to be mapped to VNI, VNI is transferred across the tunnel via ip network
+				![[Screenshot 2026-03-25 at 8.30.03 AM.png]]
+	- Zero Trust:
+		- many networks are relatively open on the inside
+		- Zero trust is a holistic approach to network sec
+			- covers every device, process, and person
+		- Everything must be verified
+			- Nothing is inherently trusted
+			- MFA, encryption, system permissions, additional firewalls, monitoring and analytics
+		- Policy based auth
+			- adaptive identity
+				- consider the source and requested resources
+				- multiple risk indicators: relationship to org, phys location, type of connection, ip addr, etc.
+				- Make the auth stronger if needed
+		- Policy driven access control
+			- combine adaptive identification with a predefined set of rules
+			- evaluates each access decision based on policy and other info
+			- grant, deny, or revoke
+		- Authentication: we can trust your identity
+		- Authorization: determine which apps and data are accessible
+		- Can include criteria:
+			- Location, device cert validation, time of day
+		- Least privilege access (bare minimum
+		- Secure Access Service Edge (SASE):![[Screenshot 2026-03-25 at 8.53.04 AM.png|411]]
+			- next gen VPN
+			- Securely connect from different locations - secure access to cloud service
+			- Security tech are in the cloud - located close to existing cloud services
+			- SASE clients on all devices
+	- IPv6:
+		- IPv4 addr exhaustion
+			- workaround NAT with IPv4
+		- IPv6 is 128 bits - 16 bytes / 16 octets
+		- IPv6 addr compression
+			- groups of zeros can be abbreviated with a double colon
+				- only one of these abbreviations allowed per addr
+			- leading zeros are optional
+				![[Screenshot 2026-03-25 at 9.38.25 AM.png]]
+				![[Screenshot 2026-03-25 at 9.37.26 AM.png|549]]
+			- not all devices can talk IPv6
+				- legacy devices, embedded systems, etc.
+				- Solutions:
+					- Tunnel: encapsulate one protocol with another
+						- 6to4 - IPv6 on IPv4
+						- requires relay routers
+						- no NAT
+						- no longer an option in Windows
+						- 4to6: IPv4 on IPv6
+					- Dual-stack: have the option to use both IPv4/IPv6
+						- run both at the same time
+						- interfaces will be assigned multiple addr types
+					- Translate: convert IPv4 and IPv6
+						- NAT64
+						- Requires something in the middle to translate (NAT64-capable router)
+						- NAT64 DNS 64 required
+							![[Screenshot 2026-03-25 at 9.47.59 AM.png]]
+
+### Switching Technologies
+- Spanning Tree Protocol (STP):
+	- Blocking - no forwarding to prevent a loop
+	- Listening - not forwarding and cleaning the MAC table
+	- Learning - not forwarding and adding to the MAC table
+	- Forwarding - Data passes through and is fully operational
+	- Disabled - turned of port
+	- Used practically everywhere
+	- Problem:
+		- No counting mechanism at the MAC layer
+		- So when two switches are connected with two cables a loop will be introduced
+		- Traffic will be sent back and forth forever (broadcast loop)
+		- It takes seconds to bring down a network
+		- If bridge connection breaks then the network will re-learn network
+	![[Screenshot 2026-03-25 at 7.42.46 AM.png]]
+- RSTP: 
+	- latest standard
+	- faster convergence 30-50 seconds to 6 seconds
+	- backwards compatible with STP
+	- very similar process, just an update
+- How it works:
+	- Root bridge is defined by sending out Bridge Protocol Data Units (BPDUs) that contain Bridge ID (BID)
+	- BID = Priority # (Default 32768) + VLAN ID + MAC addr 
+	- The bridge with the lowest BID will be elected to be the root bridge
+	- **Designated ports** are ports that lead away from root bridge (lowest BID will remain open when blocking)
+	- **Root Ports** are ports on the non root switches that forward data to the root bridge (elected with the lowest path cost)
+	- **Blocked port** block link
+	![[Screenshot 2026-03-25 at 8.00.12 AM.png]]
+### Ports/Protocols –
+- File Transfer Protocol (FTP) - Linux/Windows tcp/20 (active mode data) and tcp/21(control)
+	- Authentication with user & pass
+	- list, add, delete, etc.
+- Trivial FTP: used to transfer small amount of info quickly udp/69
+	- Typically used for
+		- very simple file transfer app: read and write files 
+		- No authentication
+		- Useful when starting a system: transfer config files (VOIP example)
+- SSH - tcp/22
+	- encrypted comm
+- Secure FTP (SFTP) - tcp/22
+	- provides full file system functionality
+	- uses SSH
+- Telnet - tcp/23
+	- Similar to SSH but no encryption
+	- Exposes user credentials
+- Simple Mail Transfer Protocol - tcp/25 (no encryption) | tcp/587 (SMTP TLS encryption)
+	- protocols used for clients to receive email IMAP & POP3
+- DNS - udp/53
+	- large transfers may use tcp/53
+- DHCP - automated ip config udp/67 | udp/68
+	- requires DHCP server
+	- dynamic / pooled: ip addrs are assigned from a pool
+		- each sys is given a lease and it must be renewed at set intervals
+	- DHCP reservations: Addresses are assigned by MAC address
+- HTTP: tcp/80 - web server comms
+- HTTPS: tcp/443 - HTTP over TLS (newer - transport layer security) or SSL (secure socket layer) - TLS or SSL add encryption making it secure
+- NTP (Network time protocol): Switches, routers, firewalls, servers, workstations
+	- every device has its own clock
+	- udp/123
+	- synchronizing the clocks is critical for
+		- logs, auth, outage details
+	- Automatic updates (auto sync clocks)
+	- Flexible - you can control how the clocks get updated
+	- Very accurate way to keep clocks in sync - accuracy is better than 1 millisecond on local network
+- SNMP (simple network management protocol) - udp/161
+	- Gathers statistics form network devices
+	- v1 - original
+		- structured tables
+		- no encrypt
+	- v2 
+		- data type enhancements
+		- bulk transfers
+		- no encrypt
+	- v3
+		- message integrity
+		- authentication
+		- encryption 
+	- snmp trap
+		- allows notifications to get transferred mgmt station from client network devices
+		- udp/162
+- LDAP (light weight directory access protocol)
+	- tcp/389
+	- store and retrieve info in a network dir
+- LDAP secure (LDAPS)
+	- a non standard implementation using LDAP over SSL
+	- tcp/636
+- SMB (Server Message Block): direct over tcp/445 (NetBIOs-less)
+	- protocol used by ms windows
+	- file sharing, printer sharing
+	- CIFS (common internet file system)
+	- integrated into os
+		- access rights integration across systems
+		- file share publishing
+		- file locking
+- Syslog: standard for msg logging
+	- diverse systems, consolidated log
+	- udp/514
+	- usually a central collector
+		- SIEM (security info and event manager)
+	- requires lots of disk
+- Databases: collection of info
+	- SQL: structured query lang
+	- MS SQL: tcp/1433
+- RDP: tcp/3389
+- SIP (session initiation protocol): Voip signaling 
+	- tcp/5060 and tcp/5061
+	- setup and manage Voip sessions
+	- extended voice comms
+		- video conferencing
+		- instant msging
+		- file transfer
+		- etc.
+- ICMP (internet control msg protocol): used by network devices like routers to diag connectivity and report errors 
+	- carries by IP but its its own protocol not tcp or udp
+	- not used for data transfer
+	- devices can request and reply admin requests
+		- ex: you alive? yes.
+	- ping uses ICMP
+	- devices can send messages when things dont go well
+		- ttl
+		- network you are trying to reach is unreachable
+- GRE (generic routing encapsulation)
+	- tunnel between two endpoints (commonly used with VPNs)
+	- encapsulate traffic inside of IP
+	- appears as if two endpoints are connected
+	- no built in encryption
+- VPN (virt priv net): encrypted data traversing a public net
+	- concentrator
+		- encrypt/decrypt access device
+		- often integrated into a firewall
+	- many deployment options
+		- specialized cryptographic hardware
+		- software based options
+	![[Screenshot 2026-03-23 at 9.49.48 AM.png]]
+- IPsec (internet protocol sec)
+	- security for osi layer 3 (network)
+		- auth and encryption for every packet
+	- confidentiality and integrity/anti-replay
+		- encrypt and and packet signing
+	- very standardized
+	- Two core IPsec protocols
+		- auth header (AH): used to validate data
+		- in AH mode: all data is sent exposed but we are hashing the data to ensure integrity
+			![[Screenshot 2026-03-23 at 10.03.36 AM.png]]
+		- encapsulation sec payload (ESP): adds header trailer, and integrity check to ensure data is encrypted in transit
+			![[Screenshot 2026-03-23 at 10.05.13 AM.png]]
+	- Internet Key Exchange (IKE)
+		- agree on encryption/decryption keys
+		- without sending key across net
+		- builds on security association (SA)
+		- Phase 1
+			- use diffie helman to create shared secret key
+			- udp/500
+			- ISAKMP (internet sec association and key management protocol)
+		- Phase 2
+			- coordinate ciphers and key sizes
+			- negotiate an inbound and outbound SA for IPsec
+		![[Screenshot 2026-03-23 at 9.58.08 AM.png]]
+		- Transport mode vs Tunnel mode
+			![[Screenshot 2026-03-23 at 9.59.32 AM.png]]
+			- Transport mode exposes the IP header to the internet so attackers can see where traffic was intended to go but data is encrypted
+			- Tunnel mode creates new ip header hiding the original IP Header (MOST COMMON)
+### Cloud Computing
+- Network function virtualization (NFV)
+- Virtual Private Cloud (VPC)
+	- common to create multiple app clouds
+	- connect VPCs with transit gateways (cloud router)
+- VPN: site to site vpn through the internet
+- VPC Gateway / Internet Gateway: connects users to the internet
+- VPC NAT Gateway:
+	- network addr translation
+	- private cloud subnets to external resources
+	- external resources cannot access the private cloud
+- VPC Endpoint: direct connection between cloud provider networks
+- Security Groups and Lists
+	- a firewall for the cloud
+	- control ingress/egress traffic flows
+	- layer 4 port number
+		- tcp/udp
+	- layer 3 addresses
+		- individual addrs
+		- CIDR block notation
+		- IPv4 IPv6
+- Network security lists:
+	- assign a security rule to an entire IP subnet
+		- applies to all devices in the subnet
+	- very broad
+		- can be difficult to manage
+		- not all devices in a subnet have the same sec posture
+	- more granularity may be required
+		- broad rules may not provide the right level of security
+- Network security group:
+	- Assign a sec rule to a specific vNIC
+	- applies to specific devices and network connections
+	- more granular than network sec lists
+		- different rules for devices in the same IP subnet
+	- Better control and granularity
+		- best practice for clouds sec rules
+### Network Access
+- VPNs
+	- encrypted private data traversing public network\
+	- often integrated into firewall
+	- Client-to-site:
+		![[Screenshot 2026-03-25 at 10.00.28 AM.png]]
+	- Site-to-Site
+		![[Pasted image 20260325100221.png]]
+	- Client-less VPN
+		- HTML5
+		- Includes comprehensive API support
+			- web cryptography API
+		- Create a VPN tunnel without a separate VPN app
+			- nothing to install
+		- Apps are added to a firewall "portal" users auth to the portal and then can access internal app similar to okta
+	- Full-Tunnel/Split Tunnel
+		- Full Tunnel
+			- all traffic is sent through VPN
+			- client makes no additional forwarding decisions
+			- may require additional routing at the concentrator 
+			![[Screenshot 2026-03-25 at 10.18.34 AM.png]]
+		- Split Tunnel
+			- VPN traffic is sent through the tunnel
+			- Non-VPN traffic is sent normally
+			- Configed in VPN software
+			![[Screenshot 2026-03-25 at 10.19.19 AM.png]]
+- Remote Access
+	- SSH: TCP/22 - encrypted
+	- Telnet: TCP/23 - not encrypted
+	- RDP: windows
+	- VNC (virtual network computing): linux/mac
+		- uses remote frame buffer (RFB)
+		- many are open source
+	- API Integration
+		- interact with third-party services/devices
+		- cloud, firewall, OS
+	- Console
+		- DB9 serial , RJ45, USB
+		- directly connect to device
+	- Jump Box
+			![[Screenshot 2026-03-25 at 10.28.38 AM.png]]
+		- access secure network zone
+		- highly secure device
+		- SSH/Tunnel/VPN to jump server
+	- In-band management
+		![[Screenshot 2026-03-25 at 10.31.30 AM.png]]
+		- assign an ip to a device
+		- may be accessible from any connected device (ssh/browser based)
+	- Out-of-band management
+		- the network isn't available
+		- separate mgmt interface
+		- console router / comm server
+			- out of band access for multiple devices
+### IP Services
+- DHCP
+	- released in 1997
+	- provide automatic addr / IP config from almost all devices
+	- Process
+		- DORA:
+			- Discover: find dhcp server (sent from 0.0.0.0:udp/68 and broadcast to 255.255.255.255:udp/67)
+			- Offer: get and offer (10.10.10.99:udp/67 sent as broadcast to 255.255.255.255:udp/68)
+			- Request: lock in offer (sent from 0.0.0.0:udp/68 and broadcast to 255.255.255.255:udp/67)
+			- Acknowledge: dhcp server confirmation (10.10.10.99:udp/67 sent as broadcast to 255.255.255.255:udp/68)
+	- limitations:
+		- limited comm range
+			- uses ipv4 broadcast domain
+			- stops at a router
+			- multiple servers needed for redundancy
+				- across diff locations
+		- scalability is always and issue
+			- may not want/need to manage DHCP servers at every location
+		- DHCP relay
+			- helper to send DHC request across broadcast domains
+				![[Screenshot 2026-03-26 at 11.18.21 AM.png|545]]
+- Configuring DHCP
+		- Scope properties
+			- ip addr range available and excluded
+			- subnet mask
+			- lease duration
+			- other options
+				- dns server
+				- default gateway
+				- voip server
+		- DHCP pools
+			- grouping of IP addrs
+				- each subnet has it own scope
+			- a scope is generally a single contiguous pool of ip addrs
+				- DHCP exclusions can be mad inside the scope
+		- DHCP addr assignment
+			- Dynamic assignment
+				- DHCP server has a big pool of addrs to give out
+				- addrs are reclaimed after a lease period
+			- Automatic Assignment
+				- similar to dynamic allocation
+				- dhcp server keeps a list of past assignments
+				- you'll always get the same IP addr
+			- Address reservation
+				- administratively configed
+				- table of MAC addrs
+					- each MAC addr has a matching IP addr
+				- Other names
+					- static DHCP assignment
+					- IP Reservation
+		- DHCP lease
+			- assigned at lease time
+			- Admin configed
+			- reallocation
+				- Reboot computer
+				- Confirms the lease
+			- Workstation can also manually release ip addrs - moving to another subnet
+		- DHCP renewal
+			- T1 timer: checking with lending server to renew the IP addr (50% by default)
+			- T2 timer: if the original DHCP server is down, try rebinding with and DHCP server (87.5% of lease time)
+				![[Screenshot 2026-03-26 at 11.33.14 AM.png]]
+		- DHCP options
+			- A special field in DHCP message
+			- part of DHCP RFC
+			- 256 options (254 usable)
+				- 0-255 (0 pad, 255 end)
+			- common options
+				- subnet mask, DNS, domain name
+				- options are configed on the DHCP server (not supported by all dhcp servers)
+					- ex: option 129: call server ip addr 
+- IPv6 & SLACC
+		- DHCP servers
+			- requires redundant DHCP servers
+			- ongoing admin
+		- stateless addressing
+			- no separate server keeping the state
+			- no tracking of IP or MAC
+			- lease times dont exist
+		- NDP (neighbor discovery protocol)
+			- no broadcasts
+				- operates using multicast over ICMPv6
+			- neighbor MAC discover
+				- replaced the IPv4 ARP
+			- SLAAC (stateless addr autoconfig)
+				- automatically config an IP addr without a DHCP server
+			- DAD (duplicate addr detection)
+				- no duplicate ips on network
+			- discover routers
+				- Router solicitation (RS) and Router Advertisement (RA)
+				![[Screenshot 2026-03-26 at 11.43.17 AM.png]]
+			- SLAAC (Stateless Addr Autoconfig)
+				- Determine the IP prefix using NDP
+					- Router Solicitation (RS) and Router Advertisement (RA)
+					- Use the ip prefix with a modified EUI-64 addr (or randomize)
+					- Put them together to make a complete IPv6 Addr
+						![[Screenshot 2026-03-30 at 5.46.47 PM.png]]
+					- Before using, use NDP (DAD) just to be sure you're the only one with the IPv6 addr
+- DNS Overview
+	- Hierarchical
+	- Distributed DB
+		- many DNS servers
+		- 13 root server cluster (over 1000 actual servers)
+		- Hundreds of generic top-level domains (gTLDs) - .com, .org , etc.
+		- Over 275 country code top-level domains (ccTLDs) - .us, .ca , etc.
+		![[Screenshot 2026-03-30 at 5.57.10 PM.png]]
+		![[Screenshot 2026-03-30 at 5.57.35 PM.png]]
+	- Primary and Secondary
+		- DNS is an important service
+			- internet, AD, app access
+			- redundant servers are commonly used
+		- primary DNS server
+			- Contains all of the zone info for a domain
+			- changes and updates are made to the primary server
+		- secondary dns server
+			- zone info is read only
+			- zone transfers are pushed from the primary dns server
+	- Local Name Resolution
+		- you might need to override the DNS server
+			- access a test server
+			- DNS server might be configed incorrectly
+		- host file
+			- contains a list of ip addrs and host names
+			- these are the preferred resolutions
+		- some apps may not use the host file
+			- check the browser or app docs
+		- located (default - read only):
+			- Win: C:\Windows\System32\Drivers\etc\hosts
+	- Lookups
+		- Forward lookup
+			- provides the DNS server with an FQDN
+			- DNS server responds with an IP addr
+		- Reverse DNS
+			- provides the DNS server with an IP addr
+			- The DNS server responds with and FQDN
+	- The authority
+		- authoritative
+			- dns server is the authority for the zone
+		- non-authoritative
+			- does not contain the zone source files
+			- probably cached info 
+		- TTL
+			- configed on the authoritative server
+			- specifies how long a cache is valid
+			- a very long TTL can cause problems if changes are made
+	- Recursive DNS queries
+		- delegate the lookup to DNS server
+		- the DNS serve does the hard work and reports back
+			- large DNS cache provides a speed advantage
+		- future queries use the local cache
+			- cache entries eventually timeout and are removed
+			![[Screenshot 2026-03-30 at 6.13.32 PM.png]]
+	- Securing DNS
+		- DNS is often transmitted in the clear
+			- no built in encryption 
+			- relatively easy to spoof
+			- redirect email to a different mail server
+		- Domain Name Sec Extensions (DNSSEC)
+			- DNS responses from the server are digitally signed
+			- a forgery would be easily identified
+			- requires additional config on the DNS server
+		- Encrypting DNS
+			- DNS request and responses are sent in the clear
+				- anyone can view the traffic
+				- sec and privacy concerns
+			- DNS over TLS (DoT)
+				- Send DNS traffic over TCP/853, but encrypt it with TLS/SSL
+			- DNS over HTTPS (DOH)
+				- send DNS traffic in an HTTPS packet
+				- looks like a web server comm over TCP/443
+				- some browsers use DOH by default
+- DNS Records
+	- DNS records
+		- Resource Records (RR)
+			- Database records of DNS
+		- over 30 record types
+			- ip addr, certs, host alias name, etc.
+	- Start of Authority (SOA
+		- describes DNS zone details
+		- structure
+			- in SOA (internet zone, start of authority) with name of zone
+				- serial number
+				- refresh, retry, and expiry timeframes
+				- caching duration/TTL
+	- Addr records (A) (AAA)
+		- defines the IP addr of a host
+			- most popular query
+		- A records are for IPv4 addrs
+			- modify the A record to change the hostname to IP addr resolution
+		- AAAA records are for IPv6 addrs
+			- the same DNS server, different records
+	- Canonical name records (CNAME)
+		- a name is an alias of another, canonical name
+			- on physical server, multiple services
+				![[Screenshot 2026-03-30 at 6.26.12 PM.png]]
+	- Mail Exchange Record (MX)
+		- Determine the host name for the mail server
+			- this isn't an IP addr, its a name
+	- Text records (TXT)
+		- human readable text info
+			- useful public info
+		- SPF (Sender policy framework)
+			- prevent mail spoofing
+			- mail servers check that incoming mail really did come from an authorized host
+		- DKIM (Domain Key Identified Mail)
+			- Digitally sign your outgoing mail
+			- validated by the mail server, not usually seen by the end user
+			- put your public key in the DKIM TXT record
+	- Name Server Records (NS)
+		- lists the name servers for a domain
+			- NS records point to the name of the server
+	- Pointer record (PTR)
+		- the reverse of an A or AAAA record
+			- added to a revers map zone file
+- Time Protocols
+	- NTP (Network time protocol)
+		- switches, routers, firewalls, servers, workstations
+			- every device has its own clock
+		- syncing the clocks becomes critical
+			- log files, auth info, outage details
+		- automatic updates
+		- flexible
+			- you control how clocks update
+		- very accurate
+			- accuracy commonly measure in the tens of milliseconds
+	- NTP clients and servers
+		- NTP server
+			- listens on udp/123, responds to time request from NTP clients
+			- does not modify their own time
+		- NTP client
+			- request time updates from NTP server
+		- NTP client/server
+			- request time updates from NTP server
+			- responds to time request from other NTP clients
+		- important to plan your NTP strategy
+	- Network Time Security (NTS)
+		- NTP ends traffic in the clear
+		- The wrong time can be significant problem
+		- NTS is updated to provide authentication
+		![[Screenshot 2026-03-30 at 7.12.06 PM.png]]
+	- Precision Time Protocol
+		- A more precise time protocol
+			- a hardware-based time sync
+		- Nanosecond granularity
+			- industrial apps, financial trading, etc.
+		- Often implemented as specialized hardware
+			- avoids delays from OS and apps
+### Network Security Features
+- Device Security
+	- Disable unnecessary ports and services
+	- Control access with a firewall
+		- NGFW ideal
+	- Unused or unknown services install by OS or from Apps
+	- port 0-65535 cloud be open
+	- Use Nmap or similar port scanner to verify
+		- ongoing monitoring is important
+	- Change default credentials
+	- Port security
+		- disable or enable alert on switches to be notifies when a user connects to port to prevent unauthorized access
+			- Based on MAC addr
+		- Config max source MAC addr on an interface
+		- switch monitor # of unique MAC addr
+		- default action is to disable port
+		- disable unused interfaces (physical ports)
+		- NAC (802.1x): you cant communicate unless you are authenticated 
+	- MAC filtering
+		- Easy to find working MAC addrs through wireless LAN analysis
+		- Free open-source software
+		- MACs can be spoofed
+		- Security though obscurity: if you know the methods its easily defeated
+	- Key management systems
+		- Create keys for specific service/provider
+		- rotate key on regular intervals
+		- log key use and important events
+		- manage from central manager
+- Security Rules
+	- ACLs: allow or disallow traffic
+		- groupings of categories
+		- source IP, destination IP, port number, time of day, app, etc.
+		- restrict access to network devices
+			- limit by IP or other id
+			- prevent regular user / non-admin access
+		- can be implemented in many ways
+			- router, firewall, os, etc.
+- Firewall rules
+	- logical
+		- top-down
+	- can be very general or specific
+		- specific are usually at the top
+	- implicit deny
+		- most firewall include a deny at the bottom
+- URL filtering
+	- allow or restrict URL
+	- managed by category: travel, hacking, auction, etc.
+	- can have limited control
+		- URLs aren't the only way to surf
+	- often integrated into an NGFW
+		- filters traffic based on category or specific URL
+- Content filtering
+	- control traffic based on data within the content
+		- URL, website category filtering
+	- corporate control of outbound and inbound data
+		- sensitive materials
+	- control of inappropriate content
+		- not safe for work
+		- parental controls
+	- protection against: malware/virus
+- Screened subnet
+	- an additional layer of sec between you and the internet
+		- public access to pub resources
+		- private data remain inaccessible
+			![[Screenshot 2026-03-26 at 10.54.21 AM.png]]
+- Security Zones
+	- zone based sec technologies
+		- more flexible (and secure) than IP addr ranges
+	- each area of the net is associate with a zone
+		- trusted, untrusted
+		- internal, external
+		- inside, internet, server, DB, screened
+	- This simplifies sec policies
+		- trusted to untrusted
+		- untrusted to screened
+		- untrusted to trusted
+		![[Screenshot 2026-03-26 at 10.57.38 AM 1.png]]
+		![[Screenshot 2026-03-26 at 10.57.52 AM 1.png]]
+### Processes and Procedures
+- Networking Documentation
+	- Physical network map: follows the physical wire and device
+		- can include phys rack locations
+			![[Screenshot 2026-04-01 at 7.50.17 AM.png|439]]
+	- Logical network maps: high level views
+		- WAN layout, app flows
+			![[Screenshot 2026-04-01 at 7.51.00 AM.png|377]]
+	- Rack diagrams: a network admin may not walk into the datacenter
+		- provide doc for installation or changes
+		- detailed diagram of rack components
+		![[Screenshot 2026-04-01 at 7.52.34 AM.png|258]]
+	- Cable Map & Diagram: physical cable and fiber mapping
+		![[Screenshot 2026-04-01 at 7.53.28 AM.png|297]]
+	- Additional Network Diagrams 
+		![[Screenshot 2026-04-01 at 7.54.23 AM.png]]
+	- Asset Management: 
+		- record of every asset
+		- associate support tickets
+		- financial record, audit, depreciation
+		- add an asset tag
+	- Asset Database:
+		- central asset tracking system
+		- assigned users
+		- warranty tracking
+		- licensing
+	- IP Address Management (IPAM)
+		- manage ip addring
+			- plan,track, config
+		- report on ip addr usage
+		- control dhcp reservations
+		- mange IPv4 and IPv6 
+	- Service Level Agreement (SLA)
+		- minimum terms for service
+		- uptime, response time, etc.
+	- Site surveys
+		- determine existing wireless landscape
+		- identify existing ap
+		- work around existing frequencies
+			- layout and plan for interference
+		- plan for ongoing site surveys: thing certainly change
+- Lifecycle Management
+	- End of Life (EOL)
+		- manufacturer stops supporting the hardware
+		- may continue to provide security patches and updates
+		- may provide warranty repair
+	- End of Support (EOS)
+		- Manufacturer stops updating product
+		- current version is final version
+		- no ongoing security patches or updates
+	- Technology EOS is a significant concern
+	- Patches and bug fixes
+		- improve system stability
+		- security fixes
+		- Service Pack
+			- all at one
+		- monthly updates
+			- incremental
+		- emergency out-of-band updates
+			- zero-day and important security discoveries 
+	- OS updates
+		- many an varied
+		- updates 
+			- OS updates/service packs, security patches
+		- User account
+			- min password lengths and complexity 
+			- account limitations
+		- network access and security
+			- limit network access
+		- monitor and secure
+			- anti-virus/malware
+	- Firmware management
+		- software inside hardware
+		- potential exist for security vulnerabilities
+		- plan for the unexpected
+			- always have a rollback plan
+			- save those firmware binaries
+	- Decomissioning
+		- managing asset disposal
+			- desktops, latptops, etc.
+			- sanitize media or destroy
+		- may be legal issue
+			- some info must not be destroyed
+			- consider offsite storage
+		- dont want to dispose in trash
+			- recycling is a security concern
+	- Change Management
+		- how to make a change
+			- software, firewall, etc.
+		- one of the most common risks in enterprise
+			- occurs frequently
+			- often overlooked or ignored
+		- have clear policies
+			- frequency, duration, install process, fallback
+		- sometimes difficult to implement
+	- Request process tracking
+		- best way to manage service requests
+			- document, assign, resolve, report
+		- usually help desk
+			- triage
+			- determine next step
+			- assign the ticket and monitor
+- Configuration Management
+	- Only constant is change
+		- OS, patches, app updates, network modifications, new app instances
+	- identify and document hardware and software changes
+		- manage security when changes occur
+	- rebuild those systems in DR scenario
+	- Production configuration
+		- most current running configuration
+		- covers all aspects of the config
+			- hardware and firmware versions
+			- device drivers
+			- app software updates
+		- Usually tested before install
+			- must properly work
+			- not everything can be tested
+			- plan for unforeseen issues
+	- Backup Configuration
+		- There always need to be a backup
+		- create a backup before making a change
+			- revert to the backup if problem occurs
+			- copy files, vm snapshot
+		- problems during the change
+			- go back to previous prod config
+		- problems after change
+			- future issues can be rolled back
+	- Baseline/Golden Configuration
+		- an app environment should be well defined
+			- all app instances must follow this baseline
+			- firewall settings, patch levels, os file version
+			- may require constant updates
+		- integrity measurements check for secure baseline
+			- these should be performed often
+			- check against well-documented baselines
+			- failure requires an immediate correction
+### Network Monitoring
+- Simple Management Network Protocol (SNMP)
+	- A database of data (MIB) - management info base
+	- The database contains OIDs - Object IDs
+		- poll devices over udp/161
+	- SNMP v1 - the original
+		- structured tables, no encryption
+	- SNMP v2c - A good step head
+		- Data type enhancements, bulk transfers, unencrypted
+	- SNMP v3 - new standard
+		- message integrity, authentication, encryption
+	- OID object identifier can be referenced by name or number
+		- every variable in the MIB has a corresponding OID
+			- some are common across devices
+			- some manufactures define their own obj IDs
+		- SNMP manager requests info based on OID
+			- a consistent reference across devices
+	- MIB-walker helps monitor SNMP objects
+	- SNMP traps
+		- most SNMP ops expect a poll
+			- devices then respond to the SNMp requests
+			- requires constant polling
+		- SNMP traps can be configed on the monitored device
+			- comms over udp/162
+		- set a threshold for alerts
+			- if the number of CRC errors increases by 5, send a trap
+			- monitoring station can react immediately 
+	- Authentication
+		- community string
+			- simple password style auth method
+				- read-only, read-write, and trap
+			- common community string are public and private
+			- used SNMP v1 and v2c
+		- User name and password
+			- used in SNMP v3
+			- Transmitted as password hash
+- Logs and Monitoring
+	- Monitor all important points
+		- routers, switches, auth, etc.
+	- react to events
+		- account access, redundant devices, bandwidths
+	- status dashboards on one plane
+	- Flow data (Net flow) (ex. solarwinds)
+		- gathers stats from all traffic flows
+			- shared comm between devices
+		- standard collection methods
+		- many product options
+		- probe and collector
+			- probe watches network comm
+			- summary records are sent to the collector
+		- usually separate reporting app tied to collector
+		- Can be a specialized appliance that are plugged into router or switch
+	- Protocol Analyzers
+		- solve complex app issues
+		- gathers frames on the network
+			- or in air
+			- sometime built into device
+		- view traffic patterns
+			- id unknown traffic
+			- verify packet filtering and sec controls
+		- large scale storage
+			- big data analytics
+		- network performance baseline
+			- troubleshooting starts with a blank slate
+				- a baseline can add context
+			- intermittent or all-day issues
+			- some orgs already collect this data
+				- check the SIEM or management console
+			- look for patterns and correlations
+				- alarm and alert when anomalies occur
+		- Syslog
+			- standard for messaging logging
+				- diverse system create a consolidate log
+			- usually a central logging collection 
+				- integrated into the SIEM (Security Info and Event Manager)
+			- Each log entry is labeled
+				- facility code (program that created the log) and severity level
+			- common with most devices
+				- firewalls, servers, etc.
+		- SIEM
+			- logging of security events and info
+			- security alerts
+				- real time info
+			- log aggregation and long term storage
+				- usually includes advanced reporting features
+			- data correlation
+				- link diverse data types
+			- forensic analysis
+				- gather details after event
+		- Getting the data
+			- Sensors and logs
+				- data is ent to SIEM using syslog
+				- os 
+				- infra devies
+				- NetFlow Sensors
+			- Sensitivity settings
+				- easy to be overwhelmed with data
+				- some info is unnecessary
+				- informational, warning, urgent
+		- API integration
+			- control and manage devices
+				- hundreds of firewalls, routers, switches, and servers
+				- log into each devices and make change manually
+			- automate the command line
+				- batch processes
+				- very little control or error handling
+			- allow interaction with 3rd party devices and services
+			- cloud services, firewalls, OS
+		- Port mirroring
+			- copy traffic from one or more interfaces
+				- used for packet captures, IDS, performance monitoring
+				- monitor traffic on the same switch
+			- mirror traffic from one switch to another
+				- gather data from remote switch
+			- SPAN (Switch port analyzer) - network tap
+				- examines a copy of the traffic
+- Network Discovery
+	- difficult to see beyond the wall jack
+		- LLDP (Link-layer discover protocol), CDP (Cisco Discovery Protocol), etc.
+		- IP scanners (Nmap)
+		- commercial network scanners
+		- SNMP
+	- Ad hoc
+		- scan as needed or required
+	- Scheduled
+		- scan occurs at regular intervals
+		- report on moves, adds, changes
+	- traffic analysis
+		- view traffic info from routers, switches, firewalls, etc.
+			- identify traffic flows
+			- view traffic summaries
+		- can be very detailed
+			- every flow from every device
+		- important historical info
+			- monitoring, post-event analysis
+	- performance monitoring
+		- fundamental network stats
+			- amount of network use over time
+		- Many different ways to gather this metric
+			- SNMP, NetFlow, protocol analysis, agent
+		- identify fundamental issues
+			- nothing works properly if bandwidth is highly utilized
+	- availability monitoring
+		- up or down
+			- no special rights or perms required
+		- alarming and alerting
+			- notification should be and interface fail to report
+			- email,sms
+		- short-term and long-term reporting
+			- view availability over time
+		- not focused on additional details
+			- additional monitor may requires SNMP
+	- network backup and restore
+		- every device has config
+			- ip addr, sec settings, port config
+			- most devices allow the config to be downloaded and uploaded
+			- configs may be specific to a version of operating code or firmware
+		- revert to a previous state
+			- us backups to return to a previous config date and time
+			- may require a firmware or version downgrade
+	- Config monitoring
+		- verify consistency
+		- alert on any changes
+		- backup and restore
+		- often part of a larger management system or strategy
+			- central console and access
+### Disaster Recovery
+- Disaster Recovery Plan (DRP)
+	- detail plan for resuming ops after disaster
+	- extensive planning prior to the disaster
+		- backups
+		- off-site replication
+		- cloud alternatives
+		- remote site
+	- Many third party services
+		- physical location
+		- recovery services
+	- RTO (Recovery Time Objective)
+		- Measure as an amount of time
+			- time to resume ops
+			- we would like near zero
+		- get back to particular service level in a certain timeframe
+	- RPO (Recovery Point Objective)
+		- How much data loss is acceptable
+		- define the right RPO
+			-  banking, patient info
+				- very short - less than an hour
+			- web site updates , internal docs
+				- 1-4 hours 
+	- MTTR and MTBF
+		- Mean time to repair (MTTR)
+			- average time req to fix the issue
+			- the time from point of the failure to functionality
+		- Mean time between failures (MTBF)
+			- predict the time between outages
+			- often take many variables into account
+	- Site Residency
+		- recover site is prepped
+			- data is synced
+		- A disaster is called
+			- business process failover to the alternate site
+		- problem is addressed
+			- can take hours, week, etc.
+		- revert back to primary location
+			- documentation is required both ways
+	- Cold Site
+		- no hardware, empty building
+		- no data - bring it with you
+		- no people - bus in your team
+	- Hot Site
+		- an exact replica - duplicate everything
+		- stocked with hardware
+			- constantly updated
+			- buy two of everything
+		- apps and software are constantly updated
+			- automated replication
+		- flip and switch and everything moves
+	- Warm site
+		- somewhere between cold and hot
+		- big room with rack space
+			- you bring hardware
+		- hardware is ready and waiting
+			- you bring software and data
+	- Tabletop exercises
+		- performing a full-scale DR drill
+		- many of the logistics can be determined through analysis
+		- get key players together
+	- Validation Test
+		- test yourselves before an actual event 
+			- scheduled update sessions
+		- use well-defined rules of engagement
+			- don't touch prod
+		- very specific scenario
+			- limited time to run event
+	- evaluate response
+		- document and discuss
+- Network Redundancy
+	- Active-passive
+		- two device are installed and configed
+			- only one operates at a time
+		- if one devices fails, the other takes over
+		- config and real-time session info is constantly synced in case of failover
+			![[Screenshot 2026-04-01 at 10.59.41 AM.png]]
+	- Active-Active
+		- use both at the same time
+		- more complex to design and operate
+			- data can flow in many different ways
+			- a challange to mange the flows
+			- montiroing and controlling data requires a v
+
+### Network Communication - steam of packets
+- Unicast: one sender to one receiver
+	- one-to-one transmission
+	- web surfing, file transfer
+	- does not scale for realtime steaming media
+	- ipv4/ipv6
+- Multicast: one sender to a group of receivers
+	- one-to-many-of-many
+	- multimedia delivery, stock exchanges, dynamic routing updates
+	- very specialized
+		- difficult to scale across large networks
+	- ipv4/ipv6
+- Anycast: data is sent from source to the nearest device among a group of potential receivers sharing the same ip
+	- one-to-one-of-many
+	- ipv4/ipv6
+	- config the same anycast address on different devices
+		- looks like any other unicast address
+	- packets sent to an anycast address are delivered to the closest interface
+		- ex announce the same route out of multiple data centers, clients use the data center closest to them
+		- anycast DNS
+- Broadcast: send info to everyone at once
+	- one-to-all
+	- one packet received by everyone
+	- limited scope (broadcast domain)
+	- routing updates
+	- arp requests
+	- used in ipv4 / not used in IPv6
+
+Private network addresses:
+
+- 10.0.0.0
+- 172.16.0.0
+- 192.168.0.0
+- Three IP addresses taken when defining subnet:
+	- Network address: 192.168.0.**0** (first ip) identifies subnet itself
+	- Broadcast address: 192.168.0.**255** (last address in subnet) used to comm with everyone in subnet
+	- Gateway: 192.168.0**.1** (first usable ip? ) typically .1 endpoint for network traffic   
+### Network Security Concepts
+- Security Concepts
+	- Data in transit - data moving over the network
+		- Not much protection as it travels from router, switches, devices
+		- Network-based protection
+			- Firewall, IPS
+		- Provide transport encryption 
+			- Transport Layer Security (TLS)
+			- IPsec (Internet Protocol Security)
+	- Data at rest
+		- Data is on a storage device
+		- Encrypt the data
+			- whole disk encryption
+			- database encryption
+			- file/folder level encryption
+		- Apply permissions
+			- ACL
+			- only authorized users can access the data
+	- Public Key Infra (PKI)
+		- Policies, procedures, hardware, software, people
+			- digital certs: create, distribute, manage, store, revoke
+		- Also refers to binding of public keys to people or devices
+			- the cert authority
+			- its all about trust
+	- Digital Certificates
+		- a public key certificate
+			- binds a public key with a digital signature
+			- an other details about the key holder
+		- a digital signature adds trust
+			- PKI uses Cert Auth for additional trust
+			- Web of Trust adds other users for additional trust
+		- Cert creation can be built into the OS
+			- part of Windows Domain services
+			- many 3rd party ops
+	- Certificate Authority
+		- centralized certificate authority
+		- need a good way to trust an unknown entity
+			- use trusted third party
+			- an authority
+		- CA has digital signed the website cert
+			- you trust the CA, therefore you trust the website
+			- real-time verification
+	- Self-signed certificates
+		- Internal certs don't need to be signed by a public CA
+			- your company is the only one going to use it
+			- no need to purchase trust for devices that already trust you
+		- Build your own CA
+			- issue your own certs signed by your own CA
+		- Install the CA cert/trusted chain on all devices
+			- they'll no trust any certs signed by your internal CA
+			- works exactly like a cert you purchased
+	- Identity and Access Management (IAM)
+		- Give the right perms to the right people at the right time
+			- prevent unauthorized access 
+		- Identity Lifecycle management
+			- Every entity (human/not human) gets a digital identity
+			- Access control: an entity only gets what it needs
+			- Authentication and authorization: entities must prove they are who they claim to be
+			- Identity governance: track an entities resource access, may be regulatory req
+	- Least privilege
+		- rights and perms should be the bare minimum
+		- all user accounts must be limited
+			- apps should run with minimum perms
+		- don't allow users to run with admin perms
+			- limits scope of malicious behavior
+	- Role based access control (RBAC)
+		- you have a role in your org
+		- admin provides access based on the role of the user
+			- rights are gained implicitly
+		- in windows, we use groups to provide RBAC
+	- Geographic Restriction
+		- Network location
+			- identify based on IP subnet
+			- can be difficult with mobile devices
+		- Geolocation - determine a users location
+			- GPS
+			- 802.11 wireless, less accurate
+			- IP addr, not very accurate
+		- Geofencing
+			- automatically allow or restrict access when users is in particular location
+			- don't allow this app to run unless you are near the office 
+	- Cameras
+		- CCTV
+		- Camera features
+			- motion recognition can alarm and alert when something moves
+			- object detection can id face, license plate, etc.
+	- Door Locks
+		- conventional: lock and key
+		- deadbolt: physical bolt
+		- electronic: keyless, pin
+		- token-based: RFID badge, mag swipe card, or key fob
+		- biometric: hand, fingers or retina
+		- Multi-factor: smart card + pin
+- Authentication
+	- AAA framework
+		- Identification
+			- this is who you claim to be
+			- usually your username
+		- authentication
+			- prove who you are 
+			- password and other auth factors
+		- authorization
+			- based on your id and auth, what access do you have?
+		- accounting
+			- resources used, login time, data sent and received, logout time
+	- Single Sign On (SSO)
+		- Provide creds one time
+			- get access to all available or assigned resources
+			- no additional auth required
+		- usually time limited
+			- often 24 hours 
+			- auth again after timer expires
+		- underlying auth infra must support SSO
+			- not always an option
+	- RADIUS (Remote Auth Dial-In User Service)
+		- One of the more common AAA protocols
+			- widely supported
+			- Not just for dial in
+		- Centralize auth for users
+			- routers, switches, firewalls
+			- server auth
+			- remote VPN access
+			- 802.11x network access
+			- RADIUS services available on almost any server OS
+	- LDAP (Lightweight Directory Access Protocol)
+		- protocols for reading and writing directories over an IP network
+			- organized set of records, like a phone directory
+		- X.500 spec was written by International Telecomm Union
+		- DAP ran on the OSI protocol stack
+			- LDAP is lightweight
+		- LDAP is the protocol used to query and update X.500 directory
+			- used in Windows AD, Apple OpenDirectory, Novell eDirectory, etc.
+	- X.500 Distinguished Names
+		- attribute = value pairs
+		- most specific attribute is listed first
+		 ![[Screenshot 2026-04-02 at 8.30.29 AM.png]]
+		 ![[Screenshot 2026-04-02 at 8.33.04 AM.png]]
+	- SAML (Security Assertion Markup Language)
+		- open standard for authentication and authorization
+			- you can auth through 3rd party to gain access
+			- one standard does it all, sort of
+		- not originally designed for mobile apps
+			- largest roadblock
+		![[Screenshot 2026-04-02 at 8.36.09 AM.png]]
+	- TACACS (Terminal Access Controller Access-Control Systems)
+		- remote auth protocol
+		- created to control access to dial up lines to arpanet
+		- TACACS+
+			- latest version, not backwards compatible
+			- more auth requests and response codes
+			- common in cisco devices
+			- released as an open standard in 1993
+	- Multi-Factor Authentication
+		- Prove who you are
+			- use different methods
+			- memorized password
+			- a mobile app
+			- GPS location
+		- factors
+			- something you know
+			- something you have
+			- something you are
+			- somewhere you are
+	- TOTP (Time based one-time password algorithm)
+		- use a secret key and time of day
+		- no incremental counter
+		- secret is configed ahead of time
+			- timestamps are synced via NTP
+		- Timestamp usually increments every 30 sec
+			- put in username, password, TOTP
+		- One of the more common OTP methods
+- Security Technologies
+	- Honeypots
+		- attract the bad guys and trap them
+		- The attacker is probably a machine 
+			- make for interesting recon
+		- many different options, crate a virt world to explore
+	- Honeynets
+		- a real network includes more than a single device
+			- Servers, workstations, routers, switches, firewalls
+		- large deception network with one or more honeypots
+	- Risk
+		- an exposer to harm or danger
+			- possibility of something bad happening
+		- an important consideration
+			- growth brings risk
+			- useful to get ahead of any potential problems
+		- most thing have an associate risk
+			- manage potential risk
+			- qualify internal and external threats
+			- risk analysis helps plan for contingencies
+	- Vulnerabilities
+		- a weakness in a system
+			- allows the bad guy to gain access or cause a security breach
+		- some vulnerabilities are never discovered
+			- or discovered after years of use
+		- Many different types
+			- Data injection
+			- Broken auth process
+			- Sensitive data exposure
+			- Security misconfig
+	- Exploits
+		- take advantage of a vulnerability
+			- gain access to system 
+			- modify data
+			- diable a service
+		- many exploit methods
+			- built to take advantage of vulnerability
+			- may be complex
+	- Threat
+		- a vulnerability can be exploited by a threat
+			- may be intentional (attacker) or accidental (fire, flood)
+			- many of these threats are external to the org
+		- a resource can have a vulnerability
+			- vulnerability can be exploited by a threat agent
+			- threat agent take a threat action to exploit the vulnerability
+		- the result is loss of security
+	- CIA Triad
+		- Combination of principles
+			- the fundamentals of security
+		- Confidentiality
+			- prevents disclosure of info to unauthorized systems or individuals
+		- Integrity
+			- Messages cant be modified without detection 
+		- Availability
+			- Systems and network must be up and running
+- Regulatory Compliance 
+	- Compliance: meeting standards of laws, policies, and regulations
+		- Many industry specific
+		- Penalties: fines, incarceration, loss of employment
+		- Scope
+			- National, territory, or state laws
+			- Domestic and international reqs
+	- Data localization
+		- Data from a region or county is stored within the borders of the region or county
+		- Laws may prohibit where data is stored
+			- GDPR (General Data Protection Regulation) (EU)
+				- Data protection and privacy for individuals in the EU
+				- Name, address, photo, email, bank details, posts on social media, medical info, and computers IP addr
+				- Controls personal data
+					- data collected on EU citizens must be stored in the EU
+					- Users can decide where their data goes
+					- can request removal of data from search engines
+					- give "data subjects" control over their data
+			- PCI DSS (Payment Card Industry Data Security Standard)
+				- standard for protecting credit cards
+				- six control objectives
+					- build and maintain secure network and systems
+					- protect cardholder data
+					- maintain a vulnerability management program
+					- implement strong access control measures
+					- regularly monitor and test networks
+					- maintain and info security policy 
+			- complex mesh of tech and legalities
+			- compliance laws may prohibit moving data out of county
+- Segmentation Enforcement
+	- Physical, logical, virtual segmentation
+		- Devices, VLANS, virtual networks
+	- Performance
+		- high bandwidth apps
+	- Security 
+		- users should not talk directly to the DB servers
+		- the only apps in the core are SQL and SSH
+	- Compliance
+		- Mandated segmentation
+		- Makes change control much easier
+	- IoT (Internet of Things)
+		- Heating, cooling, lighting
+		- Smart Devices
+		- Wearable Technology - watches, health monitors
+		- Weak defaults - IOT manufacturers are note sec professionals
+	- IIoT (Industrial IoT)
+		- Machine to machine comms
+		- Segmentation is just as important - data is at stake
+		- Facility automation - temp, air quality, etc.
+		- Industrial equipment/ICS monitoring
+			- robotics, medical devices, etc.
+			- specialized monitoring systems
+			- wired and wireless
+	- SCADA/ICS (Supervisory Control and Data Acquisition System)
+		- large scale, multi-site Industrial Control Systems (ICS)
+		- PC manages equipment
+			- power generation, refining, manufacturing equip
+			- facilities, industrial, energy, etc.
+		- Distributed Control Systems
+			- real-time info
+			- System control
+		- Requires extensive segmentation - no access outside site
+	- Operational Technology (OT)
+		- The hardware and software for industrial equipment\
+			- electric grid, traffic control, etc.
+		- This is more than a web server failing
+		- Requires a different approach
+			- a much more critical security posture
+	- Guest Networks
+		- a network for visitors
+			- no access to internal services
+		- separate wireless network
+		- controlled access - password or captive portal
+		- firewalled from the rest of the network - internet access only
+	- BYOD
+		- bring your own device
+		- bring your own technology
+		- employee owned device
+			- needs to meet org's requirements
+		- challenging to secure 
+			- segment the device from the internal network
+			- both a home device and work device
+### Attack Types
+- Denial of Service
+	- force a service to fail - overload/overwhelm
+	- take advantage of a design failure or vulnerability
+		- apply latest security patches
+	- cause a system to be unavailable
+		- competitive advantage
+	- create a smokescreen for some other exploit
+		- precursor  to DNS spoofing attack
+	- doesn't have to be complicated
+	- Friendly DoS - unintentional
+		- network DoS
+			- layer 2 loop without STP
+		- bandwidth DoS
+			- downloading multi-gigabyte linux distro over DSL line
+		- Water line breaks
+	- Distributed Denial of service (DDoS)
+		- launch an army of computers to bring down a service
+			- use all the bandwidth or resources - traffic spike 
+		- this is why attackers have botnets
+		- Asymmetric threat
+			- the attacker may have few resources than the victim
+	- DDoS reflection and amplification
+		- turn your small attack into a big attack
+			- often reflected off another device or service
+		- an increasingly common network DDoS technique
+			- turn internet service against the victim
+		- Uses protocols with little (if any) authentication or checks
+			- NTP, DNS, ICMP common protocol examples
+			- coordinated attack
+- VLAN Hopping
+	- define diffrent VLANS
+	- you only have access to your VLAN
+		- good security best practice
+	- "Hop" to another VLAN - shouldn't happen
+	- Two primary methods
+		- switch spoofing
+			- sometimes switches support auto config
+				- is the switch port for a device, or is it a trunk?
+			- There's no authentication required
+				- pretend to be a switch
+				- send trunk negotiation
+			- now you've got a trunk link to a switch
+				- send and receive from any configed VLAN
+			- switch admins should disable trunk negotiation
+				- manually config trunk interfaces and devices/access interfaces
+		- double tagging
+			- craft a packet that includes two VLAN tags
+				- take advantage of the "native" VLAN config
+			- the first native VLAN tag is removed by the first switch
+				- the second "fake" tag is now visible to the second switch
+				- packet is forwarded to target
+			- this is a one-way trip
+				- responses don't have a way back to the source host
+					- good for DoS
+			- dont put any devices on the native VLAN
+				- change the native VLAN ID (Default 1)
+				- force tagging of the native VLAN
+				![[Screenshot 2026-04-02 at 10.54.12 AM.png]]
+- MAC Flooding
+	- MAC the physical addr of a network adapter
+		- unique to device
+		- 48-bit long (6 bytes) - Hexadecimal
+		- First 3 bytes are the Org Unique Identifier (OUI) - manufacturer
+		- Last 3 bytes are the Net Interface Controller-Specific (serial number)
+		- Stored in ROM of NIC
+	- LAN switching
+		- forward or drop frames - based on MAC addr
+	- Gather constantly updating list of MAC addrs
+		- build the list based on source MAC addr or incoming traffic
+		- these age out periodically, often 5 min
+	- Maintain a loop-free env
+		- use STP
+		![[Screenshot 2026-04-03 at 12.16.55 PM.png]]
+	- MAC flooding
+		- MAC tables are only so big
+		- attacker starts sending traffic with different source MAC addrs
+			- force out legit MAC addrs
+		- table fills up
+			- switching begins flooding traffic to all interfaces
+		- this effectively turns the switch into a hub
+			- all traffic is transmitted to all interfaces
+			- no interruption in traffic flows
+		- attacker can easily capture all traffic
+		- flooding can be restricted in the switch port security settings
+- ARP and DNS Poisoning
+	- Spoofing or poisoning
+		- pretending to be something you aren't
+			- fake web server, dns server, etc.
+		- email addr spoofing
+			- sending addr of an email isnt really the sender
+		- caller id spoofing
+			- incoming call info is fake
+		- on-path attacks
+			- the person in the middle of the convo pretends to be both endpoints
+		![[Screenshot 2026-04-03 at 12.25.53 PM.png]]
+		- Man in the middle attack
+	- DNS Poisoning
+		- modify DNS server
+			- requires crafty hacking
+		- modify the client host file
+			- the host file takes precedence over DNS queries
+		- send a fake response to a valid DNS request
+			- requires a redirect of the original request or the resulting response
+			- real-time redirect
+			- this is an on-path attack
+			![[Screenshot 2026-04-03 at 12.29.50 PM.png]]
+- Rouge Services
+	- Rouge DHCP server
+		- IP add assigned by a non-authorized server
+			- no inherit security with DHCP
+		- client is assigned an invalid or dup addr
+			- intermittent connectivity, no connectivity
+		- disable rouge DHCP comm
+			- enable DHCP snooping on your switch
+			- authorized DHCP servers in AD
+		- disable the rouge
+			- renew the IP leases on network
+	- Rouge AP
+		- an unauthorized wireless AP
+			- may be added by an employee or an attacker
+			- not necessarily malicious
+			- a significant potential backdoor
+	- Very easy to plug in a wireless AP
+		- or enable wireless sharing in your OS
+	- Schedule a periodic survey
+		- walk around your building/campus
+		- use third-party tools / wifi pineapple
+	- Consider using 802.1x (Network Access Control)
+		- you must authenticate, regardless of connection type
+	- wireless evil twin
+		- look legitimate, but actually malicious
+			- wireless version of phishing
+		- config an ap to look like an existing network
+			- same (or similar) SSID and sec settings/captive portal
+		- overpower existing aps
+			- may not require the same physical location
+		- wifi hotspots (and users) are easy to fool
+			- and they're wide open
+		- to help prevent encrypt your comm 
+			- use HTTPS or VPN 
+	- On-path network attack (man in the middle)
+		- Redirect your traffic
+			- then passes it on to the destination
+			- you never know your traffic was redirected
+		- Types
+			- APR poisoning
+				- on-path attack on the local ip subent
+				- ARP has no security
+			- Session hijacking
+			- HTTP spoofing
+			- Wifi eavesdropping
+		- Encryption fixes most of these situations
+- Social Engineering
+	- Phishing
+		- social engineering with a touch of spoofing
+			- often email, text, etc.
+			- very remarkable when done well
+		- dont be fooled
+			- check URL
+		- usually something not quite right
+			- spelling, fonts, graphics
+	- Shoulder Surfing
+		- you have access to important info
+			- many people want to see
+			- curiosity, industrial espionage, competitive advantage
+		- this is surprisingly easy
+			- airports/flights
+			- hallway-facing monitors
+			- coffee shops
+		- surf from afar
+			- binoculars/telescope
+				- easy in the big city
+			- webcam monitoring
+		- Prevent shoulder surfing
+			- control your input - be aware your surrounding
+			- use privacy filters
+			- keep your monitor out of sight
+			- don't it in front of me on your flight
+	- Tailgating and piggybacking
+		- tailgating uses an authorized person to gain un authorized access to a building
+			- the attacker does not have consent
+			- sneaks through when nobody is looking
+		- piggybacking follow the same process, but the authorized person is giving consent
+			- hold the door, my hands are full of donut boxes
+	- Watch for tailgating
+		- policy for visitors
+			- you should be able to id anyone
+		- one scan, one person
+			- policy or mechanically required
+		- access control vestibule, airlock
+		- don't be afraid to ask
+	- Dumpster Diving
+		- mobile garbage bin
+		- important info thrown out with the trash
+		- gather details that can be used for a different attack
+		- timing is important
+		- legal in the US
+		- protect your garbage 
+			- shred docs
+			- burn
+- Malware
+	- malicious software
+	- gather info
+		- keystrokes
+	- participate in a group (botnet)
+	- show you advertising
+	- viruses and worms
+		- virus requires human intervention to replicate
+		- worms can doesn't require human intervention to replicate
+	- ransomeware: encrypts your data that requires a key to unlock
+	- torjan horse: appears to be something its not
+	- rootkit: hides in OS difficult to detect or eradicate
+	- keylogger: tracks keystrokes
+	- adware/spyware: makes money for attacker
+	- bloatware: preloaded software that we dont use (can have actively running processes)
+	- logic bomb: wait for an event before execution
+	- all work together
+		- worm take advantage of vuneriability
+		- installs malware that includes remote backdoor
+		- bot may be installed later
+	- your computer must run program
+		- dont click links - email links
+		- web-page popup
+		- drive-by downloads
+		- worm
+	- OS - keep your system up to date
+	- application - check publisher
+	- your data is valuable
+		- personal data
+			- family pictures
+			- important docs
+		- org data
+			- planning docs
+			- PII
+			- financial info
+			- company private data
+
+### Hybrid Networking (Personal)
+- ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
+	- Public subnet get both private and public IPs
+	- Private subnets only have private IPs
+	- NAT gateways are required to expose private subnet resources
+- AWS site to site vpn setup
+		![[Screenshot 2026-03-26 at 8.00.56 AM.png|497]]
+	- you build a customer gateway in AWS to setup connection from on prem 
+	- Then build VPG (Virtual private gateway)
+	- Route table will contain destination (datacenter subnet) to target
+	- VPN limitations: just an encrypted tunnel
+		- congestion, latency, etc. because you dont have a direct tap to AWS
+- AWS direct connect (DX): private link all the way
+		![[Pasted image 20260326081518.png]]
+	- Datacenter need to be close to DX location
+	- AWS DX location is typically a colo and it has and AWS cage that you connect to from your partner cage
+	- You have to work with isp or internet provider to get direct connection to DX location
+	- Limitation: single region
+- AWS Direct Gateway - Multi region dx 
+	![[Screenshot 2026-03-26 at 8.21.09 AM.png]]
+	- VGW - Virtual Private Gateway
+	- VIF- Private Virtual Interface
+- Transit Gateway
+	![[Screenshot 2026-03-26 at 8.24.51 AM.png]]
+### OBJECTIVES:
+
+Section 1: Networking Concepts ⭐️
+- 1.1 OSI Model ✅
+- 1.2 Network Appliances & Applications ✅
+- 1.3 The Cloud ✅
+- 1.4 Ports and Protocols ✅
+- 1.5 Transmission Media ✅
+- 1.6 Network Topologies ✅
+- 1.7 IPv4 Addressing 🚨 Review Magic Number Subnetting & Seven Second Subnetting
+- 1.8 Network Environments ✅
+Section 2: Network Implementation 2 hrs remaining ⭐️ Monday GOAL
+- 2.1 Routing Technologies 🎧 41 min
+- 2.2 Switching Technologies 🎧 25 min
+- 2.3 Wireless Devices 29 min
+- 2.4 Physical Installations 24 min
+Section 3: Network Operations ⭐️
+- 3.1 Processes and Procedures ✅
+- 3.2 Network Monitoring ✅
+- 3.3 Disaster Recovery ✅
+- 3.4 IP Services ✅
+- 3.5 Network Access ✅
+Section 4: Network Security 1hr 36min remaining ⭐️
+- 4.1 Network Sec Concepts ✅
+- 4.2 Attack Types ✅
+- 4.3 Network Security Features ✅
+Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Tuesday GOAL
+- 5.1 Troubleshooting 8min
+- 5.2 Physical Issues 32 min
+- 5.3 Troubleshooting Network Services 20 min
+- 5.4 Performance Issues 18 min
+- 5.5 Tools and Protocols 44 min
+
+⭐️ FRIDAY GOAL - Review everything learned and master subnetting, run through practice tests, backup and clean up notes

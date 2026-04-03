@@ -1,0 +1,108 @@
+- Distributed Hybrid Infra (DHI): solutions that incorporate cloud native infra principles (programmability, elasticity, modularity & residency)
+- AOS is the Data plane (PE)
+- Prism central is the control plane
+- Why NCI?
+	- Reduced hardware cost
+	- Reduced power and cooling costs
+	- Space savings
+	- Simplified mgmt
+	- Integrated DR and backup
+	- Improved Utilization
+	- HA and fault tolerance
+		![[Pasted image 20260304094011.png]]
+	- AOS storage: aggregates local storage into a unified, distributed storage pool
+		- Features:
+			- Performance: 
+				- Data locality
+				- Intelligent Tiering (hot/cold data movement)
+				- High Throughput (Optimized for NVMe with direct PCIe)
+			- Resiliency: 
+				- Efficient Snapshots (Native to Data Services, app consistent recovery)
+				- Tune-able redundancy (RF2/RF3 data + metadata)
+				- Automatic Self-healing (Fully distributed rebuild)
+				- Placement intelligence: Disk awareness, Node Awareness, Block Awareness, and Rack Awareness
+			- Scalability: 
+				- Easy scale out: build on your own terms, linear scalability
+				- Independently Scale: scaling compute and storage separately
+			- Storage Efficiency:
+				- Compression: Reduces the size of data and boosts performance & I/O
+					- Inline (Default): Immediate compression
+					- Post-Process: Data is written and then compressed later
+				- Deduplication: Eliminated duplicate data in the background without an impact on performance
+				- Erasure Coding: Maximizes usable capacity with parity instead of full copies (mimics RAID)
+					- Data is Fragmented and Parity Data is added to deliver resiliency without a performance impact or rebuild drawbacks
+	- AHV:
+		- Foundation of NCI and combines AOS storage, Flow Virt Networking, PC, and NKP
+		- Use nutanix move to migrate from esxi to AHV
+		- Enterprise Grade Infra:
+			- Unified UI Prism
+			- VM lifecycle mgmt and resizable templates for consistent provisioning
+		- Enterprise Reliability:
+			- VM HA
+			- Live Migration and on-demand Cross Cluster Live Migration
+			- Metro Availability and Sync Replication
+		- Performance Optimization:
+			- Acropolis Dynamic Scheduler: Continuous Monitoring and detects hotspots and rebalances workloads
+			- AHV Turbo:
+				- Automatic I/O acceleration
+				- Performance that grows with workloads
+				- Advanced Processor Compatibility
+					- Cross CPU Generation Flexibility
+		- Security Centric Design:
+			- STIG Compliant
+			- Automated compliance with LCM
+			- Extended network security (Micro segmentation - flow network security)
+	- Prism Management:
+		- Nutanix Central (NCM): A way to manage multiple PC's
+			- Separate Appliance 
+			- Federate multiple PC's
+			- Multi site management
+		- Prism Central (PC): Manages multiple clusters
+		- Prism Element (PE): Management of a single cluster
+		- Infra management(comp, stor, networking), Platform administration (LCM, Marketplace, licensing, etc.), IAM (Users, Groups, Auth)
+	- DR and Data Protection:
+		- Async DR (RTO/Minutes RPO >1hr), NearSync (RTO/Minutes 1 to 15 min), Metro / Sync (RTO/minutes RPO/Zero)
+		- Multi-cloud Snapshot Tech: Offloaded to primary and stored via object storage and recover to recovery site
+		- DR Orchestration:
+			- Protection Policy: Create a copy of data a specific point in time for recovery
+			- Recovery Plans: Continuously or periodically copy data to another system for rapid failover
+		- Backup and Recovery:
+			- 3x2x1 Rule (3 copies = 2 Different media + 1 Offsite)
+	- External Storage Support:
+		- Allows for computer and storage only nodes
+		- Vendors: Dell PowerFlex, and Pure Storage
+	- Containerized Application Support:
+		- NKP
+		- Also offer persistent data services giving customer choice to use other kub (rancher, openshift, amazon eks, etc.)
+	- Flow Virtual Networking:
+		- VPC: isolate network namespace (acts as own private network)
+			- Ip addresses of vpc must be unique but ip addresses within can overlap
+		- Failover DR : failover network
+		- Workplace placement : networks exist on multiple cluster or sites
+		- Multi-tenancy: Isolated network with own address spaces, tenant level isolation
+	- Security: 
+		- Secure by default (comes secure out of the box)
+		- Least privilege
+		- Defense in Depth: multi layers of protection
+		- Security Dev Lifecycle: tested before released 
+		- Aligns to Zero Trust and NIST 
+		- Security Features:
+			- Encryption
+				- Data-at-rest encryption
+				- Data-in-transit encryption
+			- RBAC
+			- Secure access - Cluster Lockdown Mode: key based or cert bases no password login
+			- Secure config baseline (STIG)
+			- NCP Security Product
+				- Flow network security: offer micro segmentation + policy based network security
+					- Service insertion and network automation
+				- Security Central: auditing and threat protection
+					- NCM(Nutanix Cloud Manager): Cloud service and scans nutanix env for compliance and vulnerabilities
+					- Anomaly Detection
+					- investigate feature (query)
+					- Compliance adheres to HIPAA, ISO 27001, PCI-DSS, GDPR
+		- Nutanix Cloud Clusters (NC2):
+			- public cloud deployment of nutanix
+			- runs on bare-metal infra in the cloud
+			- licenses are portable between on-prem/cloud
+				  

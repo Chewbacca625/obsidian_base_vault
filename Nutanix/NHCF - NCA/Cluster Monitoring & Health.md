@@ -1,0 +1,41 @@
+- Analysis Dashboard (PC/PE)
+	- Where you can monitor cluster performance graphs for selected elements + custom charts (PC - no charts by default)
+	- Types of charts:
+		- Metric Chart: Monitors the performance of single metric on one or more entities
+		- Entity Chart: Monitors the performance of one or more metrics on a single entity
+- Reporting (PC - Intelligent Ops):
+	- Can be customized with background color, logos, etc.
+	- PDF/CSV with different entity amounts
+	- Can be bar charts, histograms, data tables, etc. (customizable)
+	- Data can be various entity metrics
+- Health: 
+	- Data Resiliency Status widget - how much hardware failure the cluster can withstand | if the cluster can withstand hardware failure
+	- You can run NCC Health Check via PE under actions in Health page
+	- You can customize health checks - manage checks in actions
+	- PC doesn't have a dedicated health dashboard (you have to search health and then view entities individually)
+- Alert Dashboard: detailed summary info about alert msgs and policies across registered clustered managed by PC (disk blew up)
+- Events Dashboard: detailed summary info about event msgs across registered clusters managed by PC (disk was added) | don't need to be resolved like alerts
+- Audit Dashboard: Displays list of actions that have been performed on registered clusters (xyz added a disk to vm) | 4 week default retention of logs
+- PC alert emails not enabled by default, if emails setup in PE and you enable PC emails you may receive multiple emails (if you don't want dup emails then disable email addresses on PE but leave Nutanix Support) | PC requires SMTP server
+- Log Collection:
+	- PE - Health -> actions -> collect logs
+	- PC - doesn't allow you to collect logs directly from the console, but has logs in the VM running PC
+- Nutanix Support:
+	- Worldwide support 24x7x365
+	- my.nutanix account required to access support
+	- https://portal.nutanix.com
+	- Doc types:
+		- Hardware doc - how to replace nutanix hardware
+		- Solutions doc - how to implement various business solutions
+		- Field Advisories - alert the field of potential issues that might arise
+		- Compatibility and Interoperability Matrix: nutanix software + hardware compatibility
+	- PC support case:
+		- Requires support portal connection before case can be created
+		- One cluster must be registered in PC
+		- only available for customer that get support directly though nutanix, not customers that got initial support form third parties
+	- Nutanix Insights:
+		- Predictive trends and analytics
+		- Guidance for optimal performance
+		- Application best practices
+		- Seamless automation support
+		- **Pulse must be enabled**

@@ -1,0 +1,15 @@
+
+- Control planes must be backed up and the three control planes are
+	- nutanix central
+	- PC
+	- PE
+- Backing up control planes are one of the most difficult IT challenges to solve
+- due to locality separating management traffic from vm traffic isn't necessary
+- During demos avoid presenting with PE focus on prism central because we want to portray the single pane of glass.
+- balance-slb add more challenges traffic may fumble over itself don't recommend (OLD MODEL) - used to be use to achieve traffic similar to active/active
+- active/active is what we want when we want to utilize multiple nics
+- follow kiss methodology when designing solutions for customers
+- we can use external tools to change passwords for admin accounts we can directly integrate with their pams using system accounts
+- most customers dont use one click remediation (auto remediation) in security central - you can still sell your story for the execs
+- its okay to pull a cluster our and restart it lol
+- use the support org in the selling process

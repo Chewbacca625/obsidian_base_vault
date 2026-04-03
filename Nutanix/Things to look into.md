@@ -1,0 +1,10 @@
+- [Starting a Node in a Cluster (AHV)(opens in a new tab)](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide:ahv-node-start-ahv-t.html)
+- [Putting a Node into Maintenance Mode using Web Console(opens in a new tab)](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v6_8:wc-node-maintenance-mode-enter-wc-t.html)
+- [Exiting a Node from the Maintenance Mode using Web Console(opens in a new tab)](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v6_8:wc-node-maintenance-mode-exit-wc-t.html)
+- https://www.youtube.com/watch?v=VUxXH4uo4AY
+- https://medium.com/@leoyeh.me/mastering-the-ratio-the-definitive-guide-to-hyper-v-vcpu-overcommit-21f30ac02e82
+- https://www.nutanix.com/blog/zero-compute-deployment-in-mst-powered-dr
+- https://quizlet.com/758052193/comptia-server-sk0-005-acronyms-flash-cards/
+- https://s3.amazonaws.com/kajabi-storefronts-production/file-uploads/sites/18623/themes/2152574258/downloads/ab73ab-e437-363-6e43-bf6eada847e_Technical_Discovery_Worksheet_2024.pdf
+- https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v10_0:ahv-advanced-processor-compatibility-c.html
+- https://www.nutanixbible.com/2f-book-of-basics-cluster-components.html

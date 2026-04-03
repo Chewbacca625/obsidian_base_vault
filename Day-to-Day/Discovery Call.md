@@ -1,0 +1,55 @@
+- Using vmware
+- many virt servers
+- cohesity for backups and recovery
+- 2 years in vmware contract
+- cohesity renewal coming up
+- looking at diffrent storage options
+- Had a dr site dismantling
+- may want to up a smaller dr solution or may want to go to the cloud
+- firewall palo alto
+- Used to hypercoverged infra already
+- Shopping around for storage
+- Looking at flash array with pure storage
+- This is a school district
+- Brad is the decision maker (system admin)
+
+Discovery questions asked:
+- What servers are you running vmware on?
+	- Dell
+- Are they up for a refresh or are they new?
+	- Vxrail - couple years out for a refresh
+- How much vms or storage your using?
+	- currently protecting 150 vms
+- Is there anything about your current env that you would like to change? What headaches do you currently have?
+	- Fairly decent, pretty good visibility, never really use the dr solution
+	- Looking for better backup product/price
+- Whats the storage for?
+	- Used app extender, big scanning project, supposed to be using more storage, slow start, they need to keep data for 7 to 10 year
+	- Desires an archive solution for meeting and project data (non compressible video data)
+	- Trying to find a better way to store backup/dr
+- Are you using a single cache drive in your vxrail?
+	- We get better performance because we write to every drive within a cluster
+- How was the upgrade of vxrails?
+- Did he come in over the weekend to work on that?
+	- No more nights and weekends without impacting any of your workloads
+- Anything your looking for that I didn't touch on?
+- Any specific questions you have for us?
+- How quickly are you planning to move on the storage?
+	- summer of next year maybe spring
+	- Next few months are planning
+- Whats your budget cycle?
+	- Start july 1st
+	- Everything needs to be in prior to that (POs)
+- For your teachers and your students, are you a google or microsoft campus?
+- Do your students have their own google share?
+	- Some file share stuff but mostly google share
+- Do you guys do anything with erate?
+	- A lot of the cisco hardware is erate
+
+Action items:
+- Follow up with customers that currently use Nutanix and provide references
+- Send recording over
+- Schedule Demo NUS
+- Schedule Demo NCI
+- Are we apart of the erate for state of SC
+Look into EVC Switch

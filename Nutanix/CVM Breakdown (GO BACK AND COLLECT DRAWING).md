@@ -1,0 +1,75 @@
+- CVM resource usage
+	- Something always has to move the data on and off the disks
+	- Power is being consumed on the same node
+		- better performance
+		- easier maintianability 
+	- SAN: the idea is to decoupe resources and have deticated resources for storage so you dont have to add compute nodes just to add storage
+	  
+	- Three tier
+		- Computer (HA)
+		- Fabric (network)
+		- Array (SAN) 
+			- you have have multiple controllers
+			- you scale by adding additional arrays
+	- Nutanix HCI
+		- we use PCI passthrough to allow the hypervisor CVM direct control over the physical disks
+		- Data locality is improved versus SAN
+	- CVM goes down
+		- bugs
+		- low on memory
+		- cvm goes down during upgrade
+		- local storage may fill up
+		- normal stuff that can cause failure to OS
+	- genisis is first service
+		- monitors status of cvms
+			- invokes ha.py connects to HV down and sets up a route to direct traffic over network to other CVM
+		- gensis leader is selected (CVM) if it goes down then another is selected
+		- vm -> iscsi redirector connect -> local CVM, if the CVM goes down iscsi redirector knows it and redirects it to all the other CVM via (iscsi portal) in the cluster io is redirected to other hosts
+	- AHV Networking
+		- OVS handles
+			- ports
+			- MAC Addr
+			- LACP
+		- VNET Port: permanent tap port ephemeral 
+		- Taps can change (when powered down) - limited by PCI network interface
+		- Acropolis ensures we dont duplicate MAC
+		- When running LACP for nic bonding all nodes within a cluster must be the same withing a cluster
+		- virbro is a kernel bridge so its not a virtual switch
+			- 192.168.5.0- all of io traffic between local and local cvm happens (iscsi redirector traffic) runs in kernel space, protected, higher priority for cpu access, keep anything storage related in kernel space for speed
+		- OVS runs in users space
+		- by default VS0 - cvm public management interface connection
+			- create another Virt switch 1 they run user vms on that space
+			- avoid haveing multiple vswitches with same vlan could cause loop
+		- example: you can create a CVM dr traffic can run on VS2 example on its own nic 
+		- virtual switch can also trunk multiple VLANS
+		- you cannot have multiple bond on one vswitch it could cause a loop (1 bond per switch)
+			- ex 2 nics for bond 0 add 2 nics for bond 1 only one Vswitch each
+			- it will create a network loop because no STP
+	- 32 node max reasoning
+		- some of our processes failed to scale beyond past those host and vm running on them
+		- upgrades took way longer
+		- operational scalability
+	- Quorum (zookeeper, cassandra)
+		- zeus: manages cluster config
+		- zookeeper: service that controls all the other services (zookeeper runs on 3 nodes - helps with quorum)
+		- Stargate: manages I/O
+		- when designing solutions - use 4 nodes not 3 (N+1) (When possible)
+			- helps absorb failures
+		- RF2/FT1: redundancy factor 2 so we can lose one disk (original + 1 copy ), fault tolerance 1 can sustain one host failure 
+		- curator: will re replicate data in the case of a failure (we never co locate data on disk in the same node (unless its a one node cluster))
+			- self healing first (vm workload), then data locality (after the fact)
+			- metadata: vm wants data where do I get it
+				- two types
+					- local metadata: Autonomous extent store DB (local to host) - which disk and where
+					- global metadata: runs on cassandra (simple old, still implemented in java, very slow) Which CVM AES is stored on
+						- fault tolerance of cassandra - any segement of the db (token ring) if two nodes go down in RF2 whole system goes down it doesnt have lookup
+			- cassandra creates metadata tables
+	- External storage
+		- minimum storage on node (Compute only - External Storage)
+		- either HCI or Compute external storage setup
+	- Vm snapshots
+		- snapshots dont take up space until something changes (grab diagram) it references first write always (VM' is the snapshot) (VM is original) consolidate as snapshots are deleted and it also handles cleanup (last snapshot that references that data)
+		- if you manually clean up or set a timeframe on you snapshot backup. it will handle the cleanup of unreferenced data to give back space (our software handles the process)
+	- external storage works two ways
+		- dell power flex: kernel module that runs on the CVM in the host you config that module and you point it at the powerflex cluster
+		- Pure storage: uses RDMA over TCP or fabric similar to iscsi, but RDMA is more efficient (less overhead in IO transaction, because simpler instruction set) 

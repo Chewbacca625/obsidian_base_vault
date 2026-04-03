@@ -1,0 +1,50 @@
+**Identifying Opportunities**
+- Upgrading Legacy Infra
+	- Typical pain points: performance, scalability, maintenance challenges
+	- Current infra cant scale for business needs (current/future)
+	- Projects where business needs to quickly deploy new apps and services
+	- Deficiencies in current DR and backup or use of public cloud DR strats
+	- Opportunities to streamline ops and reduce complexity
+	- Vmware compete: https://intranet.nutanix.com/site/17428546-391d-5656-b355-b8fb2273b653/page/e21e4be0-c534-5896-9da0-b35f1d67777c
+	- Lift-and-shifts to the public cloud are made easier using nutanix
+- Personas:
+	![[Screenshot 2026-03-05 at 8.52.03 AM.png]]
+- Discovery Questions:
+	- Hybrid Cloud:
+		- Would you benefit from a single mgmt plane for pub and private clouds?
+		- What if you could avoid creating VPCs and subnets while setting up your hybrid cloud?
+		- What if you could hibernate cloud instance when its not in use to cut down on cost without data loss?
+		- Would you like to greatly simplify your hybrid cloud arch by eliminating the need for networking overlays?
+		- Would you benefit from being able to use existing pub cloud credits in your hybrid cloud setup?
+		- Are you concerned about multicloud sprawl?
+		- Have you done any analysis of existing on prem workloads that need to move to public cloud, and which pub cloud is suitable for them?
+		- Has your cloud adoption been slow due to the long time it take to re-arch apps?
+		- Is your cloud team having to slow cloud native initiatives to spend more time on moving apps/workloads from on prem to pub cloud?
+		- Are there any cost concerns holding you back from hybrid cloud adoption?
+		- Are you aware of zombie resources in your cloud env that are adding costs but not being used?
+		- What if you had a single infra plane so can easily move apps/workloads from one cloud to another without refactoring?
+	- Infra Discovery:
+		- Are you interested in migrating or busting workloads to the cloud?
+		- Are your cloud migration efforts not progressing quickly due to complexity of refactoring workloads?
+		- Would you benefit from low latency between your on-prem records and cloud based systems?
+		- Are you looking to integrate certain on-prem apps with aws services such as AI/ML or devops services?
+		- Have you estimated the work req for app refactoring?
+		- Are you re-training your IT staff or recruiting new staff for your cloud migration projects?
+		- Would you benefit from simply leveraging the same Nutanix AOS and Prism software you can use on prem to get workloads in the cloud?
+		- Can cloud help you with your DR/business continuity needs so that you dont have to add infra cost and management overhead?
+		- Did you know you could optimize your investment in Nutanix by using the same licensees for dev/test or capacity expansion when not using the cloud for DR?
+		- Would it help to use your existing investments with Nutanix in your cloud env?
+- Sales Resources:
+	- **Executive Briefing Sessions (EBX):** engages customers real world experience with Nutanix to gain insights into challenges between customers and realize the value of Nutanix in their env's.
+	- Financial Justification: 
+		- Tier 1: Self-Service calculators
+		- Tier 2: ROI/TCO Services Team (deals between 50-250k)
+			- Teams: Bid proposal mgmt and Content mgmt teams
+				![[Screenshot 2026-03-05 at 9.42.25 AM.png]]
+		- Tier 3: Cloud Economists: strategic deals >$250k ACV(actual contract value) - request from salesforce
+		- OEM Partners: LEAN ON THEM
+- Professional Services:
+	- Consulting: expert services and optimize platfrom implmentation
+	- Technical Account Mgmt: trusted advisors focused on reducing risk and enabling outcomes
+	- Residents: dedicated consultants implementing best practices
+	- Education: training 
