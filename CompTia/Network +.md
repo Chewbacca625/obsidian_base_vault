@@ -2145,4 +2145,4 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Tuesday GOAL
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
 
-⭐️ FRIDAY GOAL - Review everything learned and master subnetting, run through practice tests, backup and clean up notes
+⭐️ FRIDAY GOAL - Review everything learned and master subnetting, run through practice tests, clean up notes

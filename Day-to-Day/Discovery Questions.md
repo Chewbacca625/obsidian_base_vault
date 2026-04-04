@@ -63,3 +63,31 @@ Do you have a cloud footprint?
 What DR do you currently have?
 What is your refresh cycle?
 Do you have newer or older hardware?
+
+
+**Discovery Questions  
+**
+
+1. What does your current IT environment look like?
+2. What are your challenges and successes with your current environment?
+3. What functionality do you seek with cloud adoption?
+
+  
+
+Focus on Impact -> Outcome
+
+What’s the impact of frequent patching downtime on your operations?
+
+1. What is your current patching process and where is the bottleneck?
+
+What is the business impact due to the slow downs, and what is the limitation with your current system resulting in the slowdown?
+
+1. What are the constraints causing slow downs for your POS system?
+
+  
+
+2. What was the business impact of the outage, and what challenges did you face bringing the systems back online?
+
+  
+
+Cloud
