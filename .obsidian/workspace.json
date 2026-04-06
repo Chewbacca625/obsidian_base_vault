@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CompTia/Network +.md",
+                "file": "CompTia/Cloud+.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Network +"
+              "title": "Cloud+"
             }
           }
         ]
@@ -197,13 +197,14 @@
   },
   "active": "24620f17de89e66a",
   "lastOpenFiles": [
+    "IT Tools/Helpful Tools.md",
+    "CompTia/Network +.md",
     "CompTia/Cloud+.md",
     "Day-to-Day/Discovery Questions.md",
     "Day-to-Day/Discovery Call.md",
     "Sales Help/Sales Training.md",
     "Sales Help/Quotes.md",
     "Sales Lingo.md",
-    "CompTia/Network +.md",
     "CompTia/Server+.md",
     "Testing.md"
   ]
