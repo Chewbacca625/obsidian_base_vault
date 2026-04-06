@@ -2123,7 +2123,7 @@ Section 1: Networking Concepts ⭐️
 - 1.6 Network Topologies ✅
 - 1.7 IPv4 Addressing 🚨 Review Magic Number Subnetting & Seven Second Subnetting
 - 1.8 Network Environments ✅
-Section 2: Network Implementation 2 hrs remaining ⭐️ Monday GOAL
+Section 2: Network Implementation 2 hrs remaining ⭐️ Tuesday GOAL
 - 2.1 Routing Technologies 🎧 41 min
 - 2.2 Switching Technologies 🎧 25 min
 - 2.3 Wireless Devices 29 min
@@ -2138,11 +2138,16 @@ Section 4: Network Security 1hr 36min remaining ⭐️
 - 4.1 Network Sec Concepts ✅
 - 4.2 Attack Types ✅
 - 4.3 Network Security Features ✅
-Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Tuesday GOAL
+Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Wednesday GOAL
 - 5.1 Troubleshooting 8min
 - 5.2 Physical Issues 32 min
 - 5.3 Troubleshooting Network Services 20 min
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
 
-⭐️ FRIDAY GOAL - Review everything learned and master subnetting, run through practice tests, clean up notes
+⭐️ Tuesday goal - review backup types (incremental, full, differential), complete network implementation section, ask Jenn what she is looking for OSI diagram
+
+⭐️ Wednesday goal - Cloud+ Full Practice Test, Network Troubleshooting
+
+⭐️ Thursday goal - Network Discovery questions, NCP test
+
