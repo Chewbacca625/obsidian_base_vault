@@ -2513,4 +2513,3 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Wednesday GOAL
 
 
 Pick one technical and one non-technical
-- Youssef & Nelson PMO?
