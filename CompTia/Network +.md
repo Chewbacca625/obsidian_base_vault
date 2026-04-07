@@ -576,9 +576,58 @@
 	- disadvantages
 		- some router overhead required
 		- requires some initial config to work properly
-	- Enhanced Interior Gateway Routing Protocol (EIGRP) - send routing updates to routers within the same autonomous system (discover neighbor routers using multicast updates)
-	- D
+	- Dynamic routing protocols
+		- listen for subnet info from other routers
+		- provide subnet info to other routers
+		- determine the best path based on this info
+		- when network changes occur, update available routes
+		-  Enhanced Interior Gateway Routing Protocol (EIGRP) (CISCO ONLY) - send routing updates to routers within the same autonomous system (discover neighbor routers using multicast updates)
+			- easy to setup
+			- cleanly manage topology changes
+				- speed of convergence is always a concern
+				- loop free operation
+			- minimize bandwidth use
+				- efficient discovery of neighbor routers
+		- OSPF (Open shortest path first)
+			- A common interior gateway protocol
+			- used within a single autonomous system (AS)
+			- a well-established standard
+			- link state protocol
+				- routing is based on connectivity between routers
+				- each link has a cost
+				- throughput, reliability, and round-trip time
+				- low cost and fastest path wins, identical costs and load balanced
+		- BGP (border gateway protocol)
+			- exterior gateway protocol
+				- connects different AS
+			- popular standard for internet routing
 - Routing Technologies
+	- building a routing table
+		- every IP device has a routing table
+		- the list of directions is the routing table
+		- sometimes theres a tie
+			- duplicate destinations in the table
+			- how to break the tie?
+		![[Screenshot 2026-04-07 at 7.53.41 AM.png]]
+	- prefix lengths
+		- most specific route wins
+		- routes are more specific as the prefix increases
+		- best route for 192.168.1.6 is 192.168.1.6/32
+	- administrative distance
+		- what if you have two routing protocols, and both know about a route to a subnet?
+			- two routing protocols, tow completely different metric calculations
+				- you can compare metrics across routing protocols
+		- administrative distances
+			- used by the router to determine which routing protocol has priority
+			 ![[Screenshot 2026-04-07 at 8.00.13 AM.png|348]]
+	- routing metrics
+		- each routing protocol has its own way of calculating the best route
+			- BGP,OSPF,EIGRP
+		- metric values are assigned by routing protocol
+			- BGP metrics aren't useful to OSPF/EIGRP
+		- use metrics to choose between redundant links
+			- choose lowest metric
+	- 
 - Network Addr Translation 
 ### Switching Technologies
 - VLANs and Trunking
