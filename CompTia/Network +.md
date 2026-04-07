@@ -793,9 +793,105 @@
 			- avoid frequency conflict
 			- AP can switch to an unused frequency
 			- clients move with the AP
-		- 
+		- TPC (Transmit power control)
+			- avoid conflict with satellites services
+			- AP determines power output of the client 
 - Wireless Networking
+	- Independent Basic Service Set (IBSS)
+		- no ap required - two devices comm directly to each other using 802.11
+		- ad hoc
+			- created for a particular purpose without any previous planning
+			- without an AP
+		- temp or long-term comm
+			- connect to a device with an ad hoc connection
+			- config it with the ap setting and credentials
+		- SSID and BSSID
+			- SSID (service set ID) - every wireless network needs a name
+			- there might be multiple APs supporting an SSID
+				- the hardware addr of an ap is the BSSID (basic service set ID)
+				- the MAC (Media Access Control) address
+			 ![[Screenshot 2026-04-07 at 10.16.25 AM.png|231]]
+	- extending the network
+		- most orgs have more than one ap
+			- wireless network names can be used across aps
+			- the network name shared across aps is an ESSID
+				- extended service set id
+			- your device automatically roam when moving between APs
+	- captive portal
+		- authentication to a network
+			- common on wireless networks
+		- access table recognizes a lack of authentication
+			- redirects your web access to a captive portal page
+		- username/password
+			- add additional authentication factors
+		- once proper authentication is provided, the web session continues 
+			- until captive portal removes access
+	- wireless security modes
+		- config the authentication on your wireless AP/ wireless router
+			- OWE - opportunistic wireless encryption (cannot talk to other wireless devices)
+		- open system
+			- no authentication password required
+		- WPA/2/3-personal /WPA/2/4-PSK
+			- WPA2 or WPA3 with a pre-shared key
+			- everyone used the same 256-bit key
+		- WPA/2/3 - Enterprise / WPA/2/3-802.1x
+			- Authenticates users individually with an authentication server (i.e., RADIUS, LDAP, etc.)
+	- onmi directional antennas
+		- one of the most common APs
+		- signal is evenly distributed on all sides
+		- good choice for most environments
+		- you need coverage in all directions
+		- no ability to focus the signal
+	- Directional antenna
+		- focus the signal
+		- send an receive in a single direction
+		- antenna performance is measured in dB
+			- double power every 3dB of gain
+		- types
+			- yagi antenna
+				- very directional and high gain
+			- parabolic antenna
+				- focus the signal to a single point (good for long distance)
+		- autonomos APs
+			- the ap handles most wireless tasks
+			- the switch is not wireless-aware
+		- Lightweight ap
+			- just enough to be 802.11 wireless
+			- the intelligence is the switch
+			- less expensive
+		- control and provision
+			- CAPWAP is an RFC standard
+			- CAPWAP (Control and Provisioning of Wireless APs)
+			- Manage Multiple APs simultaneously 
+		- Wireless LAN controllers
+			- centralized mgmt of aps
+			- deploy new aps
+			- performance and sec monitoring
+			- config and delpoy changes to all sites
+			- report on ap use
+			- usually proprietary system
 - Network Types
+	- wireless mesh
+		- multiple APs
+			- APs bridge the gap
+			- client's across an extended distance can com with each other 
+		- ad hoc devices work together to from a mesh
+			- self form and self heal
+	- Ad hoc mode
+		- created for a particular purpose without any previous planning
+		- without an ap
+		- two devices comm directly to each other using 802.11
+			- no ap required
+			- IBSS
+		- temp or long-term comm
+			- connect to a device with and ad hoc connection
+			- config it with the ap setting and credentials
+	- point-to-point 
+		- connect two APs together
+			- extend a wired network over a distance
+			- building to building
+			- site-to-site
+	- 
 - Wireless Encryption
 ### Physical Installations
 - Installing Networks
