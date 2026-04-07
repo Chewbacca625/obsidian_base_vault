@@ -2503,7 +2503,7 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Wednesday GOAL
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
 
-⭐️ Tuesday goal - review backup types (incremental, full, differential), complete network implementation section, ask Jenn what she is looking for OSI diagram
+⭐️ Tuesday goal - review backup types (incremental, full, differential), complete network implementation section, ask Jenn what she is looking for OSI diagram, autoscaling, baselining, oversubscription 
 
 ⭐️ Wednesday goal - Cloud+ Full Practice Test, Network Troubleshooting
 
