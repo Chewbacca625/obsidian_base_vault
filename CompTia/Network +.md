@@ -685,8 +685,55 @@
 		- doesnt replace a standalone router
 			- not all designs require extensive routing
 	- Working with data and voice
-		- connect computer to switch, connect phone to PBX ()
+		- connect computer to switch, connect phone to PBX (private branch exachnge)
+			- two physical cables, two different technologies
+		- Now, VoIP
+			- connect all devices to eth switch
+			- one network cable for both
+			![[Screenshot 2026-04-07 at 9.43.36 AM.png]]
+		- Voice and data don't like each other
+			- voice is very sensitive to congestion
+			- data love to congest the network
+			- put the computer on one VLAN
+			- and the phone on another
+				- but the switch interface is not a trunk
+			- Each switch interface has a data VLAN and a voice VLAN
+				- config each separately
+			 ![[Screenshot 2026-04-07 at 9.45.29 AM.png]]
 - Interface Configurations
+	- speed and duplex
+		- speed: 10 / 100 / 1000 / 10 Gig
+		- duplex: half/full
+		- automatic and manual
+		- needs to match both sides
+	- IP addr mgmt
+		- layer 3 interfaces
+		- VLAN interfaces
+		- Mgmt interfaces
+		- IP addr, subnet mask/CIDR block, default gateway, DNS (optional)
+	- Link aggregation
+		- port bonding / LAG (link aggregation)
+			- multiple interfaces act like one big interface
+		- LACP (Link aggregation control protocol)
+			- Adds additional automation and management
+	- MTU (Maximum Transmission Unit)
+		- Maximum IP packet for transmit
+			- but not fragment
+		- fragmentation slow things down
+			- losing a fragment loses an entire packet
+			- requires overhead along the path
+		- difficult to know the MTU all the way though the path
+			- automated methods are often inaccurate
+			- especially when ICMP is filtered
+	- Jumbo Frames
+		- eth frames with more than 1,500 bytes of payload
+			- up to 9216 byes of an MTU (9000 is the accepted norm)
+		- increases transfer efficiency
+			- per-packet size
+			- fewer packets to switch/route
+		- eth devices must support jumbo frames
+			- switches, interface cards
+			- not all devices compatible with others
 - Spanning Tree Protocol (STP):
 	- Blocking - no forwarding to prevent a loop
 	- Listening - not forwarding and cleaning the MAC table
@@ -716,6 +763,37 @@
 	![[Screenshot 2026-03-25 at 8.00.12 AM.png]]
 ### Wireless Devices
 - Wireless Technologies
+	- 802.11ac is Wifi5
+	- 802.11ax is WIFI6 and WIFI6e (extended)
+	- 802.11be is WIFI7
+	- 802.11 technologies
+		- frequencies
+			- 2.4, 5, and 6 GHz
+			- sometimes combined
+		- Channels
+			- group of frequencies, numbered by the IEEE
+			- using non-overlapping channels would be optimal
+		- bandwidth
+			- amount of frequency in use
+				- 20, 40, 80, 160 MHz
+	- Band steering
+		- many frequencies to choose from
+			- not all of them are optimal
+		- some devices may only use one frequency 
+			- older devices, specialized systems, etc.
+		- other devices may have a choice
+			- 2.4, 5, or 6 GHz
+		- use band steering to direct clients to the best frequency
+			- 2.4 and 5 GHz without band steering = strongest frequency
+			- 2.4 and 5 GHz with band steering = 5 GHz connection
+		- 802.11h standard
+			- add interoperability features to 802.11
+			- a worldwide approach
+		- DFS (Dynamic Frequency Selection)
+			- avoid frequency conflict
+			- AP can switch to an unused frequency
+			- clients move with the AP
+		- 
 - Wireless Networking
 - Network Types
 - Wireless Encryption
@@ -2275,8 +2353,8 @@ Section 1: Networking Concepts ⭐️
 - 1.7 IPv4 Addressing 🚨 Review Magic Number Subnetting & Seven Second Subnetting
 - 1.8 Network Environments ✅
 Section 2: Network Implementation 2 hrs remaining ⭐️ Tuesday GOAL
-- 2.1 Routing Technologies 🎧 41 min
-- 2.2 Switching Technologies 🎧 25 min
+- 2.1 Routing Technologies ✅
+- 2.2 Switching Technologies ✅
 - 2.3 Wireless Devices 29 min
 - 2.4 Physical Installations 24 min
 Section 3: Network Operations ⭐️
