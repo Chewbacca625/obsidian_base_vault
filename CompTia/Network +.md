@@ -648,9 +648,44 @@
 		- trunking VLANs via one cable from router to switch
 - Network Addr Translation
 	- IPv4 is exhausted
-	- NAT allows 
+	- NAT enables
+		- Private Ip to public ip addr translation
+		 ![[Screenshot 2026-04-07 at 9.12.57 AM.png]]
+	- NAT overload/PAT (port addr translation)
+		- multiple devices internally can use the same public ip addr externally using ports to route the traffic
+		 ![[Screenshot 2026-04-07 at 9.22.24 AM.png]]
 ### Switching Technologies
 - VLANs and Trunking
+	- LAN - a group of devices in the same broadcast domain
+	- Virtual LAN: same as LAN, but separated logically instead of physically 
+		- defined by number and configed in the switch
+		- VLAN DB stores vlan data
+		- VLANs on multiple switches
+			- VLAN trunking (802.1Q) - single ethernet connection between two switches, and configed interface to be trunk port
+		- 802.1Q trunking
+			![[Screenshot 2026-04-07 at 9.32.25 AM.png]]
+			- ISL - is no longer used (proprietary) - inter-switch link
+		- VLAN tag is added at the trunk
+		- Default VLAN
+			- is the VLAN assigned to an interface by default
+		- Each trunk has a Native VLAN
+			- not the same as default VLAN
+			- doesn't add 802.1Q header
+			- the native VLAN connects switches without a tag
+				- some devices wont talk 802.1Q
+				- just use the native VLAN
+			- native VLAN should match between switches
+				- you'll get a message if the VLAN IDs don't match
+	- Layer 3 switches
+		- internal router connects to VLANs over VLAN interfaces
+			- also called switched virtual interfaces (SVI)
+		- may need to enable routing on your switch
+			- will operate as an L2 device until enabled
+			- may require a switch restart
+		- doesnt replace a standalone router
+			- not all designs require extensive routing
+	- Working with data and voice
+		- connect computer to switch, connect phone to PBX ()
 - Interface Configurations
 - Spanning Tree Protocol (STP):
 	- Blocking - no forwarding to prevent a loop
