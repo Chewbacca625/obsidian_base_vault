@@ -928,8 +928,101 @@
 			- message integrity check (MIC) with Galois Message Authentication Code (GMAC) 
 ### Physical Installations
 - Installing Networks
+	- Distribution fram
+		- passive cable termination
+			- patch pannel
+			- punch down blocks
+		- usually mounted on flat surface
+		- all transport media
+			- copper, fiber, voice and data
+		- often used as a room or location
+	- Main Distribution Frame (MDF)
+		- central point of the network
+		- termination point for WAN links
+		- Good test point
+		- this is often the data center
+	- intermediate distribution frame (IDF)
+		- extension of the MDF
+			- strategic distro point
+		- connects the users to the network
+			- uplinks from the MDF
+			- workgroup switches
+			- other local resources
+		- common in the med to large orgs
+			- geographically diverse
+		![[Screenshot 2026-04-07 at 3.36.24 PM.png]]
+	- equipment racks
+		- 19in rack/device width
+		- 1U = 1.75in
+		- common rack heights is 42U
+		- depth can vary
+	- cooling a data center
+		![[Screenshot 2026-04-07 at 3.39.36 PM.png]]
+	- fiber distro pannel
+		- permanent fiber install
+			-patch panel at both ends
+		- fiber bend radius
+		- breaks when bent too tightly
+		- often includes a service loop
+			- extra fiber for future changes
+			- inexpensive insurance
 - Power
+	- always disconnect from the power source when working on a device
+	- some devices store a charge in capacitors
+	- never connect your body to any part of a electrical system 
+	- respect electricity
+	- Ampere (amp, A)- the rate of electron flow past a point in one second
+		- diameter of the hose
+	- Voltage (volt, V) - electrical pressure pushing the electrons
+		- 120v, 240v
+	- Watt (W) - electrical load is measured in watts
+		- volts * amps = watts
+	- Alternating currents (AC)
+		- direction of current constantly reverse
+		- distributed electricity efficiently over long distances
+	- frequency of this cycle is important 
+		- US/Canada - 110 to 120v of VAC (volts of ac), 60 Hertz
+		- Europe - 220-240 VAC, 50 Hz
+	- Direct current (DC)
+		- current moves in one direction with constant voltage
+		- devices commonly use DV voltage
+			- most power sources provide AC voltage
+			- convert 120 V AC or 240 V AC
+				- to DV voltages
+	- UPS (uninterruptible power supply)
+		- short-term backup power
+		- blackouts, brownout, surges
+		- offline/standby UPS - failover for soft shutdown
+		- line-interactive UPS - increases power provided to help with brownouts
+		- on-line/double conversion UPS - always running
+		- Features: auto shutdown, battery capacity, outlets, phone line suppression
+	- Power Distro Unit (PDU)
+		- provide multiple power outlets
+		- often provide monitoring and control
 - Environmental Factors
+	- Humidity
+		- low humidity promotes static discharge
+		- high humidity promotes condensation
+		- ideal is 40-60%
+		- specific setting vary on location and equipment type
+	- Temp
+		- electrical equipment has an optimal operating temp
+			- usually part of the device spec
+			- industry best practices are around 64 degrees to 81 F
+		- many external influences
+			- outdoor temp
+			- temp increases as sys load increases
+		- HVAC is used to manage temp and humidity
+	- Fire suppression
+		- Data center fire safety
+			- large area
+			- water isn't the best fire suppression
+		- Common to use inert gases and chemical agent 
+			- stored in tanks and dispersed during a fire
+			- many warning signs
+		- HVAC system
+			- monitor for Co2
+			- Enable/disable air handlers
 ### Ports/Protocols –
 - File Transfer Protocol (FTP) - Linux/Windows tcp/20 (active mode data) and tcp/21(control)
 	- Authentication with user & pass
@@ -2485,7 +2578,7 @@ Section 2: Network Implementation 2 hrs remaining ⭐️ Tuesday GOAL
 - 2.1 Routing Technologies ✅
 - 2.2 Switching Technologies ✅
 - 2.3 Wireless Devices ✅
-- 2.4 Physical Installations 24 min
+- 2.4 Physical Installations ✅
 Section 3: Network Operations ⭐️
 - 3.1 Processes and Procedures ✅
 - 3.2 Network Monitoring ✅
@@ -2503,7 +2596,7 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Wednesday GOAL
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
 
-⭐️ Tuesday goal - review backup types (incremental, full, differential), complete network implementation section, ask Jenn what she is looking for OSI diagram, autoscaling, baselining, oversubscription 
+⭐️ Tuesday goal - review backup types (incremental, full, differential) ask Jenn what she is looking for OSI diagram, autoscaling, baselining, oversubscription 
 
 ⭐️ Wednesday goal - Cloud+ Full Practice Test, Network Troubleshooting
 
