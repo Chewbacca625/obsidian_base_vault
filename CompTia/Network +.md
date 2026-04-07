@@ -627,8 +627,28 @@
 			- BGP metrics aren't useful to OSPF/EIGRP
 		- use metrics to choose between redundant links
 			- choose lowest metric
-	- 
-- Network Addr Translation 
+	- First Hop Redundancy Protocol (FHRP)
+		- your computer is configed with a single default gateway
+		- the default route IP addr isnt real
+			- devices use a virtual IP (VIP) for the default gateway
+			- if a router disappears, another takes its place
+			- data continues to flow
+		- solve a shortcoming with IP addring
+			- one default gateway can be really many different routes
+		![[Screenshot 2026-04-07 at 8.54.25 AM.png]]
+	- Subinterfaces
+		- a device has a physical interface
+			- config options for each interface
+		- some interfaces are not physical
+			- VLANs in a trunk
+			- these are subinterfaces 
+		- often referenced with physical
+		 ![[Screenshot 2026-04-07 at 9.09.09 AM.png|273]]
+		![[Screenshot 2026-04-07 at 9.10.16 AM.png]]
+		- trunking VLANs via one cable from router to switch
+- Network Addr Translation
+	- IPv4 is exhausted
+	- NAT allows 
 ### Switching Technologies
 - VLANs and Trunking
 - Interface Configurations
