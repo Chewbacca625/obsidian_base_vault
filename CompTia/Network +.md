@@ -891,8 +891,41 @@
 			- extend a wired network over a distance
 			- building to building
 			- site-to-site
-	- 
+		- may requires specialized wireless equipment
+			- outdoor antennas and aps
+			- power adjustments
+			- frequency options
+	- infra mode
+			- clients comm to an AP
+				- ap forwards traffic
+			- clients can comm to a wired network
+				- ap bridges the networks
+			- clients can comm to each other
+				- if ap allows
 - Wireless Encryption
+	- authenticate the users before granting access
+		- username, password, MFA
+	- ensure that all comm is confidential
+		- encrypt the wireless data
+	- verify the integrity of all comm
+		- the received data should be identical to the original sent data
+		- a message integrity check (MIC)
+	- WPA (wired protected access)
+		- WPA was the replacement for serious cryptographic weaknesses in WEP
+		- designed to run on same hardware as WEP
+	- WPA2 and CCMP
+		- CCMP block cipher mode
+			- counter mode with cipher block chaining message auth code protocol, or counter / CBC-MAC protocol
+			- CCMP sec services
+				- data confidentiality with AES encryption 
+				- message integrity check (MIC) with CBC-MAC
+	- WPA3 and GCMP
+		- GCMP block cipher mode
+			- Galois/counter mode protocol
+			- a stronger encryption than WPA2
+		- GCMP sec services
+			- data confidentiality with AES
+			- message integrity check (MIC) with Galois Message Authentication Code (GMAC) 
 ### Physical Installations
 - Installing Networks
 - Power
@@ -2451,7 +2484,7 @@ Section 1: Networking Concepts ⭐️
 Section 2: Network Implementation 2 hrs remaining ⭐️ Tuesday GOAL
 - 2.1 Routing Technologies ✅
 - 2.2 Switching Technologies ✅
-- 2.3 Wireless Devices 29 min
+- 2.3 Wireless Devices ✅
 - 2.4 Physical Installations 24 min
 Section 3: Network Operations ⭐️
 - 3.1 Processes and Procedures ✅
