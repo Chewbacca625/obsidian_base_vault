@@ -544,7 +544,45 @@
 						- NAT64 DNS 64 required
 							![[Screenshot 2026-03-25 at 9.47.59 AM.png]]
 
+
+### Routing Technologies
+- Static Routing
+	- routing tables: hold routing information for local subnet or forwarding info
+	- Process
+		- ID the destination IP addr
+		- If destination IP is on local connected subnet forward the packet
+		- If destination IP addr is on a remote subnet
+			- forward to next hop router/gateway
+	- Note: if a router refers to table and doesn't find next hop it will disregard the traffic 
+	- Static routing: manually define the routes
+		- advantages
+			- easy to config and manage smaller networks
+			- no overhead from routing protocols
+			- easy to config on stub network (only one way out)
+			- more secure - no routing protocols to analyze
+		- disadvantages
+			- difficult at scale
+			- no automatic method to prevent routing loops
+			- if theres a network change, you have to manually update the routes
+			- no automatic re routing if an outage occurs
+	- 
+- Dynamic Routing
+	- Routers send routes to other routers
+		- routing tables are updated in (almost) real-time
+	- advantages
+		- no manual route config
+		- new routes are populated automatically
+		- very scaleable
+	- disadvantages
+		- some router overhead required
+		- requires some initial config to work properly
+	- Enhanced Interior Gateway Routing Protocol (EIGRP) - send routing updates to routers within the same autonomous system (discover neighbor routers using multicast updates)
+	- D
+- Routing Technologies
+- Network Addr Translation 
 ### Switching Technologies
+- VLANs and Trunking
+- Interface Configurations
 - Spanning Tree Protocol (STP):
 	- Blocking - no forwarding to prevent a loop
 	- Listening - not forwarding and cleaning the MAC table
@@ -559,7 +597,7 @@
 		- It takes seconds to bring down a network
 		- If bridge connection breaks then the network will re-learn network
 	![[Screenshot 2026-03-25 at 7.42.46 AM.png]]
-- RSTP: 
+- Rapid STP (RSTP): 
 	- latest standard
 	- faster convergence 30-50 seconds to 6 seconds
 	- backwards compatible with STP
@@ -572,6 +610,15 @@
 	- **Root Ports** are ports on the non root switches that forward data to the root bridge (elected with the lowest path cost)
 	- **Blocked port** block link
 	![[Screenshot 2026-03-25 at 8.00.12 AM.png]]
+### Wireless Devices
+- Wireless Technologies
+- Wireless Networking
+- Network Types
+- Wireless Encryption
+### Physical Installations
+- Installing Networks
+- Power
+- Environmental Factors
 ### Ports/Protocols –
 - File Transfer Protocol (FTP) - Linux/Windows tcp/20 (active mode data) and tcp/21(control)
 	- Authentication with user & pass
