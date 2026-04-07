@@ -2149,5 +2149,6 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Wednesday GOAL
 
 ⭐️ Wednesday goal - Cloud+ Full Practice Test, Network Troubleshooting
 
-⭐️ Thursday goal - Network Discovery questions, NCP test
+⭐️ Thursday goal - Network Discovery questions, NCP test, sketch network structure as team?, physical networking
 
+⭐️ Friday - Cloud + exam 10am, complete anything else remaining from the week
