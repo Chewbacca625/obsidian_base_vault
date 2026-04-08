@@ -79,12 +79,9 @@
 - Point-to-Site/Point (P2P): remote access VPN to site
 	- WFH to corp site
 
-Paas
-app
-pres
-session
-iaas
-transport
-net
-data link
-phys
+### Backup Types
+- Full backup - take a full backup of the data
+	- slowest backup, but simplest
+- Incremental backup - take backup of what has changed since the last full backup or incremental backup. (fastest backup, slowest to restore)
+	- Backup each day (tuesday will only backup data since last full, wednesday will backup only whats changed since tuesday, etc.)
+- Differential backup - take a backup of what has changed since the last full backup.
