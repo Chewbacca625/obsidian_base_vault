@@ -2574,7 +2574,7 @@ Section 1: Networking Concepts ⭐️
 - 1.6 Network Topologies ✅
 - 1.7 IPv4 Addressing 🚨 Review Magic Number Subnetting & Seven Second Subnetting
 - 1.8 Network Environments ✅
-Section 2: Network Implementation 2 hrs remaining ⭐️ Tuesday GOAL
+Section 2: Network Implementation 2 hrs remaining ⭐️
 - 2.1 Routing Technologies ✅
 - 2.2 Switching Technologies ✅
 - 2.3 Wireless Devices ✅
@@ -2596,9 +2596,7 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Wednesday GOAL
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
 
-⭐️ Tuesday goal - review backup types (incremental, full, differential) ask Jenn what she is looking for OSI diagram, autoscaling, baselining, oversubscription 
-
-⭐️ Wednesday goal - Cloud+ Full Practice Test, Network Troubleshooting
+⭐️ Wednesday goal - Cloud+ Full Practice Test, Network Troubleshooting, review backup types (incremental, full, differential) ask Jenn what she is looking for OSI diagram, autoscaling, baselining, oversubscription 
 
 ⭐️ Thursday goal - Network Discovery questions, NCP test, sketch network structure as team?, physical networking
 
