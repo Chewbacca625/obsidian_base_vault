@@ -2596,11 +2596,15 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Wednesday GOAL
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
 
-⭐️ Wednesday goal - Network Troubleshooting, autoscaling, baselining, oversubscription 
 
 ⭐️ Thursday goal - Cloud+ Full Practice Test, Network Discovery questions, NCP test, sketch network structure as team?, physical networking
 
-⭐️ Friday - Cloud + exam 10am, complete anything else remaining from the week
 
 
-Pick one technical and one non-technical
+
+NCA part 1 
+NCA part 2 bootcamp
+Self service Demo
+Demo done
+slide done
+Network Troubleshooting
