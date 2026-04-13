@@ -2600,27 +2600,29 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Wednesday GOAL
 - NCA part 1 bootcamp
 - network discovery questions
 - Diagram 1 : **Draw the OSI model and map each traffic type to the appropriate VLANs.**
-- Practice Test Network+
+	- **Lucidchart - draw the OSI model and show how you can use VLANs to segment traffic, ex: management, web traffic, data traffic, etc.**
+- Practice Test Network+ (Networking Concepts) - Just see where you are
+- Rob - Training
 
 ⭐️ Tuesday GOAL
 - NCA part 2 bootcamp
 - Complete slides
 - Diagram 2: **Sketch a secure network segment: VLANs, firewall rules, and monitoring agents. Show DR replication across sites.**
-- Practice Test Network+
+- Practice Test Network+ (Network Implementation) - Just see where you are
 
 
 ⭐️ Wednesday GOAL
 - Self service Demo
-- Network Troubleshooting
 - Physical Networking
-- Practice Test Network+
+- Practice Test Network+ (Network Operations) - Just see where you are
 
 
 ⭐️ Thursday GOAL
 - Physical Networking
 - Build Self-Service/Playbook demo
-- Practice Test Network+
+- Practice Test Network+ (Network Security) - Just see where you are
 
 ⭐️ Friday GOAL
-- Full Practice Test Network+
+- Network Troubleshooting
+- Full Practice Test Network+ (Network Troubleshooting) - Just see where you are
 - Wrap up anything missed during the week
