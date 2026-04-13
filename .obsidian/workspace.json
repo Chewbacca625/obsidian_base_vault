@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CompTia/Network +.md",
+                "file": "Day-to-Day/Daily Notes & Tasks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Network +"
+              "title": "Daily Notes & Tasks"
             }
           }
         ]
@@ -197,9 +197,12 @@
   },
   "active": "6c0564657bd7ebe3",
   "lastOpenFiles": [
-    "Capstones/Presentation Best Practices.md",
     "CompTia/Network +.md",
+    "CompTia/Server+.md",
+    "Day-to-Day/Daily Notes & Tasks.md",
     "CompTia/Cloud+.md",
+    "Day-to-Day/Discovery Questions.md",
+    "Capstones/Presentation Best Practices.md",
     "Capstones/Capstone 1.md",
     "Assets/Attachments/Screenshot 2026-04-07 at 3.39.36 PM.png",
     "Assets/Attachments/Screenshot 2026-04-07 at 3.36.24 PM.png",
@@ -213,12 +216,10 @@
     "Assets/Attachments/Screenshot 2026-04-07 at 9.32.25 AM.png",
     "Assets/Attachments/Screenshot 2026-04-07 at 9.22.24 AM.png",
     "IT Tools/Helpful Tools.md",
-    "Day-to-Day/Discovery Questions.md",
     "Day-to-Day/Discovery Call.md",
     "Sales Help/Sales Training.md",
     "Sales Help/Quotes.md",
     "Sales Lingo.md",
-    "CompTia/Server+.md",
     "Testing.md"
   ]
 }

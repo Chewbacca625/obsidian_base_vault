@@ -1,3 +1,38 @@
+### Task Tracker
+
+⭐️ Monday GOAL
+- NCA part 1 bootcamp
+- network discovery questions ✅
+- Diagram 1 : **Draw the OSI model and map each traffic type to the appropriate VLANs.**
+	- **Lucidchart - draw the OSI model and show how you can use VLANs to segment traffic, ex: management, web traffic, data traffic, etc.**
+- Practice Test Network+ (Networking Concepts) - Just see where you are
+- Rob - Training
+	- https://learningacademy.nutanix.com/course?course_id=699790dd793e3b4cd4f9b547
+	- https://learningacademy.nutanix.com/course?course_id=698addb42aa4f91bc527a22f
+
+⭐️ Tuesday GOAL
+- NCA part 2 bootcamp
+- Complete slides
+- Diagram 2: **Sketch a secure network segment: VLANs, firewall rules, and monitoring agents. Show DR replication across sites.**
+- Practice Test Network+ (Network Implementation) - Just see where you are
+
+
+⭐️ Wednesday GOAL
+- Self service Demo
+- Physical Networking
+- Practice Test Network+ (Network Operations) - Just see where you are
+
+
+⭐️ Thursday GOAL
+- Physical Networking
+- Build Self-Service/Playbook demo
+- Practice Test Network+ (Network Security) - Just see where you are
+
+⭐️ Friday GOAL
+- Network Troubleshooting
+- Full Practice Test Network+ (Network Troubleshooting) - Just see where you are
+- Wrap up anything missed during the week
+
 Questions for Jenn:
 - Do you have any feedback for me?
 - Do you have any tips on how to not bring work home and avoid burnout?
