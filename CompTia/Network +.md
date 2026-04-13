@@ -2574,7 +2574,7 @@ Section 1: Networking Concepts ⭐️
 - 1.6 Network Topologies ✅
 - 1.7 IPv4 Addressing 🚨 Review Magic Number Subnetting & Seven Second Subnetting
 - 1.8 Network Environments ✅
-Section 2: Network Implementation 2 hrs remaining ⭐️
+Section 2: Network Implementation ⭐️
 - 2.1 Routing Technologies ✅
 - 2.2 Switching Technologies ✅
 - 2.3 Wireless Devices ✅
@@ -2585,7 +2585,7 @@ Section 3: Network Operations ⭐️
 - 3.3 Disaster Recovery ✅
 - 3.4 IP Services ✅
 - 3.5 Network Access ✅
-Section 4: Network Security 1hr 36min remaining ⭐️
+Section 4: Network Security ⭐️
 - 4.1 Network Sec Concepts ✅
 - 4.2 Attack Types ✅
 - 4.3 Network Security Features ✅
@@ -2596,15 +2596,31 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️ Wednesday GOAL
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
 
+⭐️ Monday GOAL
+- NCA part 1 bootcamp
+- network discovery questions
+- Diagram 1 : **Draw the OSI model and map each traffic type to the appropriate VLANs.**
+- Practice Test Network+
 
-⭐️ Thursday goal - Cloud+ Full Practice Test, Network Discovery questions, NCP test, sketch network structure as team?, physical networking
+⭐️ Tuesday GOAL
+- NCA part 2 bootcamp
+- Complete slides
+- Diagram 2: **Sketch a secure network segment: VLANs, firewall rules, and monitoring agents. Show DR replication across sites.**
+- Practice Test Network+
 
 
+⭐️ Wednesday GOAL
+- Self service Demo
+- Network Troubleshooting
+- Physical Networking
+- Practice Test Network+
 
 
-NCA part 1 
-NCA part 2 bootcamp
-Self service Demo
-Demo done
-slide done
-Network Troubleshooting
+⭐️ Thursday GOAL
+- Physical Networking
+- Build Self-Service/Playbook demo
+- Practice Test Network+
+
+⭐️ Friday GOAL
+- Full Practice Test Network+
+- Wrap up anything missed during the week
