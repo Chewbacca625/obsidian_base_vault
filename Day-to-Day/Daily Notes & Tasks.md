@@ -3,14 +3,15 @@
 ⭐️ Monday GOAL
 - NCA part 1 bootcamp
 - network discovery questions ✅
-- Diagram 1 : **Draw the OSI model and map each traffic type to the appropriate VLANs.**
-	- **Lucidchart - draw the OSI model and show how you can use VLANs to segment traffic, ex: management, web traffic, data traffic, etc.**
 - Practice Test Network+ (Networking Concepts) - Just see where you are ✅
 - Rob - Training
 	- ✅ https://learningacademy.nutanix.com/course?course_id=699790dd793e3b4cd4f9b547
 	- https://learningacademy.nutanix.com/course?course_id=698addb42aa4f91bc527a22f
 
 ⭐️ Tuesday GOAL
+- Diagram 1 : **Draw the OSI model and map each traffic type to the appropriate VLANs.**
+	- **Lucidchart - draw the OSI model and show how you can use VLANs to segment traffic, ex: management, web traffic, data traffic, etc.**
+- NCA part 1 bootcamp
 - NCA part 2 bootcamp
 - Complete slides
 - Diagram 2: **Sketch a secure network segment: VLANs, firewall rules, and monitoring agents. Show DR replication across sites.**
