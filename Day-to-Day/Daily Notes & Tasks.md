@@ -16,6 +16,8 @@
 - Complete slides
 - Diagram 2: **Sketch a secure network segment: VLANs, firewall rules, and monitoring agents. Show DR replication across sites.**
 - Practice Test Network+ (Network Implementation) - Just see where you are
+- Rob - Training
+	- https://learningacademy.nutanix.com/course?course_id=698addb42aa4f91bc527a22f
 
 
 ⭐️ Wednesday GOAL
