@@ -1,7 +1,6 @@
 ### Task Tracker
 
 ⭐️ Monday GOAL
-- NCA part 1 bootcamp
 - network discovery questions ✅
 - Practice Test Network+ (Networking Concepts) - Just see where you are ✅
 - Rob - Training
@@ -10,7 +9,7 @@
 
 ⭐️ Tuesday GOAL
 - Diagram 1 : **Draw the OSI model and map each traffic type to the appropriate VLANs.**
-	- **Lucidchart - draw the OSI model and show how you can use VLANs to segment traffic, ex: management, web traffic, data traffic, etc.**
+	- **Lucidchart - draw the OSI model and show how you can use VLANs to segment traffic, ex: management, web traffic, data traffic, etc.** ✅
 - NCA part 1 bootcamp
 - NCA part 2 bootcamp
 - Complete slides
