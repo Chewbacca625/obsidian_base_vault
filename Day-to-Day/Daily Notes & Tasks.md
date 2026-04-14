@@ -34,6 +34,7 @@
 - Network Troubleshooting
 - Full Practice Test Network+ (Network Troubleshooting) - Just see where you are
 - Wrap up anything missed during the week
+- Delete Storage container in Static Cluster (After Presentation)
 
 Questions for Jenn:
 - Do you have any feedback for me?
