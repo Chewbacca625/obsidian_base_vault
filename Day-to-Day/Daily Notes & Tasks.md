@@ -11,7 +11,6 @@
 - Diagram 1 : **Draw the OSI model and map each traffic type to the appropriate VLANs.**
 	- **Lucidchart - draw the OSI model and show how you can use VLANs to segment traffic, ex: management, web traffic, data traffic, etc.** ✅
 - NCA part 1 bootcamp
-- NCA part 2 bootcamp
 - Complete slides
 - Diagram 2: **Sketch a secure network segment: VLANs, firewall rules, and monitoring agents. Show DR replication across sites.**
 - Practice Test Network+ (Network Implementation) - Just see where you are
@@ -20,6 +19,7 @@
 
 
 ⭐️ Wednesday GOAL
+- NCA part 2 bootcamp
 - Self service Demo
 - Physical Networking
 - Practice Test Network+ (Network Operations) - Just see where you are
