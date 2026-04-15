@@ -1,0 +1,6 @@
+- Customers dont do enough planning for the networking...
+- IP required in foundation
+	- CVM
+	- Host
+		- NOTE: CVM and HOST IPs must be in same subnet and broadcast domain
+	- IPMI
