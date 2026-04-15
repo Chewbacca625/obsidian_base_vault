@@ -49,8 +49,7 @@
               "title": "Nutanix Networking Bootcamp"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,10 +224,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "53907fd73d9555db",
+  "active": "6c0564657bd7ebe3",
   "lastOpenFiles": [
-    "Nutanix Networking Bootcamp.md",
     "Nutanix/NCA Bootcamp 1.md",
+    "Nutanix Networking Bootcamp.md",
     "Assets/Attachments/Screenshot 2026-04-15 at 8.18.14 AM.png",
     "Day-to-Day/Daily Notes & Tasks.md",
     "Day-to-Day/Discovery Questions.md",
