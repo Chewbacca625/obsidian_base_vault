@@ -6,4 +6,6 @@
 		- From there the data is sequentially drained down into the extent store on the hosts where the original and copies have been stored (on the backend)
 	- Benefits:
 		- This ensures data protection ensuring we always have a copy of your data
-		- 
+		- Data quality: when write occurs to oplog we take a checksum (stored in metadata)
+			- Whenever data is read (before the read occurs to the resource (ex: VM) we will perform a checksum to ensure the data is whats expected, if not we will check one of the remote nodes and run the same process to ensure data integrity)
+		![[Screenshot 2026-04-15 at 8.18.14 AM.png]]
