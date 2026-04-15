@@ -18,6 +18,14 @@
 - 2 x gateways
 - 4 CVM and 4 Host
 - 4 IPMI
+- Multiply by 3 x ip addrs required for cluster (14x3= 42)
 - Whites space - opportunities that are untapped
 - Greenfield - New deployment
 - Brownfield - Shitty upgrade
+- Double subnet size for growth
+- Discovert
+	- Is this a new subnet for IPMI? (helps understand what IPs are available)
+	- Why do you require a small subnets?
+- Dont sell 1175s 3 nodes
+- Keep network installation docs
+- 
