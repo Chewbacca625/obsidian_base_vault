@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "private IP addresses",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -225,10 +225,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "7b8e8f78978350d7",
+  "active": "53907fd73d9555db",
   "lastOpenFiles": [
-    "Nutanix/NCA Bootcamp 1.md",
     "Nutanix Networking Bootcamp.md",
+    "Nutanix/NCA Bootcamp 1.md",
     "Assets/Attachments/Screenshot 2026-04-15 at 8.18.14 AM.png",
     "Day-to-Day/Daily Notes & Tasks.md",
     "Day-to-Day/Discovery Questions.md",
