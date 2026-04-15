@@ -28,4 +28,17 @@
 	- Why do you require a small subnets?
 - Dont sell 1175s 3 nodes
 - Keep network installation docs
-- 
+
+Micro segmentation:
+- Granular policies
+- Virtual or overlay networks
+- East-west traffic
+- identity based/workload level
+- software
+
+Segmentation
+- coarse policies
+- physical network
+- north-south
+- address based/network level
+- hardware
