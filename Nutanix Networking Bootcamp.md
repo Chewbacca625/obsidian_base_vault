@@ -3,4 +3,21 @@
 	- CVM
 	- Host
 		- NOTE: CVM and HOST IPs must be in same subnet and broadcast domain
-	- IPMI
+	- IPMI - one per host
+		- doesnt need to be on same broadcast domain
+		- but it can be
+	- Gateway at least one for CVMs and Hosts
+	- One Gateway for IPMI
+14 ip for a 4 node cluster
+- CVM x 4
+- Hosts x 4
+	- same broadcast domain
+- 1 Gateway
+- IPMI x 4
+	- 1 gateway
+- 2 x gateways
+- 4 CVM and 4 Host
+- 4 IPMI
+- Whites space - opportunities that are untapped
+- Greenfield - New deployment
+- Brownfield - Shitty upgrade
