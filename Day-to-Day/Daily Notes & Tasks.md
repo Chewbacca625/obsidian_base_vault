@@ -25,7 +25,9 @@
 - Full Practice Test Network+ (Network Troubleshooting) - Dion
 
 
-
+Notes for capstone:
+- Cut the AE Piece 
+- Thats 
 
 
 Questions for Jenn:
