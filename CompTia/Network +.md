@@ -475,7 +475,7 @@
 			- Over 16 million possible virtual networks
 			- Tunnel frames across a layer 3 network
 			- Built to accommodate large virtual env's
-			- VNI - VXlan network identifier
+			- VNI - VXlan network identifier (used to differentiate between various VXLAN overlay networks)
 			- VTEP: Vxlan tunnel endpoint - responsible for encapsulating and decapsulating the VXLAN frames (hypervisor/hardware based)
 				- GRE Tunnel enables VXLAN: 
 					![[Screenshot 2026-03-25 at 8.22.56 AM.png]]
