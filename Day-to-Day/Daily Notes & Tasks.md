@@ -1,7 +1,6 @@
 ### Task Tracker
 
 ⭐️ Monday GOAL
-- NCA part 1 bootcamp
 - NCA part 2 bootcamp
 - Full Practice Test Network+ (Network Troubleshooting) - Dion
 
