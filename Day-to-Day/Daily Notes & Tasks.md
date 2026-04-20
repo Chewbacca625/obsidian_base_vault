@@ -1,28 +1,33 @@
 ### Task Tracker
 
 ⭐️ Monday GOAL
+- NCA part 1 bootcamp
+- NCA part 2 bootcamp
+- Full Practice Test Network+ (Network Troubleshooting) - Dion
 
 ⭐️ Tuesday GOAL
-- NCA part 1 bootcamp
+- Self service Bootcamp
 - Diagram 2: **Sketch a secure network segment: VLANs, firewall rules, and monitoring agents. Show DR replication across sites.**
-- Practice Test Network+ (Network Implementation) - Just see where you are
+- Full Practice Test Network+ (Network Troubleshooting) - Dion
+- Practice Presentation
 
 
 ⭐️ Wednesday GOAL
-- NCA part 2 bootcamp
-- Self service Demo
+- Build Self-Service/Playbook demo
+- Practice Demo
 
 
 
 ⭐️ Thursday GOAL
-- Physical Networking
-- Build Self-Service/Playbook demo
+- Network Troubleshooting
+- Full Practice Test Network+ (Network Troubleshooting) - Dion
 
 ⭐️ Friday GOAL
-- Network Troubleshooting
-- Full Practice Test Network+ (Network Troubleshooting) - Just see where you are
-- Wrap up anything missed during the week
-- Delete Storage container in Static Cluster (After Presentation)
+- Full Practice Test Network+ (Network Troubleshooting) - Dion
+
+
+
+
 
 Questions for Jenn:
 - Do you have any feedback for me?
@@ -31,6 +36,8 @@ Questions for Jenn:
 	- Next several week no burnout fashion
 	- 
 - Can you elaborate on the constant changes in the curriculum? I know we have briefly talked but what has led to all these changes?
+
+
 What does Youssef want out of this job?
 - I want to remain a technical expert
 - I want to help customers and my team with technical challenges
