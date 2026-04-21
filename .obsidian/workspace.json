@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day-to-Day/Daily Notes & Tasks.md",
+                "file": "CompTia/Network +.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily Notes & Tasks"
+              "title": "Network +"
             }
           },
           {
@@ -211,12 +211,13 @@
   },
   "active": "53907fd73d9555db",
   "lastOpenFiles": [
-    "Nutanix/NCA Bootcamp 1.md",
-    "Nutanix Networking Bootcamp.md",
+    "Day-to-Day/Daily Notes & Tasks.md",
     "2026-04-20.md",
+    "Nutanix Networking Bootcamp.md",
+    "Sales Lingo.md",
     "Untitled.canvas",
     "CompTia/Network +.md",
-    "Day-to-Day/Daily Notes & Tasks.md",
+    "Nutanix/NCA Bootcamp 1.md",
     "Assets/Attachments/Screenshot 2026-04-15 at 8.18.14 AM.png",
     "Day-to-Day/Discovery Questions.md",
     "CompTia/Server+.md",
@@ -237,7 +238,6 @@
     "Day-to-Day/Discovery Call.md",
     "Sales Help/Sales Training.md",
     "Sales Help/Quotes.md",
-    "Sales Lingo.md",
     "Testing.md"
   ]
 }

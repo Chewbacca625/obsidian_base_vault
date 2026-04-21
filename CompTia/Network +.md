@@ -1422,25 +1422,25 @@
 			- Database records of DNS
 		- over 30 record types
 			- ip addr, certs, host alias name, etc.
-	- Start of Authority (SOA
+	- Start of Authority (SOA) - admin info about DNS zone
 		- describes DNS zone details
 		- structure
 			- in SOA (internet zone, start of authority) with name of zone
 				- serial number
 				- refresh, retry, and expiry timeframes
 				- caching duration/TTL
-	- Addr records (A) (AAA)
+	- Addr records (A) (AAAA) - Address record
 		- defines the IP addr of a host
 			- most popular query
 		- A records are for IPv4 addrs
 			- modify the A record to change the hostname to IP addr resolution
 		- AAAA records are for IPv6 addrs
 			- the same DNS server, different records
-	- Canonical name records (CNAME)
+	- Canonical name records (CNAME) - resolves a subdomain to (ftp.example.com) to domain (example.com)
 		- a name is an alias of another, canonical name
 			- on physical server, multiple services
 				![[Screenshot 2026-03-30 at 6.26.12 PM.png]]
-	- Mail Exchange Record (MX)
+	- Mail Exchange Record (MX) - mail record
 		- Determine the host name for the mail server
 			- this isn't an IP addr, its a name
 	- Text records (TXT)
