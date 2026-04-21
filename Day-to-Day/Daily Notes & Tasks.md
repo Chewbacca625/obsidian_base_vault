@@ -1,11 +1,9 @@
 ### Task Tracker
 
 ⭐️ Monday GOAL
-- NCA part 2 bootcamp
-- Full Practice Test Network+ (Network Troubleshooting) - Dion
 
 ⭐️ Tuesday GOAL
-- Self service Bootcamp
+- NCA part 2 bootcamp
 - Diagram 2: **Sketch a secure network segment: VLANs, firewall rules, and monitoring agents. Show DR replication across sites.**
 - Full Practice Test Network+ (Network Troubleshooting) - Dion
 - Practice Presentation
