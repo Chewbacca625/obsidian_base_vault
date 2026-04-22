@@ -1,6 +1,6 @@
 ### Task Tracker
 
-- Chris Nelson - Self-Service, talk to if ISE team doesnt have an answer
+- Chris Nelson - Self-Service, talk to if ISE team doesn't have an answer
 
 ⭐️ Monday GOAL
 
@@ -88,5 +88,5 @@ Speaking Points/Capstone 1
 	- Standardize infra - self-service
 	- IAC - do you currently use and IAC?
 	- Question - are your currently in an public clouds?
-	- Intelligent visibility - reporting & forcasting (projects)
+	- Intelligent visibility - reporting & forecasting (projects)
 	- Business polices - quotas & data protection
