@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day-to-Day/Daily Notes & Tasks.md",
+                "file": "CompTia/Network +.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily Notes & Tasks"
+              "title": "Network +"
             }
           },
           {
@@ -211,10 +211,10 @@
   },
   "active": "53907fd73d9555db",
   "lastOpenFiles": [
+    "Day-to-Day/Daily Notes & Tasks.md",
     "CompTia/Server+.md",
     "CompTia/Network +.md",
     "CompTia/Cloud+.md",
-    "Day-to-Day/Daily Notes & Tasks.md",
     "Day-to-Day/Discovery Call.md",
     "Sales Help/Quotes.md",
     "Sales Help/Sales Training.md",
