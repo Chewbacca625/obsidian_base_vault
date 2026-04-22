@@ -73,3 +73,20 @@ Where to improve on white boarding:
 - we are getting rid of storage only nodes
 - SAN if you need external storage
 - refine knowledge of AOS, CVM, etc.
+
+Speaking Points/Capstone 1
+- Rapid-time-to-value
+	- Paint - Picture
+	- Challenge
+		- Siloed teams
+		- IT struggles to show value
+			- Technical metrics instead of business outcomes
+	- Each team has their own tooling
+		- What tools do you currently use?
+		- What do love and hate?
+- Build, Operate, Govern
+	- Standardize infra - self-service
+	- IAC - do you currently use and IAC?
+	- Question - are your currently in an public clouds?
+	- Intelligent visibility - reporting & forcasting (projects)
+	- Business polices - quotas & data protection
