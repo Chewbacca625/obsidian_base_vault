@@ -90,3 +90,6 @@ Speaking Points/Capstone 1
 	- Question - are your currently in an public clouds?
 	- Intelligent visibility - reporting & forecasting (projects)
 	- Business polices - quotas & data protection
+Demo
+- Demo Projects
+- Demo Self-Service 
