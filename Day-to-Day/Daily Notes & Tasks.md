@@ -93,3 +93,70 @@ Speaking Points/Capstone 1
 Demo
 - Demo Projects
 - Demo Self-Service 
+
+Network+ Areas for Improvement
+Test 1
+- Networking Concepts 27%
+- Network Implementation 29%
+- Networking Ops 35%
+- Net Sec 23%
+- Net Troubleshooting 19%
+Test 2
+- Networking Concepts 19%
+- Network Implementation 33%
+- Networking Ops 12%
+- Net Sec 31%
+- Net Troubleshooting 33%
+Test 3
+- Networking Concepts 0%
+- Network Implementation 28%
+- Networking Ops 18%
+- Net Sec 42%
+- Net Troubleshooting 18%
+Test 4
+- Networking Concepts 27%
+- Network Implementation 17%
+- Networking Ops 6%
+- Net Sec 15%
+- Net Troubleshooting 29%
+Test 5
+- Networking Concepts 29%
+- Network Implementation 22%
+- Networking Ops 35%
+- Net Sec 8%
+- Net Troubleshooting 33%
+Test 6
+- Networking Concepts 10%
+- Network Implementation 50%
+- Networking Ops 41%
+- Net Sec 23%
+- Net Troubleshooting 33%
+
+OBJ 1.1
+OBJ 1.2
+OBJ 1.3
+OBJ 1.4
+OBJ 1.5
+OBJ 1.6
+OBJ 1.7
+OBJ 1.8
+OBJ 2.1
+OBJ 2.2
+OBJ 2.3
+OBJ 2.4
+OBJ 3.1
+OBJ 3.2
+OBJ 3.3
+OBJ 3.4
+OBJ 3.5
+OBJ 4.1
+OBJ 4.2
+OBJ 4.3
+OBJ 5.1
+OBJ 5.2
+OBJ 5.3
+OBJ 5.4
+OBJ 5.5
+Network Fundementals
+Ports & Protocols
+Media & Connectors
