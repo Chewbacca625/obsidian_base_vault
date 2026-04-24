@@ -131,6 +131,12 @@ Test 6
 - Networking Ops 41%
 - Net Sec 23%
 - Net Troubleshooting 33%
+Average
+- Networking Concepts 18.7%
+- **Network Implementation 29.8%**
+- **Networking Ops 24.5%**
+- Net Sec 23.66%
+- **Net Troubleshooting 27.5%**
 
 OBJ 1.1
 OBJ 1.2
@@ -160,3 +166,16 @@ OBJ 5.5
 Network Fundementals
 Ports & Protocols
 Media & Connectors
+Distro Systems
+Wireless networking
+Ethernet Switching
+Routing
+Network Services
+WANS
+123
+Network Sec
+Network Attacks
+
+Wireless Topologies
+- Infra Mode: most common type, uses wireless AP as centralized point
+- Ad Hoc: decentralized peer-to-peer connections
