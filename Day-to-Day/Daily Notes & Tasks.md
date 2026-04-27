@@ -179,3 +179,4 @@ Network Attacks
 Wireless Topologies
 - Infra Mode: most common type, uses wireless AP as centralized point
 - Ad Hoc: decentralized peer-to-peer connections
+- Mesh: inner connection of different types of nodes, devices, radios
