@@ -2595,3 +2595,28 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️
 - 5.3 Troubleshooting Network Services 20 min
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
+
+### Wireless Technology
+- Wireless Network Types:
+	- Ad Hoc: devices connect directly to each other rather than an central AP (no internet access)
+		- file sharing
+	- Infrastructure: devices are connected to the network through a AP onto LAN (internet access) 
+		- BSSID - Mac addr of the AP
+		- SSID - network name (service set identifier)
+		- ESS: creates larger network that share the same SSID
+	- Point-to-Point
+		- connect two distinct locations over long distances (high-gain antennas) (static, dedicated bandwidth)
+	- wireless mesh
+		- versatile and resilient from of wireless networking
+		- self-healing
+		- large-scale deployments
+		- two types
+			- uses ESS in a wireless network in infra mode
+			- multiple different types of wireless networks combine to provide service
+	- Autonomous AP: standalone device that contains all intelligence to handle wireless networking (home att box)
+	- Lightweight AP - multiple aps connecting back to a centralized controller
+- Wireless Antennas 
+	- Omni directional: designed to transmit signals in all directions
+	- uni directional: designed to transmit signals in a single direction
+		- yagi: can provide high signal gains and uses a narrow beamwidth (long distances)
+- 

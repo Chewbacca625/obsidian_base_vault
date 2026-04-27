@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nutanix Networking Bootcamp.md",
+                "file": "CompTia/Network +.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nutanix Networking Bootcamp"
+              "title": "Network +"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,17 +211,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "53907fd73d9555db",
+  "active": "5b472ff207ea5b53",
   "lastOpenFiles": [
-    "CompTia/Network +.md",
+    "Untitled 1.canvas",
+    "Nutanix Networking Bootcamp.md",
     "Day-to-Day/Daily Notes & Tasks.md",
+    "CompTia/Network +.md",
     "CompTia/Server+.md",
     "CompTia/Cloud+.md",
     "Day-to-Day/Discovery Call.md",
     "Sales Help/Quotes.md",
     "Sales Help/Sales Training.md",
     "2026-04-20.md",
-    "Nutanix Networking Bootcamp.md",
     "Sales Lingo.md",
     "Untitled.canvas",
     "Nutanix/NCA Bootcamp 1.md",
