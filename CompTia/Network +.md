@@ -2619,4 +2619,25 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️
 	- Omni directional: designed to transmit signals in all directions
 	- uni directional: designed to transmit signals in a single direction
 		- yagi: can provide high signal gains and uses a narrow beamwidth (long distances)
-- 
+- 802.11 Frequencies
+	- Channel bonding: creates a wider channel by merging two or more neighboring channels into a single wider channel
+		- increased channel widths have higher interference 
+	- 802.11a:
+		- 5GHz
+		- 802.11h standard includes (added due to challanges with 802.11a - military radar/other interference)
+			- Dynamic freq selection (DFS): requires device to actively monitor the env for radar signals
+			- Transmit power control (TPC): adjust transmit power
+		- Band steering: optimize the distro of clients across diff freq bands
+- 802.11 Standards
+	- 802.11a: 5GHz band, 54 Mbps, 35 meters
+	- 802.11b: 2.4 GHz band, 11 Mbps, 140 meters
+	- 802.11g: 2.4 GHz band, 54 Mbps, 140 meteres
+	- 802.11n (wifi 4): 5GHz and 2.4GHz bands, 600 Mbps, 35 meters
+		- MIMO - Multiple input/output (single user)
+	- 802.11ac (wifi 5): 5GHz, 6.9 Gbps
+		- MU-MIMO- multi user multiple input/output
+	- 802.11ax (wifi 6) 2.4, 5, 6 GHz, 9.6 Gbps
+	- 2.4GHz: b, g, n, and ax
+	- 5GHz: a, n, ac, or ax
+	- 6GHz: ax
+	- n and ax are the only dual band standards
