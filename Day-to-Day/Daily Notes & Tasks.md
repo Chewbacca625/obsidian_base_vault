@@ -81,6 +81,7 @@ Speaking Points/Capstone 1
 		- Siloed teams
 		- IT struggles to show value
 			- Technical metrics instead of business outcomes
+		- TIME, TIME, TIME
 	- Each team has their own tooling
 		- What tools do you currently use?
 		- What do love and hate?

@@ -35,8 +35,7 @@
               "title": "Network +"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,10 +210,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "5b472ff207ea5b53",
+  "active": "53907fd73d9555db",
   "lastOpenFiles": [
-    "Day-to-Day/Daily Notes & Tasks.md",
     "CompTia/Network +.md",
+    "Day-to-Day/Daily Notes & Tasks.md",
     "Untitled 1.canvas",
     "Nutanix Networking Bootcamp.md",
     "CompTia/Server+.md",
