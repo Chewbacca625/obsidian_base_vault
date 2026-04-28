@@ -2641,3 +2641,24 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️
 	- 5GHz: a, n, ac, or ax
 	- 6GHz: ax
 	- n and ax are the only dual band standards
+- Wireless Security
+	- Pre-Shared Key (PSK): auth where same password or key is being used on both wireless ap and any connecting client devices (password)
+	- Enterprise auth:
+		- 802.11x: most widely used enterprise grade auth method
+			- RADIUS
+	- WEP (wireless equivalent policy)
+		- NOT SECURE (RC4 encryption)
+	- WPA (wifi protected access)
+		- **TKIP** (Temporal key integrity protocol)
+		- **RC4**
+		- MIC (message integrity check) - ensure data hasnt been compromised
+	- WPA2
+		- **CCMP** - countermode with cipher block chaining message auth code protocol - for integrity checks
+		- **AES** - advanced encryption standard 
+		- Peronal mode - PSK
+		- Enterprise mode - centralized auth
+	- WPA3
+		- **SAE** - Simultaneous auth of equals: enhances handshake process used by wifi auth, secure inital key exchange between client and AP
+	- WPS: network sec standard that simplifies of secure wifi connection
+		- 8 digit pin
+		- should be disabled because its not secure
