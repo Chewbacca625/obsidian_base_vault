@@ -93,7 +93,11 @@ Speaking Points/Capstone 1
 	- Business polices - quotas & data protection
 Demo
 - Demo Projects
-- Demo Self-Service 
+- Demo Self-Service
+	- Projects
+	- Self-Service Marketplace
+	- Blueprints
+	- 
 
 Network+ Areas for Improvement
 Test 1
