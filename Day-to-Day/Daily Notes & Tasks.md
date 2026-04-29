@@ -82,6 +82,7 @@ Speaking Points/Capstone 1
 		- IT struggles to show value
 			- Technical metrics instead of business outcomes
 		- TIME, TIME, TIME
+		- RACK - STACK
 	- Each team has their own tooling
 		- What tools do you currently use?
 		- What do love and hate?
@@ -97,7 +98,6 @@ Demo
 	- Projects
 	- Self-Service Marketplace
 	- Blueprints
-	- 
 
 Network+ Areas for Improvement
 Test 1
