@@ -2775,6 +2775,54 @@ Private network addresses:
 		- most ap can monitor freq usage
 			- can move automatically to unused space
 			- manual config is an option
+	- Managing Channel Usage
+		- disable legacy, low speed support
+			- use fastest possible speeds and config
+		- check your channels
+			- avoid overlap between APs
+		- adjust the output power
+			- avoid conflicts with other APs
+			- interference can steal valuable network time
+		- Split the network
+			- might need additional freq and aps
+	- Attenuation
+		- wireless signals get weaker as you move farther from the antenna
+			- can be measured with wifi analyzer
+		- control the power output on the AP
+		- use a receive antenna with a higher gain
+			- capture more of the signal
+		- some power is lost in antenna cable coax
+			- most applicable at higher freq
+			- also check for damaged cables, especially outside
+	- insufficient wireless coverage
+		- determine existing wireless landscape
+			- sample with wireless spectrum
+		- identify existing aps
+		- work around existing freq
+			- layout and plan for interference
+		- plan for ongoing site surveys
+		- heat maps - id wireless signal strengths
+	- Client disassociation issues
+		- denial of service attack
+			- takes advantage older 802.11 management frame transmission
+		- device keeps dropping form wireless network
+			- or never connects
+		- dissociation frame can be clearly seen in a packet capture
+			- grab 802.11 frame info with wireshark
+		- remove device performing the disassociation
+			- or upgrade to a new 802.11 standard
+	- Roaming misconfig
+		- a wireless network often has a single name
+			- SSID
+			- appears as on big wireless network
+		- there might be multiple ap supporting an SSID
+		- users will move to the best ap
+			- these must have identical configs
+			- users will be dropped if config differs
+- Software Tools
+- Command Line Tools
+- Hardware Tools
+- Basic Network Device Commands
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
@@ -2829,7 +2877,7 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️
 - 5.1 Troubleshooting ✅
 - 5.2 Physical Issues ✅
 - 5.3 Troubleshooting Network Services ✅
-- 5.4 Performance Issues 18 min
+- 5.4 Performance Issues ✅
 - 5.5 Tools and Protocols 44 min
 
 ### Wireless Technology
