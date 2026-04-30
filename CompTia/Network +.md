@@ -2835,8 +2835,42 @@ Private network addresses:
 		- Service Scan - what service is available
 		- additional scripts - NSE - extend capabilities, vulnerability scans
 		- Active - scan for IP addrs and open ports
-		- Pick a range of IP addrs - see who respo
+		- Pick a range of IP addrs - see who responds
+		- Visually map the network
+			- gather each device info
+		- Rouge system detection - difficult to hide from layer 2 arp
+	- CDP - cisco discovery protocol
+		- proprietary cisco protocol
+		- helps id network devices, ports number, MAC addr, VLAN ID, etc.
+	- LLDP - link layer discovery protocol
+		- vendor neutral
+		- a more common discovery method
+	- Speed test sites
+		- bandwidth testing - transfer a file, measure the throughput
+		- provide useful pre/post change analysis
+		- measure different times of the day
+		- not all sites are the same
+			- distance
+			- bandwidth
+			- best to use ISP or fast.com or speedtest.net
 - Command Line Tools
+	- Ping - test reachability
+		- determine Round trip time RTT
+		- uses Internet control message protocol ICMP
+	- Traceroute - determine the route a packet takes to a dest 
+		- map the entire path
+		- tracert windows or traceroute linux
+		- takes advantage of ICMP time to Live Exceeded error message - refers to hops, not seconds or minutes
+		- nota all devices will reply with ICMP time exceed messages
+			- some firewalls filter ICMP
+			- ICMP is low-priority for many devices
+		- flavors of traceroute
+			- not all traceroutes are the same
+				- minor differences in payload
+			- windows commonly send ICMP echo requests
+				- outgoing ICMP is commonly filtered
+			- some OS allow you to specify the protocol used
+	- 
 - Hardware Tools
 - Basic Network Device Commands
 ### Hybrid Networking (Personal)
