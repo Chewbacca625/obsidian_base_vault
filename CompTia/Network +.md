@@ -2870,8 +2870,40 @@ Private network addresses:
 			- windows commonly send ICMP echo requests
 				- outgoing ICMP is commonly filtered
 			- some OS allow you to specify the protocol used
-	- 
+	- nslookup & dig
+		- lookup info from DNS servers (CNames, IP addrs, cache timers, etc.)
+		- nslookup
+			- POSIX-based | windows 
+			- deprecated
+		- dig (Domain Info Groper)
+			- more advanced
+			- Windows support
+	- tcpdump
+		- capture packets from the CLI
+		- available linux and mac
+			- windows has options
+		- apply filters, view in real-time
+		- save the data use in another app
+		- can be overwhelming amount of data
+	- netstat
+		- network stats
+		- netstat -a : show active connections
+		- netstat -b : show binaries (windows)
+		- nestat -n : do not resolve names
+	- ipconfig | ifconfig | ip
+		- most of your troubleshooting starts with IP addr
+			- ping your local router/gateway
+		- Determine TCP/IP and network adapter info
+		- ipconfig - windows
+		- ifconfig - linux interface config
+		- ip address - latest linux util
+	- Address Resolution Protocol
+		- determine the MAC addr based on an IP addr
+		- arp -a : view local arp table
 - Hardware Tools
+	- Tone Generator: help you ID cable - easy wire tracing
+	- Cable Tester: simple wire map, continuity test
+	- 
 - Basic Network Device Commands
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
