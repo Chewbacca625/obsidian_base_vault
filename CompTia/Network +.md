@@ -2659,7 +2659,32 @@ Private network addresses:
 			![[Pasted image 20260430112034.png]]
 		- STP port states
 			- Blocking/Discarding - non forwarding to prevent a loop
-			- Listening - not forwaredin
+			- Listening - not forwarding and cleaning the MAC table
+			- Learning - not forwarding adding to the MAC table
+			- Forwarding - data passes through and is fully operation
+			- Disabled - port is admin turned off
+		- VLAN assignment
+			- Network link is active and IP addr is assigned, but no access to resources or limited functionality
+			- Every switch interface is configed as an access port or trunk port
+				- each access port is assigned to a VLAN
+			- Confirm the spec switch interface
+				- check VLAN assignment
+		- ACLs break perfectly good networks
+			- Clients are working
+				- DHCP is assigning correct IP addr
+				- Routing tables look correct
+			- Packets are still dropping
+			- Everything could be configed perfectly
+				- ACLs would still break the traffic flow
+			- Always include and ACL check when troubleshooting
+		- ACL best practices
+			- More granular rules should be first
+				- very similar to firewall
+				- stopes evaluating after a match
+				- broader rules at the top would prevent more specific rules from firing
+			- best practice before editing an ACL, disable on an interface
+				- adding an access list without any tule will filter all traffic
+					- ACLs deny all by default
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
@@ -2711,8 +2736,8 @@ Section 4: Network Security ⭐️
 - 4.2 Attack Types ✅
 - 4.3 Network Security Features ✅
 Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️
-- 5.1 Troubleshooting 8min
-- 5.2 Physical Issues 32 min
+- 5.1 Troubleshooting ✅
+- 5.2 Physical Issues ✅
 - 5.3 Troubleshooting Network Services 20 min
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
