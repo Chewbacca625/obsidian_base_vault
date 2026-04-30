@@ -2729,6 +2729,52 @@ Private network addresses:
 			- ping the IP addr, check your ARP table
 			- Find the MAC addr in your switch MAC table
 		- capture DHCP process (packet capture)
+- Performance Issues
+	- Congestion - the network is a finite resource
+		- a busy network may attempt to send more data than the cable can support resulting in contention (queuing, buffering)
+		- Buffers will fill and some dat may be fropped
+		- To mitigate we need to increase the bandwidth
+	- Bottlenecks - cloud be I/O bus, CPU speed, storage access speed, WAN bandwidth, local network speeds, etc.
+		- one of these slowdowns effects all of the others
+		- you might have to monitor all devices to find the bottleneck
+	- Bandwidth usage - amount of network use over time
+	- Throughput - amount of data successfully transferred through the network
+	- Many different ways to monitor
+		- SNMP, NetFlow, sFlow, IPFIX protocol analysis, software agent
+	- Throughput capacity
+		- total throughput has max value
+		- based on slowest link
+	- Latency - delay between request and response
+		- some is expected and normal
+		- examine the response time at every step along the way
+		- packet captures can provide detailed analysis
+			- ms granularity
+			- get captures from both sides
+	- Packet loss:
+		- discards, packet drops
+			- no errors in the packet, but system could not transmit or receive the data
+		- packets are lost
+			- corrupted during transmission
+			- dropped after validation
+		- data must be retransmitted
+			- overall comms are delayed
+	- Jitter
+		- most real-time media is sensitive to delay
+			- data should arrive at regular intervals
+			- voice, live video
+		- if you miss a packet theres no retransmission
+			- theres not time to rewind a phone call
+		- Jitter is the time between frames
+			- excessive jitter can cause you to miss info, choppy voice calls
+- Wireless Issues
+	- Wireless interference
+		- limited amount of freq
+			- everyone cant talk at the same at one time
+		- an increasing number of wireless devices
+			- nearby aps using the same freq would cause problems
+		- most ap can monitor freq usage
+			- can move automatically to unused space
+			- manual config is an option
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
