@@ -2563,6 +2563,18 @@ Private network addresses:
 		- Amount of data transferred in a given timeframe (how much water flowing through pipe)
 	- Distance
 		- Max distance
+	- Errors:
+		- CRC: Cyclic Redundancy Check - when data corruption when data is transferred (does not match initial checksum)
+		- Signal Attenuation: When signal strength degrades (possibly due to distance?)
+		- Crosstalk: Signal on one circuit affects another circuit (wires in twisted pairs)
+			- NEXT: Near end crosstalk | interference tested at transmitting end
+			- FEXT: Far end cross talk | interference tested away from the transmitter
+			- AXT: Alien Crosstalk | Interference that come from other cables
+			- ACR: Attenuation to Crosstalk Ratio | Difference between insertion loss and NEXT
+				- Signal-to-noise ratio
+			- **Almost always a wiring issue**
+				- Check crimp and maintain twists
+			- 
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
