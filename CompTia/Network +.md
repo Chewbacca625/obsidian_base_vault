@@ -2539,6 +2539,30 @@ Private network addresses:
 			- financial info
 			- company private data
 
+### Network Troubleshooting
+- Troubleshooting Methodology
+	- Identify Problem - What has changed...?
+	- Establish a Theory
+		- Bottom-Up OSI Testing
+		- Top-Down OSI Testing
+		- Divide and Conquer - break problem into smaller pieces
+	- Test the Theory
+	- Evaluate if its working
+		- Establish Plan of action - build a plan to implement fix (Change Management)
+		- Implement Plan - implement fix
+		- Verify Full System Functionality
+		- Document Findings
+- Cable Issues
+	- Multimode fiber - multiple paths
+	- Single node - one path
+	![[Screenshot 2026-04-30 at 9.11.41 AM.png|498]]
+	![[Screenshot 2026-04-30 at 9.12.49 AM.png|499]]
+	- Speed/Bandwidth
+		- Theoretical max data rate (size of the pipe)
+	- Throughput
+		- Amount of data transferred in a given timeframe (how much water flowing through pipe)
+	- Distance
+		- Max distance
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
@@ -2631,7 +2655,7 @@ Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️
 - 802.11 Standards
 	- 802.11a: 5GHz band, 54 Mbps, 35 meters
 	- 802.11b: 2.4 GHz band, 11 Mbps, 140 meters
-	- 802.11g: 2.4 GHz band, 54 Mbps, 140 meteres
+	- 802.11g: 2.4 GHz band, 54 Mbps, 140 meters
 	- 802.11n (wifi 4): 5GHz and 2.4GHz bands, 600 Mbps, 35 meters
 		- MIMO - Multiple input/output (single user)
 	- 802.11ac (wifi 5): 5GHz, 6.9 Gbps
