@@ -2583,7 +2583,50 @@ Private network addresses:
 		- RJ45 cable cross
 			- Auto-MDIX helps adjust mismatches at ethernet port to convert back to straight through
 - Interface Issues
-	- 
+	- often first sign of trouble
+	- congestion on network
+	- view OS interface details
+	- monitor with SNMP
+		- remote monitoring of all devices
+		- most metrics are Management information base - 2 (MIB-2)
+		- proprietary MIBs exist too
+	- link status: Link online/offline
+	- utilization: per interface network usage
+		- run bandwidth tests to view throughput
+	- Error rate: problems with signal
+		- CRC (relies on the frame check sequence - checksum to tell if data is corrupt), runts (smaller than min allowed frame - frame is less that 64 bytes), giants (larger than max allowed frame typically 1518 bytes), drops (frames not transmitted/received due to contention)
+		- CRC error
+			- due to cable/interface config
+		- Runts may result of a collision 
+	- Error disabled: interface disabled by device or admin
+		- some problems should be stopped in their tracks
+		- disable the interface to fix the symptom
+		- many different reasons
+			- link flapping (up/down), port security violations, duplex mismatch, etc.
+		- must be admin re-enabled
+	- Port Status
+		- administratively down - turned off an interface
+		- suspended - the config is not compatible with the current connection
+			- similar to error disabled, but occurs immediately
+			- set LACP one side, but not other -> suspended state
+- Hardware Issues
+	- Power provided at the switch (POE)
+		- built in power - endspans
+		- in-line power injector - midspan
+	- PoE
+		- original 15.4 watts DC power, 350 mA max current
+	- PoE+
+		- 25.5 watts DC power, 600 mA max current
+	- PoE++
+		- 51 W (Type 3), 600 mA max current
+		- 71.3 W (Type 4), 960 mA max current
+		- PoE with 10GBASE-T
+	- Single mode vs Multimode
+		- Transceiver have to match the fiber
+			- Transceiver needs to match the wavelength
+			- Use the ccorrect transicvers and optical fiber
+			- Signal loss
+				- dropped frames
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
