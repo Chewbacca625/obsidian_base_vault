@@ -565,7 +565,6 @@
 			- no automatic method to prevent routing loops
 			- if theres a network change, you have to manually update the routes
 			- no automatic re routing if an outage occurs
-	- 
 - Dynamic Routing
 	- Routers send routes to other routers
 		- routing tables are updated in (almost) real-time
@@ -2903,8 +2902,48 @@ Private network addresses:
 - Hardware Tools
 	- Tone Generator: help you ID cable - easy wire tracing
 	- Cable Tester: simple wire map, continuity test
-	- 
+	- Taps and port mirrors
+		- intercept network traffic
+		- physical taps (better for large bandwidths)
+			- disconnect the link, put tap in the middle
+			- can be active or passive
+		- port mirror
+			- port redirection, SPAN (Switched port Analyzer)
+				- software based tap
+				- limited functionality
+	- Wireless survey tools
+		- signal coverage
+		- potential interference
+		- built in tools
+		- 3rd party tools
+	- Wi-Fi analyzer
+		- hardware based wifi analyzer
+			- view all 801.11 traffic (no os limitations)
+		- view wifi info - freq/channels, signal strength, ap, interference, wireless devices
+		- get freq info from a spectrum analyzer
+	- Visual fault locator
+		- a flashlight for optical fiber
+		- helps find if fiber jacket is broken
+		- relatively low-tech
 - Basic Network Device Commands
+	- show mac-address-table
+		- switch forwarding uses this table
+	- show route
+		- view routing table
+		- lists to find errors in the routes
+	- show interface
+		- status of interface (duplex, connected/disconnected, encapsulation, CRC errors, MTU, total frames, queue capacity)
+	- show config
+		- displays the current running config
+	- show arp
+		- view arp protocol info - addr resolution protocol
+		- useful when troubleshooting connectivity 
+	- show vlan
+		- view the vlans associated with switch interfaces
+		- view default vlan ID and assigned VLAN ID numbers
+	- show power
+		- display power-related info PoE, Power Supplies
+		- Monitor power usage
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
@@ -2938,7 +2977,7 @@ Section 1: Networking Concepts ⭐️
 - 1.4 Ports and Protocols ✅
 - 1.5 Transmission Media ✅
 - 1.6 Network Topologies ✅
-- 1.7 IPv4 Addressing 🚨 Review Magic Number Subnetting & Seven Second Subnetting
+- 1.7 IPv4 Addressing ✅
 - 1.8 Network Environments ✅
 Section 2: Network Implementation ⭐️
 - 2.1 Routing Technologies ✅
@@ -2955,12 +2994,12 @@ Section 4: Network Security ⭐️
 - 4.1 Network Sec Concepts ✅
 - 4.2 Attack Types ✅
 - 4.3 Network Security Features ✅
-Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️
+Section 5: Network Troubleshooting ⭐️
 - 5.1 Troubleshooting ✅
 - 5.2 Physical Issues ✅
 - 5.3 Troubleshooting Network Services ✅
 - 5.4 Performance Issues ✅
-- 5.5 Tools and Protocols 44 min
+- 5.5 Tools and Protocols ✅
 
 ### Wireless Technology
 - Wireless Network Types:
