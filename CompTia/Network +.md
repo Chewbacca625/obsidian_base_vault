@@ -2565,7 +2565,9 @@ Private network addresses:
 		- Max distance
 	- Errors:
 		- CRC: Cyclic Redundancy Check - when data corruption when data is transferred (does not match initial checksum)
-		- Signal Attenuation: When signal strength degrades (possibly due to distance?)
+		- Signal Attenuation: When signal strength degrades
+			- distance degrades signal
+			- happens across all mediums: fiber, copper, radio waves
 		- Crosstalk: Signal on one circuit affects another circuit (wires in twisted pairs)
 			- NEXT: Near end crosstalk | interference tested at transmitting end
 			- FEXT: Far end cross talk | interference tested away from the transmitter
@@ -2574,7 +2576,14 @@ Private network addresses:
 				- Signal-to-noise ratio
 			- **Almost always a wiring issue**
 				- Check crimp and maintain twists
-			- 
+		- Avoiding EMI
+			- Watch bend radius
+			- don't use staples
+			- avoid power cables, electrical systems, and florescent lights
+		- RJ45 cable cross
+			- Auto-MDIX helps adjust mismatches at ethernet port to convert back to straight through
+- Interface Issues
+	- 
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
