@@ -2624,9 +2624,42 @@ Private network addresses:
 	- Single mode vs Multimode
 		- Transceiver have to match the fiber
 			- Transceiver needs to match the wavelength
-			- Use the ccorrect transicvers and optical fiber
+				- 850nm, 1310nm, etc.
+			- Use the correct transceivers and optical fiber
 			- Signal loss
-				- dropped frames
+				- dropped frames, missing frames
+		- Transceiver signal strength
+			- devices must receive enough signal
+			- each device has a sensitivity level
+			- calc power budget
+				- determine transmit power (dBm)
+				- calculate signal loss baed on distance, connectors, splices, etc.
+				- subtract signal loss form the transmitter power
+				- compare to min receive power
+- Switch Issues
+	- Switching loops
+		- STP is often configed to protect against this
+		- broadcasts and multicasts are sent to all
+			- broadcast repeated to all switch ports
+		- nothing at the MAC addr level to id loops
+			- IP had TTL
+	- STP
+		- bridges are always talking to each other
+		- uses MAC-Layer multicasts (01:80:C2:00:00:00)
+		- bridge protocol data unit (BPDU)
+		- send config and an topology changes
+		- Default hello interval is 2 seconds
+			- miss three of those, and the link is considered down
+		- Root bridge election
+			- choose best connection to the root
+			- all bridges/switches are assigned a bridge ID between 0 and 61440
+			- lowest ID is the root
+			- if there is a tie MAC addr number wins
+			- each bridge assigns a port role to an interface
+			![[Pasted image 20260430112034.png]]
+		- STP port states
+			- Blocking/Discarding - non forwarding to prevent a loop
+			- Listening - not forwaredin
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
