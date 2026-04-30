@@ -2820,6 +2820,22 @@ Private network addresses:
 			- these must have identical configs
 			- users will be dropped if config differs
 - Software Tools
+	- protocol analyzer - solve complex app issues
+	- gathers frames on the network
+		- on air
+		- sometime built into device
+	- view traffic patterns
+		- id unknown traffic
+		- verify packet filtering and sec controls
+	- large scale storage
+		- big data analysis
+	- NMAP - find and learn more about net devices
+		- port scan find and id open ports
+		- OS scan - discover the OS
+		- Service Scan - what service is available
+		- additional scripts - NSE - extend capabilities, vulnerability scans
+		- Active - scan for IP addrs and open ports
+		- Pick a range of IP addrs - see who respo
 - Command Line Tools
 - Hardware Tools
 - Basic Network Device Commands
