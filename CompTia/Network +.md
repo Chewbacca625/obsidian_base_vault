@@ -2685,6 +2685,50 @@ Private network addresses:
 			- best practice before editing an ACL, disable on an interface
 				- adding an access list without any tule will filter all traffic
 					- ACLs deny all by default
+- Routing and IP Issues
+	- Missing route - destination network does not exist
+		- packet will be dropped
+		- ICMP host unreachable message will be sent to the source addr
+	- Gateway of last resort
+		- adding a static default route can simplify your routing table
+			- if it doesn't match an entry, use this route
+		- add in global router config
+			- create a route to 0.0.0.0/0
+	- Addr pool exhaustion
+		- Client recieved an APIPA addr
+			- local subnet comm only
+		- Check DHCP server
+			- add more IPs if possible
+		- IPAM
+			- monitor and report on IP addr shortages
+		- Lower the lease time
+			- when there are a lot of transient users
+	- Troubleshoot IP configs
+		- check your docs
+			- IP addr, subnet mask, default gateway
+		- monitor the traffic
+			- difficult to determine subnet mask
+		- check devices around you
+			- confirm subnet mask and gateway
+		- traceroute and ping
+			- this issue might be infra
+			- ping local ip, default gateway, and outside addr
+	- Duplicate IP addrs
+		- static addr assignments
+			- must be very organized
+		- DHCP isn't a perfect
+			- static IP addr
+			- multiple DHCP servers overlap
+			- Rouge DHCP servers
+		- intermittent connectivity - fight with each other
+		- blocked by the OS
+	- Troubleshooting Duplicate IP
+		- check your ip addr
+		- ping an IP addr before static assignment
+		- Determine the IP addr
+			- ping the IP addr, check your ARP table
+			- Find the MAC addr in your switch MAC table
+		- capture DHCP process (packet capture)
 ### Hybrid Networking (Personal)
 - ![[Screenshot 2026-03-26 at 8.39.47 AM.png]]
 	- Public subnet get both private and public IPs
@@ -2738,7 +2782,7 @@ Section 4: Network Security ⭐️
 Section 5: Network Troubleshooting 2hrs 2min remaining ⭐️
 - 5.1 Troubleshooting ✅
 - 5.2 Physical Issues ✅
-- 5.3 Troubleshooting Network Services 20 min
+- 5.3 Troubleshooting Network Services ✅
 - 5.4 Performance Issues 18 min
 - 5.5 Tools and Protocols 44 min
 
