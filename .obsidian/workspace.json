@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nutanix/ECA - NCP/Configuring Cluster Networking.md",
+                "file": "Day-to-Day/Daily Notes & Tasks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Configuring Cluster Networking"
+              "title": "Daily Notes & Tasks"
             }
           },
           {
@@ -211,29 +211,30 @@
   },
   "active": "53907fd73d9555db",
   "lastOpenFiles": [
+    "IT Tools/Helpful Tools.md",
+    "Capstones/Capstone 1.md",
+    "Day-to-Day/Daily Notes & Tasks.md",
+    "Sales Lingo.md",
+    "Nutanix/Nutanix Networking Bootcamp.md",
     "Nutanix/ECA - NCP/Getting Started with a Nutanix Cluster.md",
-    "Nutanix/ECA - NCP/Nutanix Security.md",
+    "2026-04-20.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
     "Nutanix/ECA - NCP/Configuring Cluster Networking.md",
+    "Nutanix/ECA - NCP/Nutanix Security.md",
     "CompTia/Network +.md",
     "CompTia/Cloud+.md",
     "Assets/Attachments/Pasted image 20260430112034.png",
     "Assets/Attachments/Screenshot 2026-04-30 at 9.12.49 AM.png",
     "Assets/Attachments/Screenshot 2026-04-30 at 9.11.41 AM.png",
-    "Day-to-Day/Daily Notes & Tasks.md",
     "Day-to-Day/Discovery Questions.md",
     "Day-to-Day/Discovery Call.md",
     "Sales Help/Quotes.md",
-    "Untitled 1.canvas",
-    "Nutanix Networking Bootcamp.md",
     "CompTia/Server+.md",
     "Sales Help/Sales Training.md",
-    "2026-04-20.md",
-    "Sales Lingo.md",
-    "Untitled.canvas",
     "Nutanix/NCA Bootcamp 1.md",
     "Assets/Attachments/Screenshot 2026-04-15 at 8.18.14 AM.png",
     "Capstones/Presentation Best Practices.md",
-    "Capstones/Capstone 1.md",
     "Assets/Attachments/Screenshot 2026-04-07 at 3.39.36 PM.png",
     "Assets/Attachments/Screenshot 2026-04-07 at 3.36.24 PM.png",
     "Capstones",
@@ -241,7 +242,6 @@
     "Assets/Attachments/Screenshot 2026-04-07 at 7.53.41 AM.png",
     "Assets/Attachments/Screenshot 2026-04-07 at 8.54.25 AM.png",
     "Assets/Attachments/Screenshot 2026-04-07 at 8.00.13 AM.png",
-    "IT Tools/Helpful Tools.md",
     "Testing.md"
   ]
 }

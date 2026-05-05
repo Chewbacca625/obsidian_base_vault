@@ -36,7 +36,7 @@
 ### Understanding Networking
 - OVS run within AHV host apart of the linux kernel, the CVM is the control plane to manage OVS (OVS runs on each node)
 	- All OVS instances combine to form a single logical switch
-	![[Pasted image 20260310121342.png|373]]
+	![[Pasted image 20260310121342.png|633]]
 
 ### Configuring and Managing Networking in PC
 - VPC: independent and isolated IP address space that functions as a logically isolated vNet. VPC is made up of 1+ subnets connected via logical or vir router.
@@ -69,7 +69,7 @@
 ### Extending Subnets
 - a subnet can be extended between on-prem and remote sites (AZ's) to support seamless migration of apps between sites.
 - To extend subnet to support his functionality it must be configed in PC 
-- L2 network extensions all you to migrate a set of apps to the remote AZ while retaining their network bindings such as IP, MAC, and default gateway
+- L2 network extensions you migrate a set of apps to the remote AZ while retaining their network bindings such as IP, MAC, and default gateway
 - Since subnet extension allows vms to comm over the same broadcast domain, it elims
 	- re-arch network
 	- downtime
