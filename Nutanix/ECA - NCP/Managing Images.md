@@ -1,0 +1,4 @@
+- Types of Images
+	- ISO: image or copy of data on optical disk
+	- Disk Image: entire data, file structure, files, etc.
+- 

@@ -1,14 +1,33 @@
 ### Task Tracker
 
-⭐️ Monday GOAL
-
-⭐️ Tuesday GOAL
-
 ⭐️ Wednesday GOAL
+- Managing Images
+- Creating and Managing Vms
+- Practice Test
 
 ⭐️ Thursday GOAL
+- Configuring and Managing Cluster Storage
+- Backup and DR
+- Practice Test
 
 ⭐️ Friday GOAL
+- Securing a Nutanix Cluster
+- Migrating Workloads with Nutanix Move
+- Practice Test
+
+⭐️ Monday GOAL
+- Monitoring Cluster Performance
+- Monitoring Cluster Health
+- Practice Test
+
+⭐️ Tuesday GOAL
+- Maintaining and Upgrading a Cluster
+- Investigating and Remediating Performance Issues
+- Practice Test
+
+⭐️ Wednesday GOAL
+- Getting Started with NKP
+- NKP Fundamentals Bootcamp
 
 
 Questions for Jenn:
@@ -16,7 +35,6 @@ Questions for Jenn:
 - Do you have any tips on how to not bring work home and avoid burnout?
 	- Prioritize things I don't want to do first
 	- Next several week no burnout fashion
-	- 
 - Can you elaborate on the constant changes in the curriculum? I know we have briefly talked but what has led to all these changes?
 
 
@@ -54,28 +72,3 @@ Where to improve on white boarding:
 - we are getting rid of storage only nodes
 - SAN if you need external storage
 - refine knowledge of AOS, CVM, etc.
-
-Speaking Points/Capstone 1
-- Rapid-time-to-value
-	- Paint - Picture
-	- Challenge
-		- Siloed teams
-		- IT struggles to show value
-			- Technical metrics instead of business outcomes
-		- TIME, TIME, TIME
-		- RACK - STACK
-	- Each team has their own tooling
-		- What tools do you currently use?
-		- What do love and hate?
-- Build, Operate, Govern
-	- Standardize infra - self-service
-	- IAC - do you currently use and IAC?
-	- Question - are your currently in an public clouds?
-	- Intelligent visibility - reporting & forecasting (projects)
-	- Business polices - quotas & data protection
-Demo
-- Demo Projects
-- Demo Self-Service
-	- Projects
-	- Self-Service Marketplace
-	- Blueprints
