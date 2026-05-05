@@ -62,7 +62,7 @@
 - **Zookeeper:** Stores info about cluster components (hardware/software), including ip, capacities, data rep rules, in the cluster config. Its active on 3 or 5 nodes, depending on redundancy factor applied to cluster. Uses multiple nodes to prevent stale data from being returned to other components. Odd number for breaking ties. One node is elected to be the leader by Zookeeper, it will receives all request for info and confers with follower nodes. Zookeeper has no dependencies.
 - **Zeus:** Interface to access info stored in Zookeeper is used by all other components to access cluster config. 
 - **Medusa:** Keeps track of stored data for other systems (hv or vms) and where replicas are stored. Its the abstraction layer that sits in front of the db that holds metadata. The db is distributed in a ring topology in the cluster for resiliency and is using a modified from of apache cassandra. 
-- Cassandra: Stores all metadata about the guest vm data in a storage container. Runds on all nodes of the cluster, and communicate using the gossip protocol ever second. Depends on zeus to gather info about the cluster config.
+- Cassandra: Stores all metadata about the guest vm data in a storage container. Runs on all nodes of the cluster, and communicate using the gossip protocol ever second. Depends on zeus to gather info about the cluster config.
 - Stargate: Component for receiving and processing data to storage presented to other systems like hv. All r/w requests are sent across a vSwitch to the stargate process running on that node. It depends on medusa to gather metadata and zeus to gather cluster config data. Stargate the the main point of contact from the prospective of the HV
 - Curator: Lead node periodically scans metadata and identifies cleanup and optimization that stargate should perform. Shares analyzed metadata across other curator nodes. Depends on Zeus to learn which nodes are available, and medusa to gather metadata, based on the analysis commands are sent to stargate.
 
@@ -92,7 +92,7 @@
 	- ISCSI data services IP
 	- checkbox for the retention of deleted vms
 	- Cluster encryption state
-- Prism Central: is an app that needs to be spun up as a vm before it can be used. You must register you clusters to the PC instance.
+- Prism Central: is an app that needs to be spun up as a vm before it can be used. You must register your clusters to the PC instance.
 	- Additional feature over PE
 		- Cost Governance
 		- Resource planning: capacity runaway tab allows you to view current resource runway
