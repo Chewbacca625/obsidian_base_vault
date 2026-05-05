@@ -3,8 +3,13 @@
 	- Disk Image: entire data, file structure, files, etc.
 - Images uploaded to PE reside in and can only be managed in PE
 	- Steps to upload: Settings -> Image config
+	- any image uploaded to PE can be imported into PC
 - Images migrated in PE reside in PE but can only be managed in PC
 	- Image dashboard only exists in PC
 		- Polices:
 			- Placement Policies: enables you to config policies that govern placements of images on clusters (map images using categories)
 			- Bandwidth Throttling Policy: limits the bandwidth consumed during image creation using the URL option (without remote server will consume as much bandwidth as available)
+- URL download: files size limits, which affect image file uploads (images larger than 2GB, it is recommended to upload them using a remote server)
+- When adding an image from a remote server, you can specify URLs to multiple images as part of a single operation
+- Categories
+	- Cannot be associated with other category entities, only entities (VMs, Images, etc.)
