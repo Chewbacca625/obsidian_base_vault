@@ -1,4 +1,10 @@
 - Types of Images
 	- ISO: image or copy of data on optical disk
 	- Disk Image: entire data, file structure, files, etc.
-- 
+- Images uploaded to PE reside in and can only be managed in PE
+	- Steps to upload: Settings -> Image config
+- Images migrated in PE reside in PE but can only be managed in PC
+	- Image dashboard only exists in PC
+		- Polices:
+			- Placement Policies: enables you to config policies that govern placements of images on clusters (map images using categories)
+			- Bandwidth Throttling Policy: limits the bandwidth consumed during image creation using the URL option (without remote server will consume as much bandwidth as available)
