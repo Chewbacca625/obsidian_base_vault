@@ -1,0 +1,18 @@
+Prereqs for Deploying a VM
+- Network:
+	- VM network interface is bound to virt network, and each virt network is bound to a single vlan
+	- Managed (Nutanix IPAM), unmanaged (external IPAM)
+- Image: used for OS and app install
+- VirtIO Drivers (**WINDOWS**) - [link](https://portal.nutanix.com/page/downloads?product=ahv&bit=VirtIO)
+	- drivers to enhance stability and performance of VMs
+	- bundles eth adapter, RNG device, SCSI pass-through, SCSI controller, serial driver, etc.
+	- When installing windows fresh use the VirtIO ISO, but when updating an existing driver use the MSI
+- Categories: Apply entities to categories, then you can set polices on categories for governance
+	- useful for management, and is recommended
+- UEFI & BIOs
+	- AHV can run on hardware that supports UEFI and Secure Boot of UEFI
+		- VMs can be enabled to use Secure Boot
+		- UEFI - faster boot times, supports larger disks, and provides more security (auth components to execute if boot loader has been tampered with)
+	- Min version 1.1.6 of Nutanix VirtIO
+- Sysprep
+	- Used for windows installs, generalizes installs so it can be cloned 
