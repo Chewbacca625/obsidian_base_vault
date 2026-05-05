@@ -1,4 +1,4 @@
--Upgrading manually you need to update firmware last
+- Upgrading manually you need to update firmware last
 ### Benefits of HCI
 - Agile operations
 	- HCI installer is packaged as a full stack installer allowing you deploy nodes quickly at multiple geo locations
@@ -8,7 +8,7 @@
 - Sustained Innovation
 	- Hybrid cloud can be implemented with no need to compromise on benefits of on prem and cloud
 - Optimized Economics
-	- HCI can scale dynamically with business need, further sub based licensing allowf for opex budget for datacenter infra
+	- HCI can scale dynamically with business need, further sub based licensing allows for opex budget for datacenter infra
 
 ### Nutanix Cloud Platform
 - NCI (Nu Cloud Infra): complete software solution including virt compute, stor, and net, for vm and containers, with built in DR, self-healing, resilience, performance, and sec
