@@ -3,7 +3,7 @@
 - Virtual Switch (VS): defines a collection of AHV nodes and the uplink ports on each node. Its an aggregation of the same OVS bridge on all the compute nodes in a cluster.
 	- EX: vs0 is default virt switch and it aggregates br0 and br0-up uplinks from all the nodes
 - Bridges: act as virt switches to manage phys net and virt net interfaces. Default AHV config is br0 and native linux bridge virbr0. virbr0 carries mgmt traffic and storage comms between CVM and AHV hosts. All other storage, host, and vm network traffic flows through br0.
-	- NOTE: virbr0 handles internal network traffic on a host NO OUTSIDE COMMS. Its only comms between AHV host and local CVM. All local storage I/0 and mgmt traffic between the hv and the cvm pass through the native linux bridge.
+	- NOTE: virbr0 handles internal network traffic on a host NO OUTSIDE COMMS. Its only comms between AHV host and local CVM. All local storage I/O and mgmt traffic between the hv and the cvm pass through the native linux bridge.
 - Ports: logical constructs created in a bridge to connect to virt switch. 
 	- Types:
 		- Internal Port: Used for host mgmt and typically has the default bridge name (br0)
