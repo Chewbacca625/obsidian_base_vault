@@ -62,6 +62,7 @@ Segmentation
 - Active-Active Balance slb (MAC_Pinning) - DONT RECOMMEND
 	- Multicast will not work b/c of ovs??? KB
 - Active-Active LACP
+	- LCAP - requires fallback (active backup should be enabled)
 	- MUST BE IDENTICAL Interfaces
 	- Wont disconnect, if a node fails but if you replace the nic it needs to be reenumerateed (there is a script)
 - LC and MPO - cables are the most common fiber connection types nutanix

@@ -29,3 +29,10 @@
 ### Self-Service Admin Tasks
 - Config AD with a pool of self-service users
 - Open self-service user role -> create authorization policy choose role, define scope, and assign users
+
+### Nutanix Guest Tools
+- NGT installer allows you to install NGT in a guest VM
+- Nutanix Guest Agent, maintains comm between VCM and guest VMs
+- Nutanix VirtIO package, vm mobility drivers that enable VM migration between AHV and ESXi, in-place HV conversion, and cross HV disaster recovery
+- Nutanix VSS package, enable nutanix native in-guest volume snapshots service (VSS) agent to take app-consistent snapshots for all VMs that support VSS
+- Python Package, NGA service is written in python 
