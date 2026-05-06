@@ -42,3 +42,7 @@ Segmentation
 - north-south
 - address based/network level
 - hardware
+
+- Licensing is tied to node serial 
+- IPMI is node specific dedicated
+	- if it comes with based 10 AIOM (shared IPMI)
