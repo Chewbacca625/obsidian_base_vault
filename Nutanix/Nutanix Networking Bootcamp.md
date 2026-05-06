@@ -44,5 +44,14 @@ Segmentation
 - hardware
 
 - Licensing is tied to node serial 
-- IPMI is node specific dedicated
-	- if it comes with based 10 AIOM (shared IPMI)
+- IPMI is node specific dedicated (Base-T)
+	- if it comes with based 10 AIOM (shared IPMI) - eth0 (data and IPMI access)
+	- ASK about cables so that we can size correctly...!!!!!!!!!
+	- Check with distribution, partners, etc. because nics
+		- ONLY SUPPORTS if its on the board, no adapters
+	- SFP+
+	- We only support multimode, not single mode
+	- What is AOC fiber?
+- Most nutanix nodes base-T is capped at 10Gbps
+- IPMI mostly 10Gbps Base-T
+- SFP+ capped at 10G
