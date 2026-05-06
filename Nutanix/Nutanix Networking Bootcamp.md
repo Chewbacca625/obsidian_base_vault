@@ -68,7 +68,14 @@ Segmentation
 - all interfaces need to be the same, speed, driver, type, model (TO BE IN THE SAME BOND) - if they differ they cant be in the same bond
 - Each bridge can only have one BOND
 - Best practice is to seperate CVM and host traffic from workload traffic via vlans or bridges (physical)
-- 
+- Setup
+	- Plug in IPMI first
+		- You can set it in trunk mode for added security, but typically not necessary
+	- We use MLAG - for to connect switches enable LACP
+	- Then We setup CVM host 
+	- Then Workloads 
+	- Br0 = host
+	- Vs0 = cluster
   
   
   
