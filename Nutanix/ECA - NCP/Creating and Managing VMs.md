@@ -1,4 +1,4 @@
-Prereqs for Deploying a VM
+### Prereqs for Deploying a VM
 - Network:
 	- VM network interface is bound to virt network, and each virt network is bound to a single vlan
 	- Managed (Nutanix IPAM), unmanaged (external IPAM)
@@ -22,3 +22,10 @@ Prereqs for Deploying a VM
 	- used to customize linux installs
 	- cloud init must be preinstalled on image to use
 - Agent VM: a specialized VM thats pinned to a specific physical host
+### Prism Self-Service Roles
+- Self Service Admin: can create projects, add users and groups to projects, config roles for each project member, publish vm templates and images, monitor project resource usage and adjust quotas, no admin access of PC, but has full access to all VMs running on a cluster
+- Project user: consumes resources, can work with entities based on roles/perms, GUI only displays what user have access to.
+
+### Self-Service Admin Tasks
+- Config AD with a pool of self-service users
+- Open self-service user role -> create authorization policy choose role, define scope, and assign users
