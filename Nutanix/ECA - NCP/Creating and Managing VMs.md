@@ -35,4 +35,16 @@
 - Nutanix Guest Agent, maintains comm between VCM and guest VMs
 - Nutanix VirtIO package, vm mobility drivers that enable VM migration between AHV and ESXi, in-place HV conversion, and cross HV disaster recovery
 - Nutanix VSS package, enable nutanix native in-guest volume snapshots service (VSS) agent to take app-consistent snapshots for all VMs that support VSS
-- Python Package, NGA service is written in python 
+- Python Package, NGA service is written in python and is a dedicated install
+
+NGT Features:
+- Self-Service file recovery: file-level recover using VM snapshots
+- Nutanix VM mobility: Facilitates VM migration between ESXi and AHV, in place HV conversion, and cross HV DR
+- VSS requester and hardware provider for Windows VM: Enables app consistent snapshots of AHV and ESXi
+- App-consistent snapshot for Linux VMs: support app consistent snapshots for Linux running specific scripts on VM quiesce
+- Static IP preservation support after failover for Nutanix DR: Preserves IP addr of guest VM with static IP for its failover DR to an IPAM network
+- In-guest script exe support for Nutanix DR: automates various task exe upon recovery of the VMs
+> Note: You can install NGT while a VM is running, but it will require a restart so for running workloads schedule or do in maintenance window
+
+>**NUTANIX GUEST TOOLS VIA PE MUST BE MANUALLY ENABLED AND THEN INSTALLED BY LOGGING INTO THE VM, PC DOESN'T REQUIRE YOU TO LOGIN**
+- 
