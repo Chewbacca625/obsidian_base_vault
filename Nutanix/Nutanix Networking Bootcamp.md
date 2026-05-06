@@ -51,9 +51,10 @@ Segmentation
 		- ONLY SUPPORTS if its on the board, no adapters
 	- SFP+
 	- We only support multimode, not single mode
-	- What is AOC fiber?
+	- What is AOC fiber? - Active optical cables draw power 
 - Most nutanix nodes base-T is capped at 10Gbps
-- IPMI mostly 10Gbps Base-T
+- IPMI mostly 100Mbps/1Gbps/10Gbps Base-T
+	- for shared they use the first base-T interface (Cant be SFP)
 - SFP+ capped at 10Gbps
 	- Make sure that the SFP+ is compatable, any SFP interfaces need to also be compatable with the nic KB13531 SPF Not compatable with NIC, ATTENTION TO DETAIL!!!!
 - Order matters when you take out disks and host from a block...
@@ -63,3 +64,43 @@ Segmentation
 - Active-Active LACP
 	- MUST BE IDENTICAL Interfaces
 	- Wont disconnect, if a node fails but if you replace the nic it needs to be reenumerateed (there is a script)
+- 
+  
+  
+  
+  
+  
+https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2071-AHV-Networking:load-balancing-in-bond-interfaces.html
+
+Review:
+Discovery / Sales Specific Questions  
+  
+May I know the end user for this request?  
+Do you have an approved Nutanix Deal Registration ID?  
+Is this a new or existing Nutanix environment?  
+Do you have an existing Nutanix Sizer Scenario or BOM for this request?  
+Did you use a Discovery Reporting Tool (Nutanix Collector, RVTools, or Live Optics) to gather existing  
+environment workload information?  
+(If the customer is getting multiple clusters) Are you shipping all of the hardware to the same location?  
+  
+Hardware Specific Questions –  
+  
+(If Data collection tool is provided) Are you looking to count both powered on and off VMs or just powered on?  
+Whats your vCPU workload requirement?  
+How much RAM are you utilizing in VMs requirement?  
+How much storage are you guys currently utilizing / looking for usable?  
+Regarding your storage, are we looking at a all flash solution or a hybrid utilizing HDDs?  
+Which type of network connectivity do you need on each server node? (10GbE, 25GbE, 40GbE, or 100GbE)  
+For 10GbE, do you need SFP+ or Base-T connectivity?  
+How many ports per host are you looking for?  
+Does the customer have a GPU requirement?  
+  
+Software / Support Specific Questions -  
+  
+Which edition of NCI licensing do you need? (Starter, Pro, Ultimate)  
+Nutanix Software Options Overview:  
+h[ttps://www.nutanix.com/products/cloud-platform/software-options](https://www.nutanix.com/products/cloud-platform/software-options)  
+  
+How many years of software and hardware support do you need? (you can select anything between 1 – 7 Years)  
+Are you looking for additional security/encryption or replication licenses?  
+Are we looking for installation and startup services?
