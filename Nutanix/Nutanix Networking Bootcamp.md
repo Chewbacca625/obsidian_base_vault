@@ -58,3 +58,8 @@ Segmentation
 	- Make sure that the SFP+ is compatable, any SFP interfaces need to also be compatable with the nic KB13531 SPF Not compatable with NIC, ATTENTION TO DETAIL!!!!
 - Order matters when you take out disks and host from a block...
 - Disk performance is directly related to network performance
+- Active-Active Balance slb (MAC_Pinning) - DONT RECOMMEND
+	- Multicast will not work b/c of ovs??? KB
+- Active-Active LACP
+	- MUST BE IDENTICAL Interfaces
+	- Wont disconnect, if a node fails but if you replace the nic it needs to be reenumerateed (there is a script)
