@@ -54,4 +54,7 @@ Segmentation
 	- What is AOC fiber?
 - Most nutanix nodes base-T is capped at 10Gbps
 - IPMI mostly 10Gbps Base-T
-- SFP+ capped at 10G
+- SFP+ capped at 10Gbps
+	- Make sure that the SFP+ is compatable, any SFP interfaces need to also be compatable with the nic KB13531 SPF Not compatable with NIC, ATTENTION TO DETAIL!!!!
+- Order matters when you take out disks and host from a block...
+- Disk performance is directly related to network performance
