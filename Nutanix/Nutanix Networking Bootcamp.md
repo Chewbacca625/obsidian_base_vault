@@ -64,6 +64,10 @@ Segmentation
 - Active-Active LACP
 	- MUST BE IDENTICAL Interfaces
 	- Wont disconnect, if a node fails but if you replace the nic it needs to be reenumerateed (there is a script)
+- LC and MPO - cables are the most common fiber connection types nutanix
+- all interfaces need to be the same, speed, driver, type, model (TO BE IN THE SAME BOND) - if they differ they cant be in the same bond
+- Each bridge can only have one BOND
+- Best practice is to seperate CVM and host traffic from workload traffic via vlans or bridges (physical)
 - 
   
   
