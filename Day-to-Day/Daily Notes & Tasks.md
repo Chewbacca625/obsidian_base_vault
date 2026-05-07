@@ -33,6 +33,8 @@ Things I want to try in the Static Cluster:
 Nutanix Guest tools install: 
 - https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2024_1:mul-ngt-pc-requirements-r.html
 - https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2024_1:mul-ngt-pc-management-c.html
+Guest Customization:
+- https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_8:wc-vm-image-customize-wc-c.html
 
 
 

@@ -53,8 +53,13 @@ NGT Features:
 - You can also take actions on multiple VMs
 - You must use nutanix move to migrate VMs from one cluster to another, but if you want to migrate VMs between node in a cluster this is possible without move
 
-### Hot-Plugging CPU and Memory
+### Hot-Plugging CPU, Memory, and vNIC
 - You can change the number of CPUs (vCPU/Socket), while a VM is turned on, but not # of cores per CPU
 - You can also hot-swap memory, while VM is turned on
 - Each action must be done one at a time (action, save, action,...)
+- you can hot swap NIC it is dependent on successful ACPI request, if not it must be power cycled 
+
+### Cloning VMs
+- you can clone 250 VMs at a time
+- you cannot override the secure boot setting while cloing a VM, unless the source VM already had secure boot enabled
 - 

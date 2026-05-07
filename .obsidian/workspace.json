@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nutanix/ECA - NCP/Creating and Managing VMs.md",
+                "file": "Day-to-Day/Daily Notes & Tasks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Creating and Managing VMs"
+              "title": "Daily Notes & Tasks"
             }
           },
           {
@@ -211,8 +211,8 @@
   },
   "active": "53907fd73d9555db",
   "lastOpenFiles": [
-    "Day-to-Day/Daily Notes & Tasks.md",
     "Nutanix/ECA - NCP/Creating and Managing VMs.md",
+    "Day-to-Day/Daily Notes & Tasks.md",
     "Nutanix/Nutanix Networking Bootcamp.md",
     "Untitled.md",
     "CompTia/Network +.md",
