@@ -62,4 +62,11 @@ NGT Features:
 ### Cloning VMs
 - you can clone 250 VMs at a time
 - you cannot override the secure boot setting while cloing a VM, unless the source VM already had secure boot enabled
-- 
+- you cannot add or remove disks
+
+### Enabling VM HA
+- VM HA ensures that VMs can be migrated and restarted on another AHV host in an AHV cluster when a host becomes unavailable, it also respects affinity (if pinned to A and B in a cluster with ABCD, wont be started on CD) and anti-affinity rules
+- Two Config options
+	- Default: if enough resources exist VMs will be migrated to another host
+	- Guarantee: if enough resources **DONT** exit then guarantee ensure that the VM will be spun up on another host (Reserves Space)
+- Enabled in settings menu of PE - Data Resiliency - manage VM HA
