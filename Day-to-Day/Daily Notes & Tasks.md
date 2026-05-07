@@ -81,4 +81,5 @@ Where to improve on white boarding:
 - refine knowledge of AOS, CVM, etc.
 
 Flow call
-- 
+- When defining policies default is allow all you should tie security policies to categories and require categories to be applied to configure what is allowed based on said policy
+- Implicit security polices - so block all by default except what you define to allow ie 443 and 80
