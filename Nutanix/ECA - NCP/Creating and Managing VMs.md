@@ -80,4 +80,4 @@ NGT Features:
 - ADS Automatic Migration:
 	- ADS proactively monitor your cluster for any computer and storage I/O contention or hotspots over a period of time. If a problem is detected it migrates VMs from one node to another within a cluster
 	- ADS runs every 15 minutes, if node is >85% utilization for 15 minutes, migration tasks are triggered, for storage it looks at the last 40 minutes of data and uses a smoothing alogrithem to use the most recent data, for CPU it looks at the average usage for the last 10 minutes (ADS doesn't monitor network or memory)
-- Automatic Live Migration During Maintenance: if a node is put in maintenance mode 
+- Automatic Live Migration During Maintenance: if a node is put in maintenance mode, its marked as unscheduleable so no new VMs can be created on it, and ones running on it are evacuated to another host, and returned to original host
