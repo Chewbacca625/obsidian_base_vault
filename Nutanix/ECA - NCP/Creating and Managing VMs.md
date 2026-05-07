@@ -70,3 +70,7 @@ NGT Features:
 	- Default: if enough resources exist VMs will be migrated to another host
 	- Guarantee: if enough resources **DONT** exit then guarantee ensure that the VM will be spun up on another host (Reserves Space)
 - Enabled in settings menu of PE - Data Resiliency - manage VM HA
+
+### Manual vs. Automatic VM Migration
+- Manual: moving one vm to another host within the same cluster or to new cluster(requires Nutanix Move) entirely (Non-Nutanix Storage - > Nutanix Storage, ESXi/Hyper-V -> nutanix cluster)
+- VM Live Migration: VM moved from one node to another while VM is powered on
