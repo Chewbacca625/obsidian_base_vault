@@ -47,4 +47,14 @@ NGT Features:
 > Note: You can install NGT while a VM is running, but it will require a restart so for running workloads schedule or do in maintenance window
 
 >**NUTANIX GUEST TOOLS VIA PE MUST BE MANUALLY ENABLED AND THEN INSTALLED BY LOGGING INTO THE VM, PC DOESN'T REQUIRE YOU TO LOGIN**
+
+### Managing VMs
+- PC: you can create templates, protect/unprotect, enable/disable efficiency measurement, anomaly detection, run playbooks, manage categories, manage ownership, apply storage policies, etc.
+- You can also take actions on multiple VMs
+- You must use nutanix move to migrate VMs from one cluster to another, but if you want to migrate VMs between node in a cluster this is possible without move
+
+### Hot-Plugging CPU and Memory
+- You can change the number of CPUs (vCPU/Socket), while a VM is turned on, but not # of cores per CPU
+- You can also hot-swap memory, while VM is turned on
+- Each action must be done one at a time (action, save, action,...)
 - 
