@@ -37,8 +37,6 @@ Guest Customization:
 - https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_8:wc-vm-image-customize-wc-c.html
 
 
-
-
 Questions for Jenn:
 - Do you have any feedback for me?
 - Do you have any tips on how to not bring work home and avoid burnout?
@@ -81,3 +79,6 @@ Where to improve on white boarding:
 - we are getting rid of storage only nodes
 - SAN if you need external storage
 - refine knowledge of AOS, CVM, etc.
+
+Flow call
+- 

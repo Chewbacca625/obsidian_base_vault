@@ -85,6 +85,6 @@ NGT Features:
 ### VM Affinity
 - VM-Host Affinity: specifies what host a VM can run on
 - VM-VM Anti-Affinity Policy: meant to keep specific VMs apart (cant run on the same node). Is preferential policy and can be ignored by ADS if resource constraints require VMs to be temporarily placed on the same node
-	- Can only be defined in PE
+	- Can only be defined in PE via CLI - create a group and add VMs to it
 - PC uses categories for VM-Host affinity policies, and supports automatic cluster selection
 - PE you must defined affinity polices one at a time either at creation or updating
