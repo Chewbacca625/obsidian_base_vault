@@ -73,4 +73,11 @@ NGT Features:
 
 ### Manual vs. Automatic VM Migration
 - Manual: moving one vm to another host within the same cluster or to new cluster(requires Nutanix Move) entirely (Non-Nutanix Storage - > Nutanix Storage, ESXi/Hyper-V -> nutanix cluster)
-- VM Live Migration: VM moved from one node to another while VM is powered on
+- VM Live Migration: VM moved from one node to another while VM is powered on (manual/automatic)
+	- Live migration occurs automatically, it can be due to Acropolis Dynamic Scheduler (ADS) monitoring a cluster for hotspots and contentions and making adjustments
+	- Micro Stunning (AOS 6.8) enables faster & more efficient migrations: replicates memory state of a VM from source VM host to destination VM host, and then cutting over. Due to VM memory changes are faster than VM memory can be replicated the VM is temporarily stunned to prevent memory updates and active state is moved to the destination host.
+- Live migration limitations : [Link](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v11_0:mul-vm-live-migration-restrictions-c.html)
+- ADS Automatic Migration:
+	- ADS proactively monitor your cluster for any computer and storage I/O contention or hotspots over a period of time. If a problem is detected it migrates VMs from one node to another within a cluster
+	- ADS runs every 15 minutes, if node is >85% utilization for 15 minutes, migration tasks are triggered, for storage it looks at the last 40 minutes of data and uses a smoothing alogrithem to use the most recent data, for CPU it looks at the average usage for the last 10 minutes (ADS doesn't monitor network or memory)
+- Automatic Live Migration During Maintenance: if a node is put in maintenance mode 
