@@ -36,3 +36,6 @@ Demo
 	- Projects
 	- Self-Service Marketplace
 	- Blueprints
+	  
+	  
+	  4 workers 3 control planes
