@@ -98,4 +98,6 @@ NGT Features:
 		- categories required
 		- multiple categories can be associated with single storage policy, but a single category cannot be associated with multiple storage policies
 		- once encryption has been enabled it cannot be disabled, if policy is deleted new data will be written without encryption but old data will remain encrypted
-		- 
+
+### Automating Common Admin Tasks with Playbooks
+- X-Play (Cross-Play) - playbooks
