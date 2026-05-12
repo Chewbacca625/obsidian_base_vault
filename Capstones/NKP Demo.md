@@ -2,6 +2,7 @@ Script:
 - Why Kubernetes?
 - Challenges with deploying kuberentes
 	- https://landscape.cncf.io/?group=projects-and-products
+	- https://www.gartner.com/en/documents/5361263
 - How Nutanix makes kuberentes easier?
 - Demo
 	- Interface
