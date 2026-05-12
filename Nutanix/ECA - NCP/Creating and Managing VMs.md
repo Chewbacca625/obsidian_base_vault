@@ -88,3 +88,14 @@ NGT Features:
 	- Can only be defined in PE via CLI - create a group and add VMs to it
 - PC uses categories for VM-Host affinity policies, and supports automatic cluster selection
 - PE you must defined affinity polices one at a time either at creation or updating
+
+### Storage Policies
+- Storage policies such as encryption, compression, deduplication, and erasure coding are applied to storage containers, however if you want to apply them to a group of VMs you can also do this via categories.
+	- Storage policy considerations
+		- each policy requires unique name
+		- requires at lease on non-default value
+		- supported only on AHV entities
+		- categories required
+		- multiple categories can be associated with single storage policy, but a single category cannot be associated with multiple storage policies
+		- once encryption has been enabled it cannot be disabled, if policy is deleted new data will be written without encryption but old data will remain encrypted
+		- 
