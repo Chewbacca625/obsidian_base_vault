@@ -1,0 +1,10 @@
+- AOS Storage
+	- pools flash and disk storage across Nutanix cluster and exports it as a data store to the virtualization layer as iSCSI, NFS, and SMB, eliminating the need for SAN and NAS solutions
+	- stores user data (VM disk/files) across storage tiers (SSD, HDD, Cloud) on multiple nodes
+	- Supports:
+		- instant snapshots
+		- clones of VM disks
+		- deduplication
+		- compression
+		- erasure coding
+	- 
