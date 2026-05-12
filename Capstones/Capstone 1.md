@@ -37,5 +37,26 @@ Demo
 	- Self-Service Marketplace
 	- Blueprints
 	  
-	  
-	  4 workers 3 control planes
+
+Grade: 28.5/40
+- Executive level presence
+- define acronyms
+- aos is the cloud platform
+- good pc vs PE
+- good customer engagement
+- strong opening
+- humor is peak
+- flow is good confident
+- good use of backup recordings
+- good job learning and understanding self-service
+- met expectations 
+- plainly stated
+- consistently stated value
+- Q&A thoughtful
+- fluid and purposeful
+weak
+- business signals - quantify the pain with the impact???
+- value translation - consistently connected - tying it to correlate to measurable outcomes???
+- used right tools
+- Q&A responsive and thoughtful
+
