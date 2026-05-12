@@ -1,5 +1,5 @@
 - AOS Storage
-	- pools flash and disk storage across Nutanix cluster and exports it as a data store to the virtualization layer as iSCSI, NFS, and SMB, eliminating the need for SAN and NAS solutions
+	- pools flash and disk storage across Nutanix cluster and exports it as a data store to the virtualization layer as iSCSI, NFS, and SMB (SMB3), eliminating the need for SAN and NAS solutions
 	- stores user data (VM disk/files) across storage tiers (SSD, HDD, Cloud) on multiple nodes
 	- Supports:
 		- instant snapshots
@@ -7,4 +7,12 @@
 		- deduplication
 		- compression
 		- erasure coding
-	- 
+		- disaster recovery 
+		- high availability
+	![[Screenshot 2026-05-12 at 12.14.04 PM.png]]
+	- Intelligent tiering
+		- AOS monitors data access patterns and optimizes data placement on either SSD or HDD tiers, achieving the best performance without admin intervention
+	- Data Locality
+		- ensures that as much of a VMs data is stored on the node where its running. Negates read I/O over the network, optimizes performance and minimizes network congestion. Every VMs data is served locally from the CVM and stored preferentially on local storage. When a node is moved from one node to another or live migration, the VMs data follows the VM in the background based on read patterns.
+	- Auto Disk Balancing
+		- capable of responding to different workloads and allows different node types (compute heavy / storage heavy) within a single cluster. When mixing nodes its important to ensure uniform distribution of data, taking into account the different storage capacities. The native disk balancing feature ensures that data is distributed uniformly among nodes once storage utilization on a node crosses a threshold. Movement of data is always done in the same tier when balancing is performed.
