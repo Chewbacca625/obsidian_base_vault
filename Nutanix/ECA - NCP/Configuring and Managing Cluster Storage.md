@@ -16,3 +16,11 @@
 		- ensures that as much of a VMs data is stored on the node where its running. Negates read I/O over the network, optimizes performance and minimizes network congestion. Every VMs data is served locally from the CVM and stored preferentially on local storage. When a node is moved from one node to another or live migration, the VMs data follows the VM in the background based on read patterns.
 	- Auto Disk Balancing
 		- capable of responding to different workloads and allows different node types (compute heavy / storage heavy) within a single cluster. When mixing nodes its important to ensure uniform distribution of data, taking into account the different storage capacities. The native disk balancing feature ensures that data is distributed uniformly among nodes once storage utilization on a node crosses a threshold. Movement of data is always done in the same tier when balancing is performed.
+	- Data Path Redundancy
+		- in an HA event or during an upgrade where CVM become unavailable, Nutanix CVM auto pathing reroutes request to a "healthy" CVM on another node. This failover is transparent to the HV and apps. Redirection continues until the local CVM failure is resolved. The cluster has a global namespace and access to replicas for all the data on that node, it services request immediately, providing a high degree of fault tolerance and failover capability for all VMs in a cluster. If CVM remains unavailable for a prolonged period, data automatically replicates again to maintain Rep factor.
+		  
+	- Storage constructs
+		- Storage pool: pooled physical storage resources
+		- Storage Contianer: logical segmentation of storage pool and contains a group of VMs or vdisks. (RF configed here)
+		- vDisk: slice of available storage within a storage container providing storage to VMs. Any file over 512 KB on DSF, including VMDKs and VM disks. vDisks are broken up into extents, which are grouped and stored on physical disk as an extent group. You can migrate a vdisk from one storage container to another while it is attached to a guest VM without needing to shutdown or delete that VM.
+		- 
