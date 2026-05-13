@@ -94,6 +94,21 @@
 			- NutanixManagementShare - built in storage container used by Nutanix Files and Self-Service Portal file storage, feature upgrades, and other operations, not intended for vDisks.
 			- SelfServiceContainer - used by image service features
 			- Default-Container - used for regular storage and, no specific uses or requirements.
-		- Updating Storage Co
+		- Updating Storage Container
+			- Cannot rename through update dialog
+			- cannot rename if contains vDisks
+			- can only update rf via cli
+			- if data is compressed to uncompressed it will take effect on next data scan
+	- Volume Groups
+		- allow for separating data disks from a VM's boot disk, facilitating shared storage access for applications like Oracle RAC and Microsoft Failover Clustering
+		- Primarily designed for high-performance applications requiring shared disks across multiple VMs or direct block device access (e.g., Oracle RAC, SQL Server, SAP HANA, and containerized applications).
+		- Updating VGs
+			- cannot change cluster and iSCSI target name
+			- you can change the client type by removing all clients, saving, and reopen the update VG
+	- Migrating vDisks between storage containers while they are attached to live VMs
+		- you can choose to migrate all vDisks or just select specific ones. You must ssh into the VCM and run the following command: 
+		`nutanix@cvm$ acli vm.update_container vm-name container=target-container wait=false`
+	- 
+		  
  
 
