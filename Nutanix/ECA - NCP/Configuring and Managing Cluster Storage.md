@@ -105,10 +105,34 @@
 		- Updating VGs
 			- cannot change cluster and iSCSI target name
 			- you can change the client type by removing all clients, saving, and reopen the update VG
-	- Migrating vDisks between storage containers while they are attached to live VMs
-		- you can choose to migrate all vDisks or just select specific ones. You must ssh into the VCM and run the following command: 
-		`nutanix@cvm$ acli vm.update_container vm-name container=target-container wait=false`
-	- 
-		  
- 
+- Migrating vDisks between storage containers while they are attached to live VMs
+	- you can choose to migrate all vDisks or just select specific ones. You must ssh into the VCM and run the following command: 
+	`nutanix@cvm$ acli vm.update_container vm-name container=target-container wait=false`
 
+- Capacity Reservation
+	- Reserved capacity: allows you to reserve the min amount of space for you storage container, and prevents the space from being used
+	- Advertised capacity: allows you to set the max amount of space that a container is allowed to uses
+		- Note: Advertised must always be larger than reserved
+	- Best practices
+		- Reserve capacity only if storage pool has multiple storage containers. Unless there is a specific reason to have multiple storage containers, Nutanix recommends having a single storage pool with a single storage container 
+		- Reserve no more than 90% of space in the storage pool
+		- When setting advertised capacity ensure you leave enough room for data that has not yet been garbage collected
+
+- Storage and Capacity Optimization
+	- Compression: (enabled by default on storage containers)
+		- both inline(Default): 
+			- for large I/O size or sequential data streams
+			- data is written uncompressed to OpLog
+			- it is coalesced, and compressed into memory and then written to extent store
+			- delay 0
+		- post process
+			- sees data written uncompressed to disk and MapReduce framework is applied to data cluster-wide to compress
+			- delay 60 minutes (recommended by nutanix)
+	- Deduplication
+		- reduces storage space consumed by consolidating duplicate data blocks on nutanix storage
+		- Cache Dedup: deduplication occurs on data in memory. Is applied to read cache to optimize performance
+			- requires CVM to have 24gb ram
+		- Capacity Dedup: dedup performed on the data in hard disk storage, it can only be enabled if cache dedup is enabled, pro+ license
+			- requires CVM to have 32gb ram
+		- Not recommended for all workloads. Recommended for full clones, physical to virtual migration, and persistent desktops
+		- Linked clones or Nutanix VAAI clones: duplicate data is managed efficiently by DSF so dedup has 
