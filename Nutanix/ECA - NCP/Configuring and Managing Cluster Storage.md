@@ -19,26 +19,45 @@
 	- Data Path Redundancy
 		- in an HA event or during an upgrade where CVM become unavailable, Nutanix CVM auto pathing reroutes request to a "healthy" CVM on another node. This failover is transparent to the HV and apps. Redirection continues until the local CVM failure is resolved. The cluster has a global namespace and access to replicas for all the data on that node, it services request immediately, providing a high degree of fault tolerance and failover capability for all VMs in a cluster. If CVM remains unavailable for a prolonged period, data automatically replicates again to maintain Rep factor.
 		  
-	- Storage constructs
-		- Storage pool: pooled physical storage resources
-		- Storage Contianer: logical segmentation of storage pool and contains a group of VMs or vdisks. (RF configed here)
-		- vDisk: slice of available storage within a storage container providing storage to VMs. Any file over 512 KB on DSF, including VMDKs and VM disks. vDisks are broken up into extents, which are grouped and stored on physical disk as an extent group. You can migrate a vdisk from one storage container to another while it is attached to a guest VM without needing to shutdown or delete that VM.
-		- Volume Group: collection of logically related vDisks or volumes - attached to one or more execution contexts (VMs or iSCSI initiators) that share the disks in the VG. Can be managed as a single unit. You can include them in protection domains configed for Asysc DR either exclusively or with VMs
-			- Cannot be included in protect domain configed for metro, protected Vstore, consistency group with app consistent snapshotting
-			- Each VG has: UUID, Name, iSCSI target name
-			- Each disk in a VG has: UUID, LUN to specify order within the VG
-		- vBlock: a 1MB chunk of virt addr space composing a vDisk. ex: 100MB = 100 vBlocks, these map to extents which are stored as files on disk as extent groups
-		- Extent: a 1MB piece of logically contiguous data which consists of n number of contiguous blocks. They are written/read/modified on a sub-extent basis for granularity and efficiency
-		- Extent Group: 1MB or 4MB piece of physical contiguous stored data. Stored as a file on the storage device and owned by the CVM, they are dynamically distributed among extent groups to provide data striping across nodes/disks to improve performance.
-		- Extent Store: persistent bulk storage of DSF and spans all device tiers (SSD, SATA SSD, HDD, Etc.) and is extensible to facilitate additional devices/tiers. Data is either drained from the Oplog or is sequential/sustained in nature and has bypassed the OpLog directly. Nutanix Intelligent Lifecycle Manager (ILM) will determine tier placement dynamically based upon I/O patterns, number of accesses of data and weight given to individual tiers and will move data between tiers.
-		- OpLog: Persistent write buffer, similar to filesystem journal and is the stating area to handle burst of random writes, coalesce them, and sequentially drain the data to the extent store. For sequential workloads oplog is bypassed and heads to the extent store. Any data that has not been drained will be served by the oplog until it lives on the extent store.
-		- Unified Cache: read cache which is used for data, metadata and deduplication, and is stored in the CVMs memory. Upon a read where data isn't stored in the cache, the data will be read from the extent store and placed in unified cache (Using least recently used) until its evicted.
-		- Autonomous Extent Store (AES): different method for writing/storing data in the extent store, it leverages a mix of primarily local + global metadata allowing for much more efficient sustained performance due to metadata locality. For sustained random write workloads, these will bypass the OpLog and be written directly to the Extent Store using AES. For bursty random workloads they will take the OpLog path but drain to the Extent Store using AES where possible.
-		  
-	- Replication Factor: Refers to the number of copies of data and metadata maintained on a cluster. Set at the storage container level.
-		- RF1 (1 original) = 1 copy of data (should only be used if apps support HA or data protection)
-		- RF2 (1 original + 1 copy) = 2 copies of data | 3 copies of metadata
-		- RF3 (1 original + 2 copies) = 3 copies of data | 5 copies of metadata
+- Storage constructs
+	- Storage pool: pooled physical storage resources
+	- Storage Contianer: logical segmentation of storage pool and contains a group of VMs or vdisks. (RF configed here)
+	- vDisk: slice of available storage within a storage container providing storage to VMs. Any file over 512 KB on DSF, including VMDKs and VM disks. vDisks are broken up into extents, which are grouped and stored on physical disk as an extent group. You can migrate a vdisk from one storage container to another while it is attached to a guest VM without needing to shutdown or delete that VM.
+	- Volume Group: collection of logically related vDisks or volumes - attached to one or more execution contexts (VMs or iSCSI initiators) that share the disks in the VG. Can be managed as a single unit. You can include them in protection domains configed for Asysc DR either exclusively or with VMs
+		- Cannot be included in protect domain configed for metro, protected Vstore, consistency group with app consistent snapshotting
+		- Each VG has: UUID, Name, iSCSI target name
+		- Each disk in a VG has: UUID, LUN to specify order within the VG
+	- vBlock: a 1MB chunk of virt addr space composing a vDisk. ex: 100MB = 100 vBlocks, these map to extents which are stored as files on disk as extent groups
+	- Extent: a 1MB piece of logically contiguous data which consists of n number of contiguous blocks. They are written/read/modified on a sub-extent basis for granularity and efficiency
+	- Extent Group: 1MB or 4MB piece of physical contiguous stored data. Stored as a file on the storage device and owned by the CVM, they are dynamically distributed among extent groups to provide data striping across nodes/disks to improve performance.
+	- Extent Store: persistent bulk storage of DSF and spans all device tiers (SSD, SATA SSD, HDD, Etc.) and is extensible to facilitate additional devices/tiers. Data is either drained from the Oplog or is sequential/sustained in nature and has bypassed the OpLog directly. Nutanix Intelligent Lifecycle Manager (ILM) will determine tier placement dynamically based upon I/O patterns, number of accesses of data and weight given to individual tiers and will move data between tiers.
+	- OpLog: Persistent write buffer, similar to filesystem journal and is the stating area to handle burst of random writes, coalesce them, and sequentially drain the data to the extent store. For sequential workloads oplog is bypassed and heads to the extent store. Any data that has not been drained will be served by the oplog until it lives on the extent store.
+	- Unified Cache: read cache which is used for data, metadata and deduplication, and is stored in the CVMs memory. Upon a read where data isn't stored in the cache, the data will be read from the extent store and placed in unified cache (Using least recently used) until its evicted.
+	- Autonomous Extent Store (AES): different method for writing/storing data in the extent store, it leverages a mix of primarily local + global metadata allowing for much more efficient sustained performance due to metadata locality. For sustained random write workloads, these will bypass the OpLog and be written directly to the Extent Store using AES. For bursty random workloads they will take the OpLog path but drain to the Extent Store using AES where possible.
+	  
+- Replication Factor: Refers to the number of copies of data and metadata maintained on a cluster. Set at the storage container level.
+	- RF1 (1 original) = 1 copy of data (should only be used if apps support HA or data protection)
+	- RF2 (1 original + 1 copy) = 2 copies of data | 3 copies of metadata | req redundancy factor 2
+	- RF3 (1 original + 2 copies) = 3 copies of data | 5 copies of metadata | req redundancy factor 3
 	- How it works:
 		- Incoming writes are staged in OpLog onto the low-latency SSD tier
 		- When data is written to a local OpLog its synchronously replicated to another one (RF2) or two (RF3) CVMs OpLog before acknowledging as a successful write to the host 
+
+- Redundancy Factor: Refers to the number of failures (node/disk) that a cluster can withstand. 
+	- Default Recommendation: 3 nodes - RF2 (1 node / 1 disk)
+	- 5 nodes - RF3 (2 nodes/2 disk)
+	- For quest VMs to tolerate the simultaneous failure of two nodes/drives in different blocks, the data must be stored on storage containers with RF3
+	- **Must be set/viewed in PE**
+	- Cannot be reverted
+- Failure Handling and Fault Tolerance
+	- Disk Failure
+		- Nutanix Nodes Store 4 Primary Types of Data:
+			- Persistent Data (Hot/Cold tier) 
+				- Cold - stored on capacity tier
+				- Hot - stored in performance tier
+			- Storage metadata - performance tier
+			- OpLog - performance tier
+			- CVM boot files - performance tier
+		> On hardware platforms that contain peripheral component interconnect express SSD (PCIe-SSD) drives, the SATA-SSD holds only the CVM boot files. Storage metadata, oplog, and hot-tier persistent data reside on the PCIe-SSD.
+
+		- Boot Drive Failure: CVM boots from SATA-SSD (holds component logs and related files) - eventually will cau
