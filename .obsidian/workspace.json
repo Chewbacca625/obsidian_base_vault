@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "BIOS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -210,7 +211,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "813ec6360a78457e",
+  "active": "7b8e8f78978350d7",
   "lastOpenFiles": [
     "Nutanix/ECA - NCP/Configuring and Managing Cluster Storage.md",
     "Assets/Attachments/Screenshot 2026-05-12 at 12.14.04 PM.png",
