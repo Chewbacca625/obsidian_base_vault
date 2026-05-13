@@ -64,4 +64,22 @@
 			- CVM will restart if dual SSD nodes if a boot drive fails, or if you unmount a drive without marking it for removal and data hasn't successfully migrated
 		- Metadata Drive Failure
 			- Cassandra uses up to 4 SSDs to store the database providing read and write access for cluster metadata
-			- When a metadata drive fails, the local Cassandra process will no longer be able to access its share of the database and being a persistent cycle of restarts until it can access its data. If it Cassandra cannot restart, the Stargate process on that CVM will crash. If both fail data path redu
+			- When a metadata drive fails, the local Cassandra process will no longer be able to access its share of the database and being a persistent cycle of restarts until it can access its data. If it Cassandra cannot restart, the Stargate process on that CVM will crash. If both fail data path redundancy will take effect. During the switch guest VM I/O will pause due to shared storage being unavailable. I/O performance may decrease due to network latency.
+			- **Note**: The Controller VM restarts if a metadata drive fails, or if you remove a metadata drive without marking the drive for removal and the data has not successfully migrated.
+				- If Cassandra remains in a failed state for more than thirty minutes, the surviving Cassandra nodes detach the failed node from the Cassandra database so that the unavailable metadata can be replicated to the remaining cluster nodes. The process of healing the database takes about 30-40 minutes. 
+				- If the Cassandra process restarts and remains running for five minutes, the procedure to detach the node is canceled. If the process resumes and is stable after the healing procedure is complete, the node will be automatically added back to the ring. A node can be manually added to the database using the nCLI command.
+		- Data Drive Failure
+			- each node contributes to local storage devices, and data is replicated across the cluster so a single disk failure will not result in data loss. 
+			- when a data drive fails, the cluster receives an alert from the host and immediately begins working to create a second replica of any guest VM data that was stored on the drive, guest VMs with files on the failed drive will need to read across the network briefly.
+			- Nodes with only SSD only have a hot-tier
+		- Node Failure
+			- CVM failure: may include a user powering down the CVM, CVM rolling update, or any event that brings down the CVM
+			- Host Failure: Nutanix clusters support HA provided by the hypervisor, HA-protected VMs can be automatically restarted on other nodes in the cluster
+				- First, guest VM begins reading across the network, Stargate begins migrating extents to the new host
+				- Second, Curator will notice missing replica of those extents and instruct Stargate to begin creating a second replica
+		- Block Failure
+			- block share power supplies, front control panels, backplane, and fans
+			- Block fault tolerance allows nutanix cluster to make redundant copies of data and metadata and place the copies on nodes in different blocks
+				- Opt-in procedure: guaranteed data resiliency when conditions are met
+				- Best-Effort: data copies remain on the same block when there is insufficient space across all blocks
+
