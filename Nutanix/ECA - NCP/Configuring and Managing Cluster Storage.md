@@ -77,9 +77,22 @@
 			- Host Failure: Nutanix clusters support HA provided by the hypervisor, HA-protected VMs can be automatically restarted on other nodes in the cluster
 				- First, guest VM begins reading across the network, Stargate begins migrating extents to the new host
 				- Second, Curator will notice missing replica of those extents and instruct Stargate to begin creating a second replica
-		- Block Failure
+		- Block Failure (Config in PE)
 			- block share power supplies, front control panels, backplane, and fans
-			- Block fault tolerance allows nutanix cluster to make redundant copies of data and metadata and place the copies on nodes in different blocks
+			- Block fault tolerance allows Nutanix cluster to make redundant copies of data and metadata and place the copies on nodes in different blocks
 				- Opt-in procedure: guaranteed data resiliency when conditions are met
 				- Best-Effort: data copies remain on the same block when there is insufficient space across all blocks
+		- Rack Fault Tolerance (Config in PE)
+			- allow cluster to withstand rack failure
+			- to enable, you must specify the mapping of the blocks to the racks based on the actual placement of the blocks in the datacenter
+				- RF2 - requires 3 racks (4 with erasure coding)
+				- RF3 - requires 5 racks (6, with erasure coding), 1 node in each rack
+
+- Storage Management in PC
+	- Storage Containers
+		- Default Contianers
+			- NutanixManagementShare - built in storage container used by Nutanix Files and Self-Service Portal file storage, feature upgrades, and other operations, not intended for vDisks.
+			- SelfServiceContainer - used by image service features
+			- Default-Container - used for regular storage and, no specific uses or requirements.
+ 
 
