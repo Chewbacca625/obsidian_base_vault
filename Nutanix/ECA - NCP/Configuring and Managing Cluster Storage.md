@@ -60,4 +60,8 @@
 			- CVM boot files - performance tier
 		> On hardware platforms that contain peripheral component interconnect express SSD (PCIe-SSD) drives, the SATA-SSD holds only the CVM boot files. Storage metadata, oplog, and hot-tier persistent data reside on the PCIe-SSD.
 
-		- Boot Drive Failure: CVM boots from SATA-SSD (holds component logs and related files) - eventually will cau
+		- Boot Drive Failure: CVM boots from SATA-SSD (holds component logs and related files) - eventually will cause CVM to fail, but the host doesn't directly, so other guest VMs will continue to run and Data Path Redundancy will redirect storage path to another CVM
+			- CVM will restart if dual SSD nodes if a boot drive fails, or if you unmount a drive without marking it for removal and data hasn't successfully migrated
+		- Metadata Drive Failure
+			- Cassandra uses up to 4 SSDs to store the database providing read and write access for cluster metadata
+			- When a metadata drive fails, the local Cassandra process will no longer be able to access its share of the database and being a persistent cycle of restarts until it can access its data. If it Cassandra cannot restart, the Stargate process on that CVM will crash. If both fail data path redu

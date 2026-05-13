@@ -4,8 +4,11 @@ Script:
 	- https://landscape.cncf.io/?group=projects-and-products
 	- https://www.gartner.com/en/documents/5361263
 - How Nutanix makes kuberentes easier?
+	- Nutanix Selling Points
 - Demo
 	- Interface
 	- How to manage kuberentes cluster
 	- Deploy cool app in NKP to show
 - Closing remarks (reiterate how nutanix makes kuberentes easy)
+	- If you're ready to adopt enterprise Kuberentes the easy way, lets schedule a follow up!
+	- Follow up link
