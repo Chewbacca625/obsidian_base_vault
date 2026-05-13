@@ -33,4 +33,12 @@
 		- Extent Store: persistent bulk storage of DSF and spans all device tiers (SSD, SATA SSD, HDD, Etc.) and is extensible to facilitate additional devices/tiers. Data is either drained from the Oplog or is sequential/sustained in nature and has bypassed the OpLog directly. Nutanix Intelligent Lifecycle Manager (ILM) will determine tier placement dynamically based upon I/O patterns, number of accesses of data and weight given to individual tiers and will move data between tiers.
 		- OpLog: Persistent write buffer, similar to filesystem journal and is the stating area to handle burst of random writes, coalesce them, and sequentially drain the data to the extent store. For sequential workloads oplog is bypassed and heads to the extent store. Any data that has not been drained will be served by the oplog until it lives on the extent store.
 		- Unified Cache: read cache which is used for data, metadata and deduplication, and is stored in the CVMs memory. Upon a read where data isn't stored in the cache, the data will be read from the extent store and placed in unified cache (Using least recently used) until its evicted.
-		- Autonomous Extent Store (AES): different method for writing/storing data in the extent store, it leverages a mix of primarily local + global metadata allowing for much more efficient sustained performance due to metadata locality. For sustained random write workloads, these will bypass the OpLog and be written directly to the Extent Store using AES. 
+		- Autonomous Extent Store (AES): different method for writing/storing data in the extent store, it leverages a mix of primarily local + global metadata allowing for much more efficient sustained performance due to metadata locality. For sustained random write workloads, these will bypass the OpLog and be written directly to the Extent Store using AES. For bursty random workloads they will take the OpLog path but drain to the Extent Store using AES where possible.
+		  
+	- Replication Factor: Refers to the number of copies of data and metadata maintained on a cluster. Set at the storage container level.
+		- RF1 (1 original) = 1 copy of data (should only be used if apps support HA or data protection)
+		- RF2 (1 original + 1 copy) = 2 copies of data | 3 copies of metadata
+		- RF3 (1 original + 2 copies) = 3 copies of data | 5 copies of metadata
+	- How it works:
+		- Incoming writes are staged in OpLog onto the low-latency SSD tier
+		- When data is written to a local OpLog its synchronously replicated to another one (RF2) or two (RF3) CVMs OpLog before acknowledging as a successful write to the host 
