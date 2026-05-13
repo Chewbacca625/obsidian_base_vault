@@ -23,4 +23,10 @@
 		- Storage pool: pooled physical storage resources
 		- Storage Contianer: logical segmentation of storage pool and contains a group of VMs or vdisks. (RF configed here)
 		- vDisk: slice of available storage within a storage container providing storage to VMs. Any file over 512 KB on DSF, including VMDKs and VM disks. vDisks are broken up into extents, which are grouped and stored on physical disk as an extent group. You can migrate a vdisk from one storage container to another while it is attached to a guest VM without needing to shutdown or delete that VM.
-		- 
+		- Volume Group: collection of logically related vDisks or volumes - attached to one or more execution contexts (VMs or iSCSI initiators) that share the disks in the VG. Can be managed as a single unit. You can include them in protection domains configed for Asysc DR either exclusively or with VMs
+			- Cannot be included in protect domain configed for metro, protected Vstore, consistency group with app consistent snapshotting
+			- Each VG has: UUID, Name, iSCSI target name
+			- Each disk in a VG has: UUID, LUN to specify order within the VG
+		- vBlock: a 1MB chunk of virt addr space composing a vDisk. ex: 100MB = 100 vBlocks, these map to extents which are stored as files on disk as extent groups
+		- Extent: a 1MB piece of logically contiguous data which consists of n number of contiguous blocks. They are written/read/modified on a sub-extent basis for granularity and efficiency
+		- Extent Group: 1MB or 4MB piece of physical contiguous stor 
