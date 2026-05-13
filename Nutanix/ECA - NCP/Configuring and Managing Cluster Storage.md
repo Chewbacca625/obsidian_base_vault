@@ -135,4 +135,14 @@
 		- Capacity Dedup: dedup performed on the data in hard disk storage, it can only be enabled if cache dedup is enabled, pro+ license
 			- requires CVM to have 32gb ram
 		- Not recommended for all workloads. Recommended for full clones, physical to virtual migration, and persistent desktops
-		- Linked clones or Nutanix VAAI clones: duplicate data is managed efficiently by DSF so dedup has 
+			- Linked clones or Nutanix VAAI clones: duplicate data is managed efficiently by DSF so dedup has no benefit
+			- Server workloads: redundant data is minimal so no significant benefit from dedup
+	- Erasure Coding
+		- increases usable disk space while maintaining the same cluster resiliency by striping individual data blocks and associated parity blocks across nodes rather than disks, forming an erasure strip 
+		- uses parity block along with remain blocks in the erasure strip to recalc the missing data onto a new node. All blocks associated with erasure coding strips are stored on separate nodes. Each node takes part in subsequent rebuilds reducing potential rebuild time.
+		- Works best with cold data
+			![[Screenshot 2026-05-13 at 1.24.30 PM.png]]
+		- RF2 - min 4 nodes to enable EC
+		- RF3 - min 6 nodes to enable EC
+		  
+		![[Screenshot 2026-05-13 at 1.26.56 PM.png]]
