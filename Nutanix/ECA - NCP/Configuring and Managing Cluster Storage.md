@@ -94,5 +94,6 @@
 			- NutanixManagementShare - built in storage container used by Nutanix Files and Self-Service Portal file storage, feature upgrades, and other operations, not intended for vDisks.
 			- SelfServiceContainer - used by image service features
 			- Default-Container - used for regular storage and, no specific uses or requirements.
+		- Updating Storage Co
  
 
