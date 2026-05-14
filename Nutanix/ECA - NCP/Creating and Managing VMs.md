@@ -100,4 +100,4 @@ NGT Features:
 		- once encryption has been enabled it cannot be disabled, if policy is deleted new data will be written without encryption but old data will remain encrypted
 
 ### Automating Common Admin Tasks with Playbooks
-- X-Play (Cross-Play) - playbooks
+- X-Play (Cross-Play) 
