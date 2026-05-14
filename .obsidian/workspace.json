@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Snooping",
+                "query": "port mirroring",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -196,9 +196,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "7b8e8f78978350d7",
+  "active": "6f4dfa6b4bbfceec",
   "lastOpenFiles": [
     "Nutanix/ECA - NCP/Configuring Cluster Networking.md",
+    "CompTia/Network +.md",
     "Nutanix/ECA - NCP/Creating and Managing VMs.md",
     "Nutanix/ECA - NCP/Configuring and Managing Cluster Storage.md",
     "Nutanix/CVM Breakdown (GO BACK AND COLLECT DRAWING).md",
@@ -214,7 +215,6 @@
     "Day-to-Day/Discovery Questions.md",
     "Day-to-Day/Discovery Call.md",
     "Day-to-Day/Daily Notes & Tasks.md",
-    "CompTia/Network +.md",
     "Nutanix/Nutanix Networking Bootcamp.md",
     "Nutanix/ECA - NCP/Managing Images.md",
     "Nutanix/ECA - NCP/Investigating and Remediating Performance Issues.md",
