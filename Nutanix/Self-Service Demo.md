@@ -1,0 +1,1 @@
+NCM 2.0 is transitioning from a VM/VMS to a kubernetes architecture to loosely couple from PC
