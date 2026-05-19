@@ -25,3 +25,12 @@ Script:
 	- defeats the purpose of virtualization
 - number 1 challenge of adopting kuberentes is cost 
 - 50% now run kuberentes in production at the edge, driven by AI workloads
+- its often misunderstood that kuberentes itself is not production ready
+- Kubernetes is great at orchestrating, but it lacks a lot of vital functionality so the CNCF was built around solving these problems that it doesnt solve itself ex security, sso, networking, observability, etc.
+- 12000 products exist already, we hand pick the best and built a production ready Kubernetes platform
+- We ship pure upsteam opensource kuberentes, its all based on the CNCF, and supports freedom of choice
+- manages all of these components as a single platform, and its deployed all in one installation
+	- in an upgrade we manage all the components updates
+		- no need to pay a commercial vendors
+		- none of the self management overhead like when one of the projects has a vunderability, or you deploy a new componet or update and it requires extensive testing, you get to focus on what matters most your applications (time, money, effort)
+		- we handle the testing and how each component works
