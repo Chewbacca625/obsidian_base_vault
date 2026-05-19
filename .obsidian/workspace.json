@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nutanix/Self-Service Demo.md",
+                "file": "Capstones/NKP Demo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Self-Service Demo"
+              "title": "NKP Demo"
             }
           }
         ]
@@ -197,8 +197,8 @@
   },
   "active": "6f4dfa6b4bbfceec",
   "lastOpenFiles": [
-    "Capstones/NKP Demo.md",
     "Nutanix/Self-Service Demo.md",
+    "Capstones/NKP Demo.md",
     "Nutanix/ECA - NCP/Getting Started with a Nutanix Cluster.md",
     "CompTia/Network +.md",
     "Nutanix/ECA - NCP/Configuring Cluster Networking.md",
