@@ -15,6 +15,9 @@ Script:
 	- Follow up link
 
 ### Notes
+- By 2027, 90% of global organizations will be running containerized applications in production vs <40% in 20212
+- Majority (56%) of containers deployed require persistent storage3
+- Emerging workloads (AI and data heavy workloads)4 drive container usage
 - 92% agree that dev should not be managing kub infra
 	- Wastes time
 	- create complexity
@@ -34,3 +37,9 @@ Script:
 		- no need to pay a commercial vendors
 		- none of the self management overhead like when one of the projects has a vunderability, or you deploy a new componet or update and it requires extensive testing, you get to focus on what matters most your applications (time, money, effort)
 		- we handle the testing and how each component works
+- Built on best-of-breed open source like DIY
+- Fully supported like other enterprise platforms
+- Easy to use like the public cloud
+- Supported, tested, automated unlike DIY
+- No lock-in unlike other enterprise platforms
+- Complete and open platform unlike public cloud
