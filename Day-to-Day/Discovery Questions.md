@@ -1,6 +1,6 @@
 - When writing questions be sure that you can follow up... dont just ask questions with no follow up or understanding
 - LAST Questions: What stood out to you? - helps you find out what they like xyz
-- 
+- upsale qbr: ask if what they are doing with each product? instead of why arent you using it...
   
   
 MISSES: upgrade/firmware (LCM), multivendor (API integrations), introductions
