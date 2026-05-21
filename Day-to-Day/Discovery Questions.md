@@ -1,4 +1,8 @@
-
+- When writing questions be sure that you can follow up... dont just ask questions with no follow up or understanding
+- LAST Questions: What stood out to you? - helps you find out what they like xyz
+- 
+  
+  
 MISSES: upgrade/firmware (LCM), multivendor (API integrations), introductions
 We can integrate with third party vendors api and add those to PC dashboard
 
