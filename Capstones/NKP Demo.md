@@ -73,4 +73,10 @@ Script:
 - NKP Downsides
 	- none really we focus on using rich open source tools
 	- projects are segregated so we need to click through the UI, or too much capability
-	- insights inside NKP too much security, etc. that presented CVEs all that can be overwhelming, multi cloud managment ()
+	- insights inside NKP too much security, etc. that presented CVEs all that can be overwhelming, multi cloud management (production and enterprise ready)
+	- apps are updated for you so you can focus on your apps
+	- you can onboard rancher, eks, azure kub, etc. openshift and tanzu proprietary 
+
+- ASK about multicloud management
+	- Multi cloud managmenet leads to locking, you need to use there storage, db, etc.
+	- You get the control plane you have to manage the monitoring, etc.
