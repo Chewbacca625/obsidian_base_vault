@@ -43,3 +43,34 @@ Script:
 - Supported, tested, automated unlike DIY
 - No lock-in unlike other enterprise platforms
 - Complete and open platform unlike public cloud
+
+- Tanzu is a non starter
+	- very expensive
+	- not adopted well
+- OpenShift
+	- 2-4x more expensive
+	- more complex
+	- weeks to deploy
+	- proprietary pieces (meant to be open source)
+		- Dev tools
+		- multi cluster fleet management
+		- domestic support centers extra cost
+		- day 2 odf propritary
+		- observability data fabric propritary
+		- Redhat os only
+- rancher
+	- rancher is cheaper
+	- support is expensive
+	- suse linux diffrent lisencing model
+	- much cheaper
+		- not as feature rich - we have day 2 service (files,objects,NDB) and a more complete ecosystem
+		- only have a dozen of services
+		- lifecycle management is difficult
+			- NKP is very robust, far more feature rich
+			- we include ubuntu pro support
+			- lifecycle management
+			- you dont have to run it on nutanix, it can run anywhere (platform agnostic, hardware today no interdependency)
+- NKP Downsides
+	- none really we focus on using rich open source tools
+	- projects are segregated so we need to click through the UI, or too much capability
+	- insights inside NKP too much security, etc. that presented CVEs all that can be overwhelming, multi cloud managment ()
