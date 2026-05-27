@@ -15,9 +15,9 @@ Script:
 	- Follow up link
 
 ### Notes
-- By 2027, 90% of global organizations will be running containerized applications in production vs <40% in 20212
-- Majority (56%) of containers deployed require persistent storage3
-- Emerging workloads (AI and data heavy workloads)4 drive container usage
+- By 2027, 90% of global organizations will be running containerized applications in production vs <40% in 2021
+- Majority (56%) of containers deployed require persistent storage
+- Emerging workloads (AI and data heavy workloads) drive container usage
 - 92% agree that dev should not be managing kub infra
 	- Wastes time
 	- create complexity
