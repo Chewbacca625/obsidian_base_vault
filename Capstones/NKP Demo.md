@@ -84,13 +84,27 @@ Script:
 
 So when we login to NKP we are greeted with this dashboard with information regarding our kuberentes estate. The goal of NKP is again to provide one unified platform to standardize the way you manage your kubernetes in the entirety of your fleet, no mater where your cluster exist may it be in public clouds or on prem.
 
-First, when we drop into our cluster management interface no mater if its on prem, in a public cloud, or the edge this is where we can manage our clusters individually. You can see where its deployed here. The great thing is you can see observe, enforce, and build your kubernetes operating polices from one place.
+First, when we drop into our cluster management interface no mater if its on prem, in a public cloud, or the edge this is where we can manage our clusters individually. You can see where its deployed here. The great thing is you can see observe, enforce, and build your kubernetes operating polices from one place. It looks and feels the same no matter if its on prem or in a public cloud. You avoid the nuance of managing various kubernetes enviornments. Our cluster runtime extensions allow us to dismantle the proprietary pieces of the public clouds and gain the benifits that come with them.
 
 You can deploy a cluster by clicking up here on add cluster, we can attach any CNCF compliant kuberentes clusters that may exist in your enviornment already or create a new nutanix cluster via create cluster here though the UI by defining a few project variables, so you can get you cluster online in minutes or hours rather than weeks or months.
 
-When I drop into a cluster, you can see all of you kuberentes management apps ready to go for the picking. For example we can hop into grafana we can monitor our cluster immediately no need to configure or hook things up its ready to go out of the box.
+When I drop into our management cluster, you can see all of your open source kuberentes management apps ready to go for the picking. For example we can hop into grafana we can monitor our cluster immediately no need to configure or hook things up its ready to go out of the box. This applies to workload cluster you deploy as well.
 
 On the infrastrucure provider tab here, we can add external connectivity with other providers like AWS, Azure, Vsphere to automate cluster provisioning and handle infrastructure lifecycle management.
+
+Lastly, we prioritize integrations for SSO and security. You can setup your identity provider of choice here and you can manage role based access conrtol for your nutanix kubernetes platform here under access control. We have a few built in roles that you can assign to users or groups who require them.
+
+When we log in to NKP, we're greeted with a dashboard that gives us a view of our entire Kubernetes estate. Again the goal of NKP is to provide one unified platform that standardizes how you manage your full Kubernetes fleet — whether your clusters live in public clouds, on-prem, or at the edge.
+
+Starting with cluster management: this is where you manage your clusters individually, regardless of where they're deployed. From one place, you can observe, enforce, and build your Kubernetes operating policies — and the experience looks and feels the same whether you're on-prem or in a public cloud. This eliminates the friction of managing multiple Kubernetes environments. Our cluster runtime extensions let you shed the proprietary constraints of public clouds while still capturing the benefits that come with them.
+
+To deploy a cluster, click **Add Cluster** up here. You can attach any CNCF-compliant Kubernetes cluster that already exists in your environment, or create a new Nutanix cluster directly through the UI by defining a few variables. Either way, you're getting clusters online in minutes or hours — not weeks or months.
+
+Dropping into our management cluster, you'll see a full suite of open-source Kubernetes management apps, ready to use out of the box. Take Grafana as an example — you can jump straight into monitoring your cluster with no configuration or setup required. The same applies to any workload clusters you deploy too.
+
+On the **Infrastructure Provider** tab, you can add external connectivity with providers like AWS, Azure, or vSphere to automate cluster provisioning and manage infrastructure lifecycle.
+
+Finally, security and integrations are a first-class priority. You can configure your identity provider of choice for SSO, and manage role-based access control for your Nutanix Kubernetes Platform under **Access Control** — with several built-in roles ready to assign to users or groups as needed.
 
 
 
