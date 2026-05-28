@@ -6,4 +6,4 @@
 	- One-to-many: optimizes bandwidth
 	- Many-to-one: hub-spoke architecture and operation efficiency
 	- Many-to-many: most flexibility, and maximum amount of control to ensure app and service level continuity 
-	- Two-
+	- Two-way mirroring: active workloads run on each site
