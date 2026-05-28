@@ -84,7 +84,9 @@ Script:
 
 When you log in to NKP for the first time, you are greeted with a dashboard that gives you a view into your entire Kubernetes estate. Again the goal of NKP is to provide one unified platform that standardizes how you manage your full Kubernetes fleet — whether it lives in public clouds or on-prem.
 
-Starting with cluster management: this is where you manage your clusters individually, regardless of where they're deployed. From one place, you can observe, enforce, and build your Kubernetes operating policies — and the experience looks and feels the same whether you're on-prem or in a public cloud. This eliminates the friction of managing multiple Kubernetes environments thanks to our cluster runtime extensions. Which shed the proprietary constraints of public clouds while still capturing the benefits.
+If we click on clusters, this is where you manage your clusters individually, regardless of where they're deployed. As you can see here we have our management cluster and 2 workload clusters.
+
+From this one place, you can build, observe, and enforce your Kubernetes operating policies — and the experience looks and feels the same whether you're on-prem or in a public cloud. This eliminates the friction of managing multiple Kubernetes environments thanks to our cluster runtime extensions. Which shed the proprietary constraints that public clouds often have while still capturing the benefits.
 
 To deploy a cluster, click **Add Cluster** up here. You can also attach any CNCF-compliant Kubernetes cluster that already exists in your environment, or create a new Nutanix cluster directly through the UI by defining a few variables. Either way, you're getting clusters online in minutes or hours — not weeks or months.
 
