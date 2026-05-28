@@ -3067,3 +3067,7 @@ Section 5: Network Troubleshooting ⭐️
 	- WPS: network sec standard that simplifies of secure wifi connection
 		- 8 digit pin
 		- should be disabled because its not secure
+- ARP: Maps MAC addrs to IP addrs
+- Routers require:
+	- routing table 
+	- ARP table

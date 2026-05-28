@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nutanix/ECA - NCP/Backup and DR.md",
+                "file": "CompTia/Network +.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Backup and DR"
+              "title": "Network +"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "firmware",
+                "query": "ARP",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,12 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d2056dfc17381175",
@@ -198,6 +198,7 @@
   },
   "active": "6f4dfa6b4bbfceec",
   "lastOpenFiles": [
+    "Nutanix/ECA - NCP/Backup and DR.md",
     "Capstones/NKP Demo.md",
     "Day-to-Day/Discovery Questions.md",
     "Day-to-Day/Discovery Call.md",
@@ -226,7 +227,6 @@
     "Nutanix/ECA - NCP/Monitoring Cluster Performance.md",
     "Nutanix/ECA - NCP/Migrating Workloads with Nutanix Move.md",
     "Nutanix/ECA - NCP/Securing a Nutanix Cluster.md",
-    "Nutanix/ECA - NCP/Backup and DR.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Assets/Attachments/Pasted image 20260430112034.png",
