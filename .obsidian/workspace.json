@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -196,7 +195,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "6f4dfa6b4bbfceec",
+  "active": "8ae8d9581f2eb559",
   "lastOpenFiles": [
     "Nutanix/ECA - NCP/Backup and DR.md",
     "Capstones/NKP Demo.md",
