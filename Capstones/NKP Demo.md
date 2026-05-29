@@ -84,13 +84,23 @@ Script:
 
 When you log in to NKP for the first time, you are greeted with a dashboard that gives you a view into your entire Kubernetes estate. Again the goal of NKP is to provide one unified platform that standardizes how you manage your full Kubernetes fleet — whether it lives in public clouds or on-prem.
 
-If we click on clusters, this is where you manage your clusters individually, regardless of where they're deployed. As you can see here we have our management cluster and 2 workload clusters.
+If we click on clusters, this is where you manage your clusters individually, regardless of where they're deployed. 
 
-From this one place, you can build, observe, and enforce your Kubernetes operating policies — and the experience looks and feels the same whether you're on-prem or in a public cloud. This eliminates the friction of managing multiple Kubernetes environments thanks to our cluster runtime extensions. Which shed the proprietary constraints that public clouds often have while still capturing the benefits.
+From this one place, you can build, observe, and enforce your Kubernetes operating policies — and the experience looks and feels the same whether you're on-prem or in a public cloud. 
 
-To deploy a cluster, click **Add Cluster** up here. You can also attach any CNCF-compliant Kubernetes cluster that already exists in your environment, or create a new Nutanix cluster directly through the UI by defining a few variables. Either way, you're getting clusters online in minutes or hours — not weeks or months.
+Thanks to our cluster runtime extensions we are able to eliminate the friction of managing multiple Kubernetes environments.
 
-Lets drop into our a workload cluster to view the open-source kubernetes managment apps that are ready to use out of the box. Take Grafana as an example — you can jump straight into monitoring your cluster with no configuration or setup required. The same applies to any workload clusters you deploy too.
+Additionally we shed the proprietary constraints that public clouds often have while still capturing the benefits.
+
+To deploy a cluster, click **Add Cluster** up here. 
+- Select a provider
+- Few variables
+
+Lets say you have a CNCF compliant cluster that already exist you can easily attached by uploading the kubeconfig and fill out a few fields in the UI
+
+Either way, you're getting clusters online in minutes or hours — not weeks or months.
+
+Lets drop into our a workload cluster to view the open-source kubernetes managment apps that are ready to use out of the box. Take Grafana as an example — you can jump straight into monitoring your cluster with no configuration or setup required.
 
 On the **Infrastructure Provider** tab, you can add external connectivity with providers like AWS, Azure, or vSphere to automate cluster provisioning and manage infrastructure lifecycle.
 
