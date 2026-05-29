@@ -102,6 +102,8 @@ Either way, you're getting clusters online in minutes or hours — not weeks or 
 
 Lets drop into our a workload cluster to view the open-source kubernetes managment apps that are ready to use out of the box. Take Grafana as an example — you can jump straight into monitoring your cluster with no configuration or setup required.
 
+**NKP Insights** it continuously monitors your clusters for anomalies, security risks, and cost inefficiencies, providing **actionable remediation steps** before they impact your business
+
 On the **Infrastructure Provider** tab, you can add external connectivity with providers like AWS, Azure, or vSphere to automate cluster provisioning and manage infrastructure lifecycle.
 
 Finally, security and integrations are a first-class priority. You can configure your identity provider of choice for SSO, and manage role-based access control for your Nutanix Kubernetes Platform under **Access Control** — with several built-in roles ready to assign to users or groups as needed.
