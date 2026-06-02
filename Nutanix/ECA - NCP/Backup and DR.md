@@ -26,4 +26,9 @@
 - NearSync:
 	- RPO of 1 to 15 minutes. NearSync is useful for protecting mission-critical applications, securing data with minimal loss, providing granular control during the restore process, and allowing for the resolution of a disaster event within minutes.
 - Metro/Synchronous:
-	- 
+	- Metro availability is a policy applied on a storage container, which effectively spans the storage container across two sites. This is accomplished by pairing a storage container on the local cluster with one on a remote site and then synchronously replicating data between the local (active) and remote (standby) storage containers. (DONT INCLUDE VGs)
+	- ESXi / Hyper-V only (protection domains) - include storage only nodes which run AHV but not Hyper-V clusters with storage only nodes
+	- witness vm: resides in separate network and monitors metro availability config health, autom
+
+- Cloud Connect
+	- Allows you to configure a remote site to be AWS it stores extents in S3 buckets and Elastic Block Store is used to store metadata
