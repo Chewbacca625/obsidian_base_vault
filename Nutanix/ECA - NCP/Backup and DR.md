@@ -16,4 +16,6 @@
 - Snapshots: uses fewer resources compared to full backup because they capture the difference between the original state of your VM disk and its current state 
 
 ### Data Protection and DR Solutions
-- Protection Domain Based DR is accessed and configed in PE and PC based DR is accessed and configed via PC
+- Protection Domain Based DR is accessed and configed in PE and PC based DR is accessed and configed via PC. With replication schedules your can achieve RPOs of 0 seconds, 1-15 minutes, greater than an hour.
+- Nutanix DR allows you to replicate from one on-prem cluster to another, accessed via PC using Protection policies.
+- Finally, NC2 allows for cloud backups, replication between two NC2 clusters or on-prem cluster and NC2.![[Screenshot 2026-06-02 at 9.11.19 AM.png]]
