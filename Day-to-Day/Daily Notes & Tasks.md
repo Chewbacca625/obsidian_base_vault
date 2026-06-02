@@ -1,33 +1,23 @@
 ### Task Tracker
 
-⭐️ Wednesday GOAL
-- Managing Images
-- Creating and Managing Vms
-- Practice Test
-
-⭐️ Thursday GOAL
-- Configuring and Managing Cluster Storage
-- Backup and DR
-- Practice Test
-
-⭐️ Friday GOAL
-- Securing a Nutanix Cluster
-- Migrating Workloads with Nutanix Move
-- Practice Test
-
 ⭐️ Monday GOAL
-- Monitoring Cluster Performance
-- Monitoring Cluster Health
-- Practice Test
 
 ⭐️ Tuesday GOAL
-- Maintaining and Upgrading a Cluster
-- Investigating and Remediating Performance Issues
-- Practice Test
+- Backup and DR
+- Securing a Nutanix Cluster
 
 ⭐️ Wednesday GOAL
-- Getting Started with NKP
-- NKP Fundamentals Bootcamp
+- Migrating Workloads with Nutanix Move
+- Monitoring Cluster Performance
+
+⭐️ Thursday GOAL
+- Monitoring Cluster Health
+- Maintaining and Upgrading a Cluster
+
+⭐️ Friday GOAL
+- Investigating and Remediating Performance Issues
+- Module 2 LFCA
+
   
 Things I want to try in the Static Cluster:
 Nutanix Guest tools install: 
