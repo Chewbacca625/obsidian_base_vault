@@ -14,3 +14,6 @@
 - Metro Availability Protection Domain: consists of a specific active storage container in a local cluster (active), this is linked to a standby container on a remote site
 - Recovery Plan: Orchestrates the recovery of VMs at the recovery site 
 - Snapshots: uses fewer resources compared to full backup because they capture the difference between the original state of your VM disk and its current state 
+
+### Data Protection and DR Solutions
+- Protection Domain Based DR is accessed and configed in PE and PC based DR is accessed and configed via PC
