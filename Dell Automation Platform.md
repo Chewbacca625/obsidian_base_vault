@@ -1,1 +1,2 @@
+- Focus on automating the infrastructure provisoning (hardware layer) -> nutanix foundation
 - 
