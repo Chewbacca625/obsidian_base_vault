@@ -73,3 +73,5 @@ Where to improve on white boarding:
 Flow call
 - When defining policies default is allow all you should tie security policies to categories and require categories to be applied to configure what is allowed based on said policy
 - Implicit security polices - so block all by default except what you define to allow ie 443 and 80
+
+- Dont sell 1175s or below - only for robos thats it...
