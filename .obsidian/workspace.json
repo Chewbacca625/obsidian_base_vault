@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nutanix/ECA - NCP/Backup and DR.md",
+                "file": "Nutanix/ECA - NCP/Migrating Workloads with Nutanix Move.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Backup and DR"
+              "title": "Migrating Workloads with Nutanix Move"
             }
           }
         ]
@@ -197,8 +197,8 @@
   },
   "active": "7af0279dbe324fb9",
   "lastOpenFiles": [
-    "Assets/Attachments/Screenshot 2026-06-02 at 9.11.19 AM.png",
     "Nutanix/ECA - NCP/Backup and DR.md",
+    "Assets/Attachments/Screenshot 2026-06-02 at 9.11.19 AM.png",
     "Day-to-Day/Daily Notes & Tasks.md",
     "Sales Lingo.md",
     "2026-06-01.md",
