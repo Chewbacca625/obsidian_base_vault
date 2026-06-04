@@ -65,3 +65,23 @@
 		- Performance of guest VMs decreases.
 		- Guest VMs, the Nutanix web console, and nCLI are not accessible.
 		- An error message occurs when attempting to migrate VMs.
+- Recommended Update Order
+	1. On Prism Central clusters, perform an LCM inventory.
+	    1. Upgrade LCM framework. Do not upgrade any other software component except LCM.
+	    2. Upgrade and run Nutanix Cluster Check (NCC).
+	    3. Upgrade Prism Central.
+	2. On Prism Element, perform an LCM inventory.
+	    1. Upgrade LCM framework. Do not upgrade any other software component except LCM.
+	    2. Upgrade and run NCC.
+	    3. Upgrade Foundation.
+	    4. Upgrade Cluster Maintenance Utilities.
+	    5. Upgrade AOS.
+	    6. Perform firmware updates (BIOS/BMC/Host boot drive or other critical firmware as recommended by LCM).
+	    7.  If you are running AHV continue with the following steps. Otherwise skip to step h.
+	        1. Upgrade AHV.
+	        2. Perform LCM inventory again and upgrade any available firmware.
+	    8. Perform these steps if you are running a hypervisor other than AHV. Otherwise skip to step i.
+	        1. Upgrade hypervisor other than AHV.
+	        2. Perform LCM inventory again and upgrade any available software or firmware.
+	    9. Run an NCC check again.
+	3. After performing core upgrades on Prism Central and Prism Element, upgrade Services software such as Prism Self Service, Files, Nutanix Kubernetes Engine, Objects, and other Nutanix software installed on Prism Central.
