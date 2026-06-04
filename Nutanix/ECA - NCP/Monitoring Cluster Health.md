@@ -1,0 +1,18 @@
+- PE for health and to run NCC checks
+- you can setup external syslog via settings
+- Nutanix Root Logs:
+	- The _/home/nutanix/data/logs_ directory stores Nutanix logs. This location contains all the Nutanix process logs at the INFO, WARNING, ERROR and FATAL levels. It also contains the directories for the system stats (sysstats), and Cassandra system logs (cassandra).
+- Self-Monitored Logs
+	- The _/home/nutanix/data/logs/sysstats_ directory stores the self-monitoring logs. The node self-monitors itself by running several Linux tools every few minutes, including ping, iostat, sar, and df.
+- Consolidated Audit Logs
+	- The data/logs/consolidated_audit.log directory stores the audit logs. The audit log allows you to view a list of actions performed across the clusters.
+- Cassandra Logs
+	- The _/home/nutanix/data/logs/cassandra_ directory stores the Cassandra metadata database logs. The Nutanix process that starts the Cassandra database (cassandra_monitor) logs to the _/home/nutanix/data/logs_ directory. However, the most useful information relating to the Cassandra is found in the _system.log_ files located in the _/home/nutanix/data/logs/cassandra_ directory.
+- Genesis Logs
+	-   Genesis logs are available at _/home/nutanix/data/logs/genesis.out_. When checking the status of the cluster services, if any of the services are down, or the Controller VM is reporting Down with no process listing, review this log to determine why the service did not start, or why Genesis is not running properly.
+- Prism Gateway Logs
+	- The Prism log is located at _/home/nutanix/data/logs/prism_gateway.log_ on the Prism leader. The Prism leader is the node which is running the web server for the Nutanix UI. This is the log to analyze if there are problems with the UI, such as long loading times.
+- Stargate Logs
+	-   Stargate logs are located at _/home/nutanix/data/logs/stargate_.
+- Zookeeper Logs
+	- Zookeeper logs are located at _/home/nutanix/data/logs/zookeeper.out_ and contain the status of the Zookeeper service. You will rarely need to look at Zookeeper logs. However, if one of the other logs specifies that it is unable to contact Zookeeper and it is affecting cluster operations, you may want to look at this log to find the error Zookeeper is reporting.
