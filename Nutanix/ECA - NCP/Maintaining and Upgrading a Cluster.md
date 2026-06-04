@@ -6,3 +6,10 @@
 - Non-migratable VMs (for example, pinned or RF1 VMs which have affinity towards a specific node) are powered-off while live migratable or high availability (HA) VMs are moved from the original host to other hosts in the cluster. After exiting maintenance mode, all non-migratable guest VMs are powered on again and live migrated VMs are automatically restored on their original host.
 - You may encounter instances wherein an attempt is made to put a host into maintenance mode. However, VMs with GPU passthrough, CPU passthrough, PCI passthrough, and host affinity policies are not migrated to the other hosts in the cluster. As a result, these VMs may prevent attempts to enter maintenance mode.
 - Host placed in maintenance mode -> migrate able vms moved / non migrate able manual shut down ->  CVM placed in maintenance mode (handling updates/unschedulable) -> upgrades take place -> CVM taken out of maintenence mode -> host taken out of maintenence mode -> resource migrated back and non-migrate able vms started up (maybe)
+
+- Upgrading Memory (Depends on Hardware platform)
+	- You can perform a non-disruptive memory upgrade on an AHV cluster, on one node at a time. At a high-level, this involves:
+		1. Running a complete NCC health check.
+		2. Identifying the node requiring memory upgrade.
+		3. Shutting down the CVM and AHV host.
+		4. Physically removing the node from the block and inserting the DIMMs.

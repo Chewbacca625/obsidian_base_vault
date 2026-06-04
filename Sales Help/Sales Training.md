@@ -99,3 +99,4 @@ An objection is usually just a request for more information or a fear of change.
 
 SDR - sales dev rep they are the pipeline to become an ae (prospecting, lead qualification, appointment setting)
 SAM - subscription account manager
+AE - need to focus on renewals too?
