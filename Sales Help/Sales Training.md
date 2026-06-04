@@ -95,3 +95,7 @@ An objection is usually just a request for more information or a fear of change.
 ## Summary for Your Next Meeting
 
 > **"I am here to be a consultant, not a brochure. My job is to listen for the gaps in their current infrastructure and bridge them with meaningful, high-value technical outcomes."**
+
+
+SDR - sales dev rep they are the pipeline to become an ae (prospecting, lead qualification, appointment setting)
+SAM - subscription account manager

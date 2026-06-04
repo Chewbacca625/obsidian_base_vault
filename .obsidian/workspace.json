@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nutanix/ECA - NCP/Maintaining and Upgrading a Cluster.md",
+                "file": "Sales Help/Sales Training.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Maintaining and Upgrading a Cluster"
+              "title": "Sales Training"
             }
           }
         ]
@@ -197,6 +197,7 @@
   },
   "active": "5e5f4959712c0fbc",
   "lastOpenFiles": [
+    "Nutanix/ECA - NCP/Maintaining and Upgrading a Cluster.md",
     "Nutanix/ECA - NCP/Monitoring Cluster Health.md",
     "Dell Automation Platform.md",
     "Day-to-Day/Daily Notes & Tasks.md",
@@ -228,7 +229,6 @@
     "Nutanix/Nutanix Networking Bootcamp.md",
     "Nutanix/ECA - NCP/Managing Images.md",
     "Nutanix/ECA - NCP/Investigating and Remediating Performance Issues.md",
-    "Nutanix/ECA - NCP/Untitled.md",
     "Untitled 1.canvas",
     "Assets/Attachments/Pasted image 20260430112034.png",
     "Assets/Attachments/Screenshot 2026-04-30 at 9.12.49 AM.png",
