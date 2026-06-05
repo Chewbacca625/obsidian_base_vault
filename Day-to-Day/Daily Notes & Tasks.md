@@ -77,6 +77,8 @@ Flow call
 - Dont sell 1175s or below - only for robos thats it...
 
 
+# NEED TO REVIEW
+
 - Just a fly on a wall
 - For just to be listening
 - Tier 3 inside sales
