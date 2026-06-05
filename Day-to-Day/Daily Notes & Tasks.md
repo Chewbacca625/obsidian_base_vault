@@ -75,3 +75,13 @@ Flow call
 - Implicit security polices - so block all by default except what you define to allow ie 443 and 80
 
 - Dont sell 1175s or below - only for robos thats it...
+
+
+- Just a fly on a wall
+- For just to be listening
+- Tier 3 inside sales
+- Tier 2 and Tier 1 commercial and enterprise
+- Federal is it own thing
+- Healthcare and Sled typically in the same team
+- dedicated teams commerical and above
+- 
