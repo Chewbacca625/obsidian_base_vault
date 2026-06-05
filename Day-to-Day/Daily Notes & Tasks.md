@@ -88,3 +88,5 @@ Flow call
 - Prod and DR site
 - Same site twice
 - May not need as much compute add some more storage for backups
+- Notebook lm deep research
+- 
