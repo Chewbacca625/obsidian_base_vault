@@ -84,4 +84,7 @@ Flow call
 - Federal is it own thing
 - Healthcare and Sled typically in the same team
 - dedicated teams commerical and above
-- 
+- Upload
+- Prod and DR site
+- Same site twice
+- May not need as much compute add some more storage for backups
