@@ -89,4 +89,5 @@ Flow call
 - Same site twice
 - May not need as much compute add some more storage for backups
 - Notebook lm deep research
-- 
+-  Large form factor - 8-12 drive bays 3.5in
+- Small form factor - 3 drive cages 8 per cage 
