@@ -108,3 +108,4 @@ NFS PPA - Nutanix Finance Solutions Payment Plan Agreement
 JSP - Joint Success Plan  
 CS360 - Program SAMs use to dig into accounts  
 PH - Planhat
+CSF -> cluster summary file
