@@ -25,5 +25,4 @@ cluster stop - stops all the CVM services
 		- AOS bundle
 		- AHV bundle
 		- Foundation appliance
-		- check compatibility between hardware
-		- PC version needs to be compatible with AOS and AHV
+		- check compatibility between hardware, PC, AOS, and AHV
