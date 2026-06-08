@@ -1,22 +1,21 @@
 ### Task Tracker
 
 ⭐️ Monday GOAL
+- Linux IPTables
+- Start Section 2 Essencial Commands
+- Setup Ubuntu VM on Mac
 
 ⭐️ Tuesday GOAL
-- Backup and DR
-- Securing a Nutanix Cluster
+- Attempt Sizing - Noah Provided
+- Attempt to do a Install Base
+- Complete over the wire 7 and 8
+- Complete Linux Basic Commands 1, linux bash prompt
 
 ⭐️ Wednesday GOAL
-- Migrating Workloads with Nutanix Move
-- Monitoring Cluster Performance
 
 ⭐️ Thursday GOAL
-- Monitoring Cluster Health
-- Maintaining and Upgrading a Cluster
 
 ⭐️ Friday GOAL
-- Investigating and Remediating Performance Issues
-- Module 2 LFCA
 
   
 Things I want to try in the Static Cluster:
