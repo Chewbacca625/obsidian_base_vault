@@ -1,6 +1,0 @@
-- DR Custer refoundation only vms running are the CVMs
-- OEM - Nutanix hardware NX nodes
-- First thing stop all replication jobs
-- Unregister vsphere cluster https://portal.nutanix.com/page/documents/details?targetId=vSphere-Admin6-AOS-v7_3:wc-vcenter-server-unregister-t.html
-- Lisencing get lisence details and download - backup file in PC - admin - lisencing - select - actions - unlisence
-- 
