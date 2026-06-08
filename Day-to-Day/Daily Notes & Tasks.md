@@ -4,12 +4,14 @@
 - Linux IPTables
 - Start Section 2 Essencial Commands
 - Setup Ubuntu VM on Mac
+- Go through notes an clean them up they are the wild west finish out weekly plan
 
 ⭐️ Tuesday GOAL
 - Attempt Sizing - Noah Provided
 - Attempt to do a Install Base
 - Complete over the wire 7 and 8
 - Complete Linux Basic Commands 1, linux bash prompt
+- NotebookLM - Hunt down what all major univerirties in the area are using VMware?
 
 ⭐️ Wednesday GOAL
 
@@ -24,15 +26,6 @@ Nutanix Guest tools install:
 - https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2024_1:mul-ngt-pc-management-c.html
 Guest Customization:
 - https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_8:wc-vm-image-customize-wc-c.html
-
-
-Questions for Jenn:
-- Do you have any feedback for me?
-- Do you have any tips on how to not bring work home and avoid burnout?
-	- Prioritize things I don't want to do first
-	- Next several week no burnout fashion
-- Can you elaborate on the constant changes in the curriculum? I know we have briefly talked but what has led to all these changes?
-
 
 What does Youssef want out of this job?
 - I want to remain a technical expert
