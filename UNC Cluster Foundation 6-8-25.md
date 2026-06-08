@@ -20,4 +20,10 @@ cluster stop - stops all the CVM services
 ```
 - setup foundation appliance
 	- put it on same subnet as cluster
-	- 
+	- Can spin up as appliance or locally with portable via nutanix support portal
+	- Need:
+		- AOS bundle
+		- AHV bundle
+		- Foundation appliance
+		- check compatibility between hardware
+		- PC version needs to be compatible with AOS and AHV
