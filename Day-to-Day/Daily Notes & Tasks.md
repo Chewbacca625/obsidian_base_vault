@@ -3,15 +3,15 @@
 ⭐️ Monday GOAL
 - Linux IPTables
 - Start Section 2 Essencial Commands
-- Setup Ubuntu VM on Mac
 - Go through notes an clean them up they are the wild west finish out weekly plan
 
 ⭐️ Tuesday GOAL
+- Follow up on orson PC build [link](https://docs.google.com/spreadsheets/d/1s5latm1faEqdJ_nrz4HmzqM3GgMVk9XBCq47ySoA79Q/edit?gid=0#gid=0)
 - Attempt Sizing - Noah Provided
 - Attempt to do a Install Base
 - Complete over the wire 7 and 8
 - Complete Linux Basic Commands 1, linux bash prompt
-- NotebookLM - Hunt down what all major univerirties in the area are using VMware?
+- NotebookLM - Hunt down what all major univerirties in the area are using VMware? [link](https://nutanixinc-my.sharepoint.com/:p:/r/personal/noah_grussenmeyer_nutanix_com/_layouts/15/Doc.aspx?sourcedoc=%7BC5B895D4-D80F-449F-AC66-BCB27EC625CE%7D&file=NC%20Universities%20-%20SLED%20Research.pptx&wdLOR=cDA72EAF7-14FB-534F-93F9-954E739FBAAB&fromShare=true&action=edit&mobileredirect=true)
 
 ⭐️ Wednesday GOAL
 
