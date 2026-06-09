@@ -35,8 +35,7 @@
               "title": "Daily Notes & Tasks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -210,7 +209,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "1b1d4a580b466941",
+  "active": "5e5f4959712c0fbc",
   "lastOpenFiles": [
     "Nutanix/NCA Bootcamp 1.md",
     "Nutanix/GTS 2026.md",
