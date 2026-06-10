@@ -63,3 +63,32 @@ Focus: Aligning network capabilities with the customer’s long-term cloud strat
 
 > Focus on Impact -> Outcome
 
+
+May I know the end user for this request?  
+Do you have an approved Nutanix Deal Registration ID?  
+Is this a new or existing Nutanix environment?  
+Do you have an existing Nutanix Sizer Scenario or BOM for this request?  
+Did you use a Discovery Reporting Tool (Nutanix Collector, RVTools, or Live Optics) to gather existing  
+environment workload information?  
+(If the customer is getting multiple clusters) Are you shipping all of the hardware to the same location?  
+  
+Hardware Specific Questions –  
+  
+Are you looking to count both powered on and off VMs or just powered on?  
+Whats your vCPU workload requirement?  
+How much RAM are you utilizing in VMs requirement?  
+How much storage are you guys currently utilizing / looking for usable?  
+Regarding your storage, are we looking at a all flash solution or a hybrid utilizing HDDs?  
+Which type of network connectivity do you need on each server node? (10GbE, 25GbE, 40GbE, or 100GbE)  
+For 10GbE, do you need SFP+ or Base-T connectivity?  
+How many ports per host are you looking for?  
+Does the customer have a GPU requirement?  
+  
+Software / Support Specific Questions -  
+  
+Which edition of NCI licensing do you need? (Starter, Pro, Ultimate)  
+Nutanix Software Options Overview: [https://www.nutanix.com/products/cloud-platform/software-options](https://www.nutanix.com/products/cloud-platform/software-options)  
+How many years of software and hardware support do you need? (you can select anything between 1 – 7 Years)  
+Are you looking for additional security/encryption or replication licenses?  
+Are we looking for installation and startup services?
+
