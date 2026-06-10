@@ -16,5 +16,13 @@ Sizing notes
 - We prioritize right sizing
 - salesforce login is for acutal account deals
 - mynutanix and salesforce are connected but its easier to use salesforce
-- normalized cores: how many acual cores you actually running virually (spec int ratio)
-- 
+- normalized cores: how many acual cores you actually running virually (spec int ratio) - AHV/VMWARE (Virtual Slicing and scheduling)
+- assuming RF2 (two copies of data look at ram, HDD, and cpu those are changing because data is backuped) cuts into raw remaining capacity
+- notate notate notate - protects you
+- typically you will create 3 sizers 
+- most look at storage and CPU
+- dont let sales people do discovery 
+- live optics, rvtools, nutanix collector!!! VITAL we should not be sizing on the fly
+- we need to know your workloads, we have to see names or IP addrs (can be anonymous), how much storage, what your current hardware looks like, switches and nics, nic speeds, ram have they have vs use, CPU are physically, ratio core to vcpu
+- typically 6:1 but we would do 4:1 with a raw sizing
+- its an unvalidated solution without a collectors file
