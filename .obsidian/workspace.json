@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sizing",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +117,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -238,7 +239,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "5bf5350fff7503e8",
+  "active": "7b8e8f78978350d7",
   "lastOpenFiles": [
     "Day-to-Day/Things to look into.md",
     "VMware.md",
