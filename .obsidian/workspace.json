@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day-to-Day/Daily Notes & Tasks.md",
+                "file": "Day-to-Day/Things to look into.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily Notes & Tasks"
+              "title": "Things to look into"
+            }
+          },
+          {
+            "id": "5bf5350fff7503e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "VMware.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "VMware"
             }
           },
           {
@@ -50,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -224,12 +238,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "17e969d0cbd2c0e3",
+  "active": "5bf5350fff7503e8",
   "lastOpenFiles": [
     "Day-to-Day/Things to look into.md",
+    "VMware.md",
     "Day-to-Day/Discovery Questions.md",
-    "OVH Cloud Meeting - NC2.md",
     "Day-to-Day/Daily Notes & Tasks.md",
+    "OVH Cloud Meeting - NC2.md",
     "Nutanix/ECA - NCP/Investigating and Remediating Performance Issues.md",
     "Nutanix/ECA - NCP/Backup and DR.md",
     "Nutanix/NCA Bootcamp 1.md",
@@ -251,7 +266,6 @@
     "Nutanix/ECA - NCP/Creating and Managing VMs.md",
     "Nutanix/ECA - NCP/Configuring Cluster Networking.md",
     "Nutanix/ECA - NCP/Configuring and Managing Cluster Storage.md",
-    "Nutanix/Cloud Bible/Nutanix Cluster Components - Bible.md",
     "Assets/Attachments/Screenshot 2026-06-02 at 9.11.19 AM.png",
     "Untitled.base",
     "Untitled.canvas",
