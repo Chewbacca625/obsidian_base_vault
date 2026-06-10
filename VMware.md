@@ -26,3 +26,10 @@ Sizing notes
 - we need to know your workloads, we have to see names or IP addrs (can be anonymous), how much storage, what your current hardware looks like, switches and nics, nic speeds, ram have they have vs use, CPU are physically, ratio core to vcpu
 - typically 6:1 but we would do 4:1 with a raw sizing
 - its an unvalidated solution without a collectors file
+Deal reg
+a - approved - cost is caculated based on the account deal
+d- not approved - cost isnt accurate???
+Discovery questions
+- ask if you have ups's or power support high voltage is required...
+- it can run on one power supply but its not made to run on one
+- fill out scenario objectives 
