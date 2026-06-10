@@ -10,7 +10,10 @@ Sizing notes
 	- I saw a few docker vms? Are they using openshift???
 - Vdisk - possible SAN is it virtual or physical???
 - No 10Gbits no good lol
-
+- CPU is in MHZ and when max of 2.5GHz is 2500 Mhz x each core = 25000 Mhz if there are 10
+- total mhz is how much compute you not really vcpu or cores.
+  intel 10 core 2.6GHz= 26000MHz
+  AMD 10 core 3.4GHz = 34000 MHz - more performance same license cost
 ### Sizing Lesson
 - What projects, apps, scaling do you have down the line (6months ect.)
 - We prioritize right sizing
