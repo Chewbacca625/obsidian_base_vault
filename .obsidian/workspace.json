@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nutanix/ECA - NCP/Backup and DR.md",
+                "file": "Nutanix/NCI Product Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Backup and DR"
+              "title": "NCI Product Overview"
             }
           },
           {
@@ -95,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sy",
+                "query": "protection policy",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -238,8 +238,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "7b8e8f78978350d7",
+  "active": "5e5f4959712c0fbc",
   "lastOpenFiles": [
+    "Nutanix/ECA - NCP/Backup and DR.md",
     "VMware.md",
     "Day-to-Day/Daily Notes & Tasks.md",
     "UNC Cluster Foundation 6-8-25.md",
@@ -247,7 +248,6 @@
     "Day-to-Day/Things to look into.md",
     "OVH Cloud Meeting - NC2.md",
     "Nutanix/ECA - NCP/Investigating and Remediating Performance Issues.md",
-    "Nutanix/ECA - NCP/Backup and DR.md",
     "Nutanix/NCA Bootcamp 1.md",
     "Nutanix/GTS 2026.md",
     "Nutanix/CVM Breakdown (GO BACK AND COLLECT DRAWING).md",
