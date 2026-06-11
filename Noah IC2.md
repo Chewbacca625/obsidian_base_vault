@@ -10,5 +10,9 @@
 	- It typically difficult to scale it out along with being ridgid and complex
 - reading and writing over the network is inefficient 
 - Nutanix is much more performant
-- We get good performance from the SAN
-- 
+- Customer gets good performance from the SAN
+- dell firmware matricies
+- architects need good performance for cad models
+- recaped pain points and how they relate again to nutanix?
+- Did this align with how you want to modernize your infrastrcuture?
+- How can we work with you and when you broadcom renewal date
