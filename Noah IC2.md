@@ -1,0 +1,14 @@
+- Lots of touch points for management
+- With your current setup what does your upgrades look like?
+	- I proably need to get engineers on we have to have maintanence windows and on the weekend
+- Points out our NPS score would they recommend us to 100 
+- 90 for the last 10 years like chifaila -10 for broadcome chicfila 45
+- centralized storage
+- not trapped good at running
+- I would apprach it from the compatability maybe?
+- how are you able to scale currently?
+	- It typically difficult to scale it out along with being ridgid and complex
+- reading and writing over the network is inefficient 
+- Nutanix is much more performant
+- We get good performance from the SAN
+- 
