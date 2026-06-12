@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "2cf02c73696efb05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nutanix Pasco County Supervisor of Elections Check In.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Nutanix Pasco County Supervisor of Elections Check In"
+            }
+          },
+          {
             "id": "17e969d0cbd2c0e3",
             "type": "leaf",
             "state": {
@@ -78,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -252,10 +266,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "f389076777ef5e31",
+  "active": "2cf02c73696efb05",
   "lastOpenFiles": [
-    "Nutanix/NCI Product Overview.md",
     "Noah IC2 Capstone.md",
+    "Nutanix Pasco County Supervisor of Elections Check In.md",
+    "Nutanix/NCI Product Overview.md",
     "Nutanix/ECA - NCP/Backup and DR.md",
     "VMware.md",
     "Day-to-Day/Daily Notes & Tasks.md",
@@ -279,7 +294,6 @@
     "Nutanix/NHCF - NCA/Cluster Monitoring & Health.md",
     "Nutanix/NHCF - NCA/Licensing and Performing Upgrades.md",
     "Nutanix/ECA - NCP/Getting Started with a Nutanix Cluster.md",
-    "Nutanix/ECA - NCP/Creating and Managing VMs.md",
     "Assets/Attachments/Screenshot 2026-06-02 at 9.11.19 AM.png",
     "Untitled.base",
     "Untitled.canvas",

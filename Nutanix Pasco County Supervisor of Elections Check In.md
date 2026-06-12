@@ -1,0 +1,7 @@
+- SAM: Whitney Elfstrom
+- SE: Noah 
+- env doing 
+- on new cluster prod
+- old cluster still configuring
+- Has licensing questions
+- 
