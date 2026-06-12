@@ -4,4 +4,24 @@
 - on new cluster prod
 - old cluster still configuring
 - Has licensing questions
-- 
+- at 75% cpu utilization
+- licensing 144 used of 192
+- when he de provisioned old cluster it could be showing up incorrectly lisences werent used 48
+- renewal for hardware support will be up for july 2027
+- multi year is not good, budgets change yearly gov
+- what does procurement process look like cdw is quote, get verified, push out purchase request, send out purchase request, then it will be pushed to cdw, cdw will fullfil requires
+- budget released in oct
+- oct - sept 30 or in july
+- will that be an issue for coterm renewal 
+- need to know it that year in feb, by close by july 18th not rest is not due until oct are we at risk
+- Hardware model they had 3 enclosures with 5/6 nodes still racked not production we will keep them unlisences and going to scrap
+- new one is in production NPC
+- NDR - dr site
+- DR will be manual never talks
+- Checked AOS version upgraded last sept
+- Make sure version match on both production and DR
+- Resources have plenty of headroom
+- Not planning to grow or roll out more servers or VMs
+- Next 4 years may grow larger
+- Customer primarly concerned with lisencing
+- failed to connect remote site just wanted to ensure that its okay
