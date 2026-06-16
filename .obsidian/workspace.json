@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nutanix Pasco County Supervisor of Elections Check In.md",
+                "file": "IT Tools/Linux Helpful Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nutanix Pasco County Supervisor of Elections Check In"
+              "title": "Linux Helpful Commands"
             }
           },
           {
@@ -124,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "protection policy",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -268,8 +268,9 @@
   },
   "active": "2cf02c73696efb05",
   "lastOpenFiles": [
-    "Noah IC2 Capstone.md",
     "Nutanix Pasco County Supervisor of Elections Check In.md",
+    "IT Tools/Linux Helpful Commands.md",
+    "Noah IC2 Capstone.md",
     "Nutanix/NCI Product Overview.md",
     "Nutanix/ECA - NCP/Backup and DR.md",
     "VMware.md",
@@ -293,7 +294,6 @@
     "Nutanix/NCI Sales Strategy.md",
     "Nutanix/NHCF - NCA/Cluster Monitoring & Health.md",
     "Nutanix/NHCF - NCA/Licensing and Performing Upgrades.md",
-    "Nutanix/ECA - NCP/Getting Started with a Nutanix Cluster.md",
     "Assets/Attachments/Screenshot 2026-06-02 at 9.11.19 AM.png",
     "Untitled.base",
     "Untitled.canvas",
