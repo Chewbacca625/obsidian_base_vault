@@ -1,0 +1,8 @@
+- Why?
+	- Why should I listen -> Credibility
+	- Why should I believe you -> Trust
+	- Why should I have a next meeting -> Rapport (Discovery -> Demo)
+		- Follow up questions can be directed to a follow up meeting
+			- Great convo for specialist
+- Empathy, Follow through are vital
+- 
