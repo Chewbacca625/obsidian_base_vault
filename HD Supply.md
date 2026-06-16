@@ -1,0 +1,8 @@
+- Used to be ESXI
+- bought ahv from the start
+- expanded some cluster
+- converted others to AHV
+- got aquired by HD supply, been decomissioning hardware
+- Got hardware from Home depot
+- buying hardware
+- 
