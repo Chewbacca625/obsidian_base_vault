@@ -38,3 +38,4 @@ probing
 	problem -> 
 	what are the costs? - creates urgency without being manipulated
 confirming
+go to deal desk to get a better discount for a customer rather than lowering the size of the solution
