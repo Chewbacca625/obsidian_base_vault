@@ -5,3 +5,10 @@ apropos - search the manual page names and descriptions
 	- run: sudo mandb
 - commands exist in section 1-8, we can use -s flag to select specific sections
 tab tab - helps you find a list of options for a command
+
+ls -lah - l -> list, a -> all, h -> human readable size
+pwd - print working directory
+cd - # go to previous directory
+cd # go to home directory
+	../jane/reciept.pdf
+	 /home/jane/reciept.pdf - same as above
