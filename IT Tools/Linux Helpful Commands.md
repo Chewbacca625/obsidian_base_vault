@@ -22,4 +22,17 @@ stat # info about a file
 		cmd: ln -s 
 		![[Screenshot 2026-06-17 at 10.40.02 AM.png]]
 		- the l in ls -l show that this is a soft link and to access the link we can use readlink
+chgrp - change group on file
+groups - list user groups
+chown - change owner only root can do
+
+first character shows the file type 
+![[Screenshot 2026-06-18 at 7.26.23 AM.png|478]]
+-**rwx(Owner)** *rwx(Group)* rwx(other)
+- owner - permissions 
+- group - permissions
+- other - permissions
+![[Screenshot 2026-06-18 at 7.29.43 AM.png|224]]
 		
+chmod - change mode user perms on a file
+![[Screenshot 2026-06-18 at 7.33.21 AM.png|308]]
