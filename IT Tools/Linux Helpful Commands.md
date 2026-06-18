@@ -58,5 +58,8 @@ SUID, SGID, Sticky Bit
 - chmod 6xxx sets GID and SUID
 ![[Screenshot 2026-06-18 at 8.02.06 AM.png|432]]
 - to find files with SUID or SGID
-![[Screenshot 2026-06-18 at 8.03.35 AM.png|602]]
+
+![[Screenshot 2026-06-18 at 8.04.29 AM.png|546]]
 - chmod 1xxx - sticky bit
+- **T** - sticky is enabled but cannot execute
+- **t** - sticky is enabled and execute is enabled
