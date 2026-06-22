@@ -2,3 +2,4 @@
 - Production Hardware Support 8 business days * 5 next | business day support
 - Mission Critical Support 24/7 same day shipping | support within 4 hours
 - NRDK support - DMR (Defective Media Retention) & CDMR (Comprehensive Defective Media Retention) whenever a component needs to be replaced - send to OEM and get a new one or cases where customer SAN has an issue and its a secure env - DMR warranty required to protect the data, but the drives stay at the company. CDMR paying to send me a new piece of equipment because I cant share my data (darksites, healthcare, etc.). NRDK is nutanix's version of that.
+- Platform Integration Fee attached to every cluster that is created, but once they get a deal reg, this fee is removed. They get an A-dealreg#.
