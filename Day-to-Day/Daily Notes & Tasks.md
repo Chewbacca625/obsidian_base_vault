@@ -102,3 +102,4 @@ People to reach out to:
 - Brent Daniel SE SLED
 - Steven Murray SE SLED
 - Austin Stone Commercial NC2
+- Michael Stizza - Ask for feedback on NKP pitch
