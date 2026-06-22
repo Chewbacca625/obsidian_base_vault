@@ -5,4 +5,3 @@
 - got aquired by HD supply, been decomissioning hardware
 - Got hardware from Home depot
 - buying hardware
-- 

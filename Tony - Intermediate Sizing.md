@@ -36,3 +36,6 @@ Discovery questions
 - ask if you have ups's or power support high voltage is required...
 - it can run on one power supply but its not made to run on one
 - fill out scenario objectives 
+
+Large form factor - 8-12 drive bays 3.5in
+Small form factor - 3 drive cages 8 per cage 
