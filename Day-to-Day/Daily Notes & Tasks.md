@@ -86,3 +86,18 @@ Flow call
 
 caleston123
 jesse gosset
+
+Things to do to be successful in academy:
+- Get your name out there
+- Hunt people down
+- Focus on training
+
+Places we could see ourselves living:
+- NC Charolette/Ashville
+- Georgia
+- Pittsburg PA
+
+People to reach out to:
+- Maggie - Inside SE Manager
+- Brent Daniel SE SLED
+- Steven Murray SE SLED
