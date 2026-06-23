@@ -75,4 +75,8 @@ SUID, SGID, Sticky Bit
 - uniq removed repeated lines
 - sort sorts text in a file
 - diff compares file differences
-- 
+	![[Screenshot 2026-06-23 at 2.33.32 PM.png]]
+	![[Screenshot 2026-06-23 at 2.34.21 PM.png]]
+	- -c flag provides full context of the file differences
+	- sdiff side-by-side comparison 
+	- less | more are pagers to view long txt files or cmd outputs - read only  
