@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day-to-Day/Daily Notes & Tasks.md",
+                "file": "IT Tools/Linux Helpful Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily Notes & Tasks"
+              "title": "Linux Helpful Commands"
             }
           },
           {
@@ -296,11 +296,11 @@
   },
   "active": "5bf5350fff7503e8",
   "lastOpenFiles": [
+    "Day-to-Day/Daily Notes & Tasks.md",
     "OVH Cloud Meeting - NC2.md",
     "CompTia/Cloud+.md",
     "CompTia/Network +.md",
     "CompTia/Server+.md",
-    "Day-to-Day/Daily Notes & Tasks.md",
     "Sales Lingo.md",
     "Tony - Intermediate Sizing.md",
     "Sales Help/Acronyms.md",
