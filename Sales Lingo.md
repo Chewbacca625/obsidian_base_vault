@@ -7,3 +7,5 @@
 Pre renewal convo starts
 - 6 months before enterprise
 - 3-6 months for commercial
+- we need to size in functionality because of the 1,3,5 year contract terms
+- 
