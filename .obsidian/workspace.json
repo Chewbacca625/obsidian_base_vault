@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sales Lingo.md",
+                "file": "IT Tools/Linux Helpful Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sales Lingo"
+              "title": "Linux Helpful Commands"
             }
           },
           {
@@ -296,13 +296,13 @@
   },
   "active": "5bf5350fff7503e8",
   "lastOpenFiles": [
+    "Sales Lingo.md",
     "IT Tools/Linux Helpful Commands.md",
     "Day-to-Day/Daily Notes & Tasks.md",
     "OVH Cloud Meeting - NC2.md",
     "CompTia/Cloud+.md",
     "CompTia/Network +.md",
     "CompTia/Server+.md",
-    "Sales Lingo.md",
     "Tony - Intermediate Sizing.md",
     "Sales Help/Acronyms.md",
     "Sales Help/Sales Training.md",

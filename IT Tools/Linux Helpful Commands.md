@@ -63,3 +63,16 @@ SUID, SGID, Sticky Bit
 - chmod 1xxx - sticky bit
 - **T** - sticky is enabled but cannot execute
 - **t** - sticky is enabled and execute is enabled
+
+- cat to print file contents | tac to reverse
+- tail to see the last 10 lines of a file (-n to customize how many lines) | head to see the beginning of the file
+- sed stream editor to edit files 
+	- example sed 's/canda/canada/g' xyz.txt -i
+		- s - subsitute cmd
+		- g - global search the whole file
+		- -i edit in place
+- cut extracts specific sections based on delimiter (-d) and field (-f)
+- uniq removed repeated lines
+- sort sorts text in a file
+- diff compares file differences
+- 
