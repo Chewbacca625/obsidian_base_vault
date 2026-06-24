@@ -1,3 +1,4 @@
+\ is an escape character
 man - man pages
 - man man will allow you to select specific sections of man pages
 apropos - search the manual page names and descriptions
@@ -79,4 +80,25 @@ SUID, SGID, Sticky Bit
 	![[Screenshot 2026-06-23 at 2.34.21 PM.png]]
 	- -c flag provides full context of the file differences
 	- sdiff side-by-side comparison 
-	- less | more are pagers to view long txt files or cmd outputs - read only  
+	- less | more are pagers to view long txt files or cmd outputs - read only 
+	- Vim
+		- dd delete line
+		- p paste line
+		- y - yank/copy line
+	- Grep
+		- -i case insensitive
+		- -r recursively search through directory
+		- --color for when you use sudo and need color
+		- -v dont contain search pattern
+		- -w word option to search for specific word pattern
+		- -o for only matching to return only specified pattern
+	- Regex Patterns
+		- ^ - string begins with 
+		- $ 
+		- .
+		- +
+		- {}
+		- ?
+		- \[]
+		- \()
+		- \[\^]
