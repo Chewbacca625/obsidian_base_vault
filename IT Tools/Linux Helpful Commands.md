@@ -99,9 +99,9 @@ SUID, SGID, Sticky Bit
 		- + - match the previous element 1 or more times
 		- {min,max} - previous element can exist "this many" times
 		- ? - make previous element options 1 or not at all
-		- \[] - ranges or set \[a-z] (any lowercase letter a-z will be matched) \[0-9] (any one digit 0-9) 
-		- \()
-		- \[\^]
+		- \[] - ranges or set \[a-z] (any lowercase letter a-z will be matched) \[0-9] (any one digit 0-9) ex: \[abz954] - only abz954 characters
+		- \() - subexpression apply regex to everything in the parenthesis 
+		- \[\^] - negate ranges or sets 
 		- \ is an escape character we can use if we need to escape a regex
 		- \* can be used to match the previous element 0 or more time ex: let* = le, let, lett,...
 		- | or operator ex: egrep -wr 'enabled? | disabled?' /etc/
