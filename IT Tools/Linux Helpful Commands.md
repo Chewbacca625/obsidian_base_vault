@@ -1,4 +1,3 @@
-\ is an escape character
 man - man pages
 - man man will allow you to select specific sections of man pages
 apropos - search the manual page names and descriptions
@@ -92,13 +91,17 @@ SUID, SGID, Sticky Bit
 		- -v dont contain search pattern
 		- -w word option to search for specific word pattern
 		- -o for only matching to return only specified pattern
+		- use egrep to avoid having to use \ for regex
 	- Regex Patterns
-		- ^ - string begins with 
-		- $ 
-		- .
-		- +
-		- {}
-		- ?
-		- \[]
+		- ^ - beginning of string ex: '^PASS' - PASSWORD?
+		- $ - end of string 'mail$' - mail files
+		- . - match any one character 'c.t' - return cat or cut
+		- + - match the previous element 1 or more times
+		- {min,max} - previous element can exist "this many" times
+		- ? - make previous element options 1 or not at all
+		- \[] - ranges or set \[a-z] (any lowercase letter a-z will be matched) \[0-9] (any one digit 0-9) 
 		- \()
 		- \[\^]
+		- \ is an escape character we can use if we need to escape a regex
+		- \* can be used to match the previous element 0 or more time ex: let* = le, let, lett,...
+		- | or operator ex: egrep -wr 'enabled? | disabled?' /etc/
