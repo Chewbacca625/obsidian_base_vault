@@ -1,0 +1,13 @@
+- 8 sub regions in big east new england, new york
+- 1:1 ratio enterprise 20 accounts responsibility
+- backgrounds typically IT - progra NY (reach out)
+- env more complicated lots of tech debt
+- have to show credibility to more teams
+- spend time with partners - build champions
+- go to tradeshows, user groups, present as much as possible
+- shadow and build relationships - network-network-network
+- mid atlantic team possible to reach out to tom powell
+- enterprise is really about getting champions within the org
+- need fresh perspective, looking like our customers is important (people that have done the research)
+- make the smartest person in the room feel smart
+- new SEs struggle with getting caught in the weeds - be careful who work with dont spend too many cycles focus on buiness leaders
