@@ -16,4 +16,17 @@
 - customer requested move demo
 - does it retain mac addrs does it mimic nic?
 	- all the same config during migration you can tell it to keep the same nic but it will pull the nic mac info
-	- 
+	- all servers have static ips no hardware based lisencing that we know about
+- do you have any OEM virt appliances
+	- has 2 cradle point netpoing gateway
+	- cisco ucm ucsc - gonna go away 
+	- dell openpoint
+	- biantra free bsd bombguard
+	- rmm quest case appliance
+	- motorolla virtual appliance running into flatcar container linux - gonna go away
+	- if its a standard linux build 99% work
+	- only issues with linux if they strip out virio to reduce size and dont have room to put it back
+	- archive body cam footage
+		- upselling NUS - is a reasonable cost have not lost to an alternative
+		- way to upsell professional services - its hands on we share knowledge you get more than just a migration you get to ask questions etc.
+		- you set over the samsung part number I send over idrac steps to get the model they SAS drives 
