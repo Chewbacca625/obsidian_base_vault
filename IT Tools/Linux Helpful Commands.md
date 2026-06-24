@@ -71,6 +71,9 @@ SUID, SGID, Sticky Bit
 		- s - subsitute cmd
 		- g - global search the whole file
 		- -i edit in place
+		- you can use / or | as delimiter
+		- need to \\$ because it will be treated as end of line
+		- -E for extended regex
 - cut extracts specific sections based on delimiter (-d) and field (-f)
 - uniq removed repeated lines
 - sort sorts text in a file

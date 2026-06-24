@@ -1,0 +1,19 @@
+- gathered collector data
+- validated vsan ready env
+- identical 4 node cluster
+- can we swing all workloads to one site make nutanix and move
+	- Is this what your looking for?
+		- Looking to move workloads to AWS - video data 200TB
+		- Looking to migrate some other workloads based on assessment
+		- Looking to decrease on-prem footprint
+- with nutanix we cant incrementally build one node at a time - no redundancy
+	- fastest least risk is do 3 node conversion
+	- from a CPU mem we have good amount headroom
+	- old data migrating data non redundant single object state because it will fill up their storage
+- what is nimble?
+	- They were runnng linux file servers and attached Iscsi to vms directly to keep using
+	- out of support on nimble video store?
+- customer requested move demo
+- does it retain mac addrs does it mimic nic?
+	- all the same config during migration you can tell it to keep the same nic but it will pull the nic mac info
+	- 
