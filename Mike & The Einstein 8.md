@@ -11,3 +11,5 @@
 - need fresh perspective, looking like our customers is important (people that have done the research)
 - make the smartest person in the room feel smart
 - new SEs struggle with getting caught in the weeds - be careful who work with dont spend too many cycles focus on buiness leaders
+- know when to say I DONT KNOW
+- spend time with the seasoned people
