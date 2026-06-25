@@ -109,3 +109,4 @@ SUID, SGID, Sticky Bit
 		- \ is an escape character we can use if we need to escape a regex
 		- \* can be used to match the previous element 0 or more time ex: let* = le, let, lett,...
 		- | or operator ex: egrep -wr 'enabled? | disabled?' /etc/
+		- '\bword\b' - word boundary search
