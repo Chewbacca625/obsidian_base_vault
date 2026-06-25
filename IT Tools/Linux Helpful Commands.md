@@ -74,7 +74,7 @@ SUID, SGID, Sticky Bit
 		- you can use / or | as delimiter
 		- need to \\$ because it will be treated as end of line
 		- -E for extended regex
-		- you can use d to delete lines
+		- you can use d to delete lines{}
 - cut extracts specific sections based on delimiter (-d) and field (-f)
 - uniq removed repeated lines
 - sort sorts text in a file
