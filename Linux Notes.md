@@ -1,0 +1,18 @@
+- Filesystem Hierarchy
+	- / - root top level directory
+		- /bin - user binary exe
+		- /sbin - maintenance binaries 
+		- /boot - kernel loading & bootloader
+		- /dev - interface for hardware nodes
+		- /etc - system config holds static config files for system and apps (no user data here)
+		- /home - user profiles reside, docs, etc
+		- /root - isolated space for admin files
+		- /lib - shared libraries critical for operation of binaries in /bin and /sbin 
+		- /opt - dedicated space for third party software installed outside of package manager
+		- /media - automatic mount point for removal media like USB
+		- /mnt - reserved for manual, temp mounting of file system by admin
+		- /tmp - temp files for system and user file (cleared by OS)
+		- /usr - user facing binaries and docs, static & shareable, /usr/local for custom installs
+		- /var - variable files , system logs, spools, dbs, for dynamic growth
+- CMDS
+	- 

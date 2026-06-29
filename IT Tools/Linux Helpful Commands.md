@@ -1,3 +1,5 @@
+Command structure
+cmd - options - argument
 man - man pages
 - man man will allow you to select specific sections of man pages
 apropos - search the manual page names and descriptions
