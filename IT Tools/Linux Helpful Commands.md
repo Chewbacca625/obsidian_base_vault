@@ -46,7 +46,8 @@ chmod - change mode user perms on a file (+(add), -(subtract), =(set exactly))(r
 ![[Screenshot 2026-06-18 at 7.40.06 AM.png]]
 - handled in binary 0640 = r(1)w(1)(0)=6, r(1)-(0)-(0) = 4, -(0)-(0)-(0) = 0 == 640
 
-SUID, SGID, Sticky Bit
+SUID, SGID, Sticky Bit, umask
+- umask - defines default security posture and subtracts bits from default OS setting to define initial perms for new files and dirs
 - SUID special perm that allows users to run exe with perms of exe's owner
 	![[Screenshot 2026-06-18 at 7.51.10 AM.png|417]]
 - SGID similar to SID but applies to both exe and directories, it allows users to temporarily inherit the group ownership when running exe or dir
@@ -114,3 +115,22 @@ SUID, SGID, Sticky Bit
 		- \* can be used to match the previous element 0 or more time ex: let* = le, let, lett,...
 		- | or operator ex: egrep -wr 'enabled? | disabled?' /etc/
 		- '\bword\b' - word boundary search
+- Globing Patterns
+	- * match zero or more chars \*.txt
+	- ? match exactly one char image?.txt
+- Date Referencing
+	- Hardlink - direct pointer to Inode
+		- additional entry for the same data block
+		- limited to same file system
+		- persistent even if original entry is removed 
+	- Symbolic link - path based shortcut
+		- created via ln -s
+		- can span diff partitions & mount points
+		- broken if original file is deleted
+- Redirection
+	- < - feed file contents as input
+	- > - save to output file (overwrite)
+	- >> - add to existing file (append)
+- locate - queries updatedb, not that it can be outdated and requires root to update
+- which - scans PATH env var - returns first abs pathname of an exe
+- whereis - find binaries, source, manuals - searches standard system directories 
