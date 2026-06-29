@@ -240,4 +240,30 @@ SUID, SGID, Sticky Bit, umask
 	- cron runs as owner of file
 	- shorthands exist @daily
 	- /etc/crontab - explicit user field
-	- /etc/cron.d - modern approach for system admins keeps tasks distinct and organized for easier maintenance (ensure correct exe rights, and abs paths on)
+	- /etc/cron.d - modern approach for system admins keeps tasks distinct and organized for easier maintenance (ensure correct exe rights, and abs paths only)
+	- at cmd for queue based one-time ops
+	- redirect error msgs to logfiles
+- Understanding System Hardware
+	- lscpu - cpu info
+	- lshw - hardware inventory, mem banks, firm versions, storage controllers
+	- lsusb - id vendor and prod ids to match hardware drivers
+	- /proc/interrups - kernel communiction processor signaling for immediate event attention
+	- uname -r verify kernel release & sys arch
+	- lsmod - list all current active/loaded modules
+	- modprobe -automatic dependency resolution
+- Networking
+	- /etc/hosts - manual IP mapping & takes precedence over DNS queries
+	- /etc/resolv.conf - DNS Config
+	- ip cmd - mgmt of Routes, Devices, & Tunnels
+	- netstat - for inspecting sockets
+	- ss - socket stats modern successor
+	- host - quick DNS lookup
+	- dig - detailed query process DNS analysis
+	- cURL - used to transfer data to or from remote server
+	- .ssh/conf - way to manage SSH keys
+	- know_host - known host file
+	- iptables - low level netfilter
+	- firewalld zone based firewall services
+	- PAM - pluggable auth modules
+	- Fail2Ban - blocks brute force login
+	- 
