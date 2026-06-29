@@ -10,12 +10,14 @@ tab tab - helps you find a list of options for a command
 
 ls -lah - l -> list, a -> all, h -> human readable size
 pwd - print working directory
-cd - # go to previous directory
-cd # go to home directory
+cd .. - # go to previous directory
+cd ~ # go to home directory
 	../jane/reciept.pdf
 	 /home/jane/reciept.pdf - same as above
 cp # copy file/dir
 mv # move file or dir or rename
+mkdir -p - make dir (-p) build all child directories too
+rmdir - remove empty dir
 stat # info about a file
 	hard links - let say two user account want to share one file we can link them with (pointed to inode): ln
 		- only hardlink to files 
