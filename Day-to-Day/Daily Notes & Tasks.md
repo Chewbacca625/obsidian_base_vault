@@ -107,3 +107,10 @@ People to reach out to:
 
 Competitive Pitch VMware vs NCI
 - Whiteboard practice!!!
+
+Meeting Notes:
+- Commercial is City based territory - make sure your specific
+- Reach out to rob for a specialty possibly
+Capstone
+- roleplay capstone
+- chris participate or watch

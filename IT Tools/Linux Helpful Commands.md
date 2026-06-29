@@ -266,4 +266,3 @@ SUID, SGID, Sticky Bit, umask
 	- firewalld zone based firewall services
 	- PAM - pluggable auth modules
 	- Fail2Ban - blocks brute force login
-	- 
