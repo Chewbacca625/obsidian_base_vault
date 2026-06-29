@@ -179,4 +179,54 @@ SUID, SGID, Sticky Bit, umask
 - avoid editing sudoers file in standard text editor
 	- use visudo - to validate syntax before saving
 - Boot process
-	- firmware - bios / UEFO
+	- firmware - bios / UEFI
+	- Boot Loader - GRUB2
+	- Kernel  - Init RAM Disk | mount root FS
+	- Init system - systemd - user space start
+- systemctl - manage system services
+	- status - check status of service
+	- disable - disable system start
+	- start/stop/restart
+	- isolate - for config target unit
+	- Target units - group services into operational modes
+		- multi-user.target
+			- no gui
+			- background processes
+			- networking enabled
+		- graphical.target
+			- multi-user dependencies
+			- display manager
+			- desktop env
+- journald: source of truth for troubleshooting kernel, boot process, user space
+	- journalctl: filter processes very granularly 
+	- systemd-analyze: timing stats
+- Process management
+	- PID: process ID
+	- ps aux - static snapshot of every process executing (terminal status, start time, cpu & ram)
+	- top/htop - dashboard to sort resource usage and kill runaway processes
+	- kill cmd kills running processes softly or forced 
+		- kill -sigterm PID - soft
+		- kill -9 PID - force kill
+		- sighub - refresh or reload config
+	- foreground vs background execution
+		- cmd - waits for process to complete
+		- cmd & - run shell stays interactive
+		- ctrl+ z - suspend 
+		- bg - move to bg
+		- fg - move to fg
+	- top - 1,5,15 min load averages
+		- excessive swap to disk degrades system performance to unresponsiveness
+- Storage and File Systems
+	- lsblk - list blocks
+	- df -h : human readable summary of occupied and available blocks
+	- fdisk - modify disk partion tables
+	- EXT4 : general purpose
+	- XFS : large strorage focus, enterprise scale
+	- Btrfs : modern approach, instant snapshots, copy on write, volume mgmt
+	- mount cmd is ephemeral unless you update the /etc/fstab for automatic attachment of disks
+	- LVM - pools resources (physical volumes) -> volume group -> logical volume control size of volumes
+	- df cmd to identify disk usage to ensure tmp,logs,etc. dont overfill
+	- isolate /var and /home to prevent runaway processes from stalling OS
+- Logging & Observability
+	- /var/log - hub for all sys artifacts (auth.log(logins), syslog(general events), dmesg(hardware failures))
+	- rsyslog - shipping to central logging server
