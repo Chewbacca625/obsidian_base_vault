@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day-to-Day/Daily Notes & Tasks.md",
+                "file": "IT Tools/Linux Helpful Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily Notes & Tasks"
+              "title": "Linux Helpful Commands"
             }
           },
           {
@@ -338,9 +338,9 @@
   },
   "active": "d39453606897dcab",
   "lastOpenFiles": [
+    "Day-to-Day/Daily Notes & Tasks.md",
     "IT Tools/Linux Helpful Commands.md",
     "IT Tools/Linux Notes.md",
-    "Day-to-Day/Daily Notes & Tasks.md",
     "IT Tools/Helpful Tools.md",
     "Meeting.md",
     "Mike & The Einstein 8.md",

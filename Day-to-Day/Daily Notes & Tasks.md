@@ -114,3 +114,14 @@ Meeting Notes:
 Capstone
 - roleplay capstone
 - chris participate or watch
+- individual
+- KCNA end of August
+- 15 min / 20 min each?
+- 5/7 min per topic
+- 5/10 min Q/A
+- pitching company medshare health
+- mid size 3 hospitals
+- 4 year old servers
+- 8/9 year old server
+- 3 tier
+- teams of 3
