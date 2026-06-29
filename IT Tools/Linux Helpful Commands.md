@@ -230,3 +230,12 @@ SUID, SGID, Sticky Bit, umask
 - Logging & Observability
 	- /var/log - hub for all sys artifacts (auth.log(logins), syslog(general events), dmesg(hardware failures))
 	- rsyslog - shipping to central logging server
+- System Automation
+	- Cron dameon - primary tool for recurring tasks
+	- each user can have their own crontab file
+	- cron tab syntax (minutehourday/monweekday) /abs/path/to/cmd
+	- ex: 02*** /abs/path/to/file
+		- wildcard runs for every possible value
+		- this will repeat at 2 am every day
+	- cron runs as owner of file
+	- shorthands exist @daily
