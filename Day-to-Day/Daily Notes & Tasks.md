@@ -103,3 +103,7 @@ People to reach out to:
 - Steven Murray SE SLED
 - Austin Stone Commercial NC2
 - Michael Stizza - Ask for feedback on NKP pitch
+
+
+Competitive Pitch VMware vs NCI
+- Whiteboard practice!!!

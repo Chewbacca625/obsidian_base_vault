@@ -239,3 +239,5 @@ SUID, SGID, Sticky Bit, umask
 		- this will repeat at 2 am every day
 	- cron runs as owner of file
 	- shorthands exist @daily
+	- /etc/crontab - explicit user field
+	- /etc/cron.d - modern approach for system admins keeps tasks distinct and organized for easier maintenance (ensure correct exe rights, and abs paths on)
