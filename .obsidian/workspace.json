@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Product Convo.md",
+                "file": "NKP Feedback.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Core Product Convo"
+              "title": "NKP Feedback"
             }
           },
           {
@@ -233,7 +233,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d2056dfc17381175",
@@ -353,7 +354,7 @@
   "active": "a55afdb4aba92d69",
   "lastOpenFiles": [
     "IT Tools/Linux Helpful Commands.md",
-    "Core Product Convo.md",
+    "NKP Feedback.md",
     "Day-to-Day/Daily Notes & Tasks.md",
     "IT Tools/Linux Notes.md",
     "IT Tools/Helpful Tools.md",
