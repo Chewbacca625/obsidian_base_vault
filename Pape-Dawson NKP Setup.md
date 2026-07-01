@@ -1,1 +1,48 @@
-- Tory
+- Tory Atkinson, Rabie (Solution Architect) - Customer Advocate
+- Kyle Rabe - SE for customer
+- Rob, James, Satya (Principle Engineer) - CDW
+- NKP Deployment
+	- Get you staged and setup
+		- Core essentials
+		- Get into PC - most of the action
+		- PC 7.5? Make sure your on the right version
+		- Admin Center
+		- Marketplace Deploy NKP
+		- Stage initial mgmt cluster - versions listed 2.16
+			- Few things required
+				- acquire valid os image - download portal
+				- Support portal from PC super good thing to show
+				- NKP OS images
+				- by default starter -> rocky linux only
+				- POC licenses or demo license - can use ubuntu 2.16
+				- Any plans around POC licensing?
+					- Are you using pro ultimate?
+					- You can always deploy another cluster
+					- Goal is to do pro?
+						- If this is successful they will lean to purchase the this is a pilot, nvidia, cisco, lets see what we can do with AI
+					- Use NKP starter for now, NCI lisencing already have, can they run NKP starter on a env thats not lisenced? NON lisence required in Pro or Ultimate?
+				- Inital cluster mgmt only you wont run GPU or workloads just for mgmt and its a kube cluster
+		- Biggest concern dont want to run any kube on production compute cluster
+		- separate cluster for AI and what not currently
+		- Everything we do will be on 3 node cluster - clarified that infra cluster and mgmt cluster are different with kube
+		- Pre recs for 
+			- valid OS image
+			- need some IP addrs pool of 8-10 vms, control-plane, vip
+			- manage VLAN assign this pool to specific best with ip ADDR mgmt to make it easier
+			- problem got to get networking guy on board
+			- its on cluster is on seperate VLAN and other for citrix desktop only, cany utilize production, do you have one dedicated for this
+			- Planning to have one vlan for kubernetes seperate from thier others
+			- Nexus switches in use cluster is easier, ideally we enable IP addr mgmt in cluster, DHCP is managed through domain controllers
+			- seems like they have a dedicated GPU nutanix cluster
+	- Uploading image
+	- Talk about overall architecture - need to reschedule call due to waiting on network team
+	- What does deployment look like?
+		- kuberentes naming is very particular? - look into that
+		- Click deploy
+		- Name, ssh keys, provider, keep SSH username konvoy(default), enter PC password, choose which PE, defaults are more then plenty for standard deployment and can be adjusted
+		- ephemeral lots of resources can be upscaled and downscaled
+		- Choose storage container its okay to leave mostly defaults Storage ext4 90% of deployments - customer choose XFS
+	- Based in Fort-Worth / Dallas Multiple Datacenters? 2 datacenters - one has more workload, mass majority GPU workloads for - apps autocad, bently, GPU workloads 196 GPU nodes
+	- 1 data center 128 GPU nodes, not counting NUS cluster, just 8 nodes per data center, 8 compute nodes in cluster, 2 node robo clusters
+	- Data center is colo
+	- One in Atlanta is colo
