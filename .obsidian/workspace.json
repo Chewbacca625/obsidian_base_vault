@@ -8,157 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5e5f4959712c0fbc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nutanix/NCI Product Overview.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NCI Product Overview"
-            }
-          },
-          {
-            "id": "f389076777ef5e31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Noah IC2 Capstone.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Noah IC2 Capstone"
-            }
-          },
-          {
-            "id": "2cf02c73696efb05",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IT Tools/Linux Helpful Commands.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linux Helpful Commands"
-            }
-          },
-          {
-            "id": "c7a4001497115b85",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Value Selling.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Value Selling"
-            }
-          },
-          {
-            "id": "95a7e75e5b0883b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IT Tools/Linux Helpful Commands.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linux Helpful Commands"
-            }
-          },
-          {
-            "id": "17e969d0cbd2c0e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Day-to-Day/Things to look into.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Things to look into"
-            }
-          },
-          {
-            "id": "5bf5350fff7503e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IT Tools/Linux Helpful Commands.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linux Helpful Commands"
-            }
-          },
-          {
-            "id": "473103377bec92d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IT Tools/Linux Helpful Commands.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linux Helpful Commands"
-            }
-          },
-          {
-            "id": "273232a7ad24a3ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IT Tools/Linux Helpful Commands.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linux Helpful Commands"
-            }
-          },
-          {
-            "id": "d39453606897dcab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IT Tools/Linux Helpful Commands.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linux Helpful Commands"
-            }
-          },
-          {
             "id": "a55afdb4aba92d69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pape-Dawson NKP Setup.md",
+                "file": "Customer Calls/Pape-Dawson NKP Setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Pape-Dawson NKP Setup"
+            }
+          },
+          {
+            "id": "ff2021134658437f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Customer Calls/NKP & Self-Service Pre-Sales.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NKP & Self-Service Pre-Sales"
             }
           },
           {
@@ -176,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -233,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d2056dfc17381175",
@@ -351,11 +224,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "a55afdb4aba92d69",
+  "active": "ff2021134658437f",
   "lastOpenFiles": [
-    "IT Tools/Linux Helpful Commands.md",
-    "Pape-Dawson NKP Setup.md",
+    "Customer Calls/Pape-Dawson NKP Setup.md",
+    "Customer Calls/NKP & Self-Service Pre-Sales.md",
+    "Customer Calls",
     "Day-to-Day/Daily Notes & Tasks.md",
+    "IT Tools/Linux Helpful Commands.md",
+    "Day-to-Day/Things to look into.md",
+    "Value Selling.md",
+    "Noah IC2 Capstone.md",
+    "Nutanix/NCI Product Overview.md",
     "IT Tools/Linux Notes.md",
     "IT Tools/Helpful Tools.md",
     "Meeting.md",
@@ -373,11 +252,8 @@
     "Sales Help/Quotes.md",
     "Dell Automation Platform.md",
     "HD Supply.md",
-    "Noah IC2 Capstone.md",
     "Nutanix Pasco County Supervisor of Elections Check In.md",
     "UNC Cluster Foundation 6-8-25.md",
-    "Value Selling.md",
-    "Day-to-Day/Things to look into.md",
     "Assets/Attachments/Screenshot 2026-06-18 at 8.04.29 AM.png",
     "Assets/Attachments/Screenshot 2026-06-18 at 8.03.35 AM.png",
     "Assets/Attachments/Screenshot 2026-06-18 at 8.02.06 AM.png",
@@ -386,9 +262,7 @@
     "Assets/Attachments/Screenshot 2026-06-18 at 7.51.10 AM.png",
     "Assets/Attachments/Screenshot 2026-06-18 at 7.40.06 AM.png",
     "Assets/Attachments/Screenshot 2026-06-18 at 7.39.28 AM.png",
-    "Nutanix/NCI Product Overview.md",
     "Nutanix/ECA - NCP/Backup and DR.md",
-    "Day-to-Day/Discovery Questions.md",
     "Untitled.base",
     "Untitled.canvas",
     "Untitled 1.canvas",
