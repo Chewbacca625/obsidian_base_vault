@@ -1,5 +1,39 @@
-- Scott Pionke - Nutanix SE
-- Ralph Carder - unsure?
-- Kelly Willis - Self-Service Expert?
-- Jeffery Donovan - Customer?
-- Justin Chatham
+- Scott Pionke - Nutanix SE Phionix customer TGIN
+- Ralph Carder - SAM
+- Kelly Willis - NCM specialist - prev VMware
+- Bruce Jacobs - global practice lead for cloud native
+- Blake Hunnel?
+- Jeffery Donovan - Dev Secops Openshift own kubernetes stack, ansible, linux, artifactory, awx, gitops
+	- initatives
+		- build out slerm
+		- okd openshift - cost is significant challange
+- Justin Chatham - devops and linux engineer
+- Michael Martin - ?
+- Quinn Presutto - gitlab, ansible, artifactory
+- James Hoegl - Runs Nutanix
+Self-Service
+- rest infront of it NCM
+- good to link with your other catalog elements and gitops
+- cost governace - finops narrow down cost etc.
+- Security central - focused around security posture awareness - hippa, cis, STIG - provides findings in your env - ties into flow networking 
+- intelligent ops - get an understanding of your env
+-  FLOW -
+	- start with Blueprints - single vm/pods of vms - basic info what the workload looks like, we use projects logical grouping provision where they want to and guardrails, what it should look like, and customization
+	- runbooks - orchestration, creating user, dns, file share access, repeatable task and make it available as a catalog item and control RBAC
+	- store
+	- applications
+	- open up application and show overview, manage, delete/cleanup when testing, audit trail via audit
+	- Do you have any questions do have you readup? Didnt know that this was an addtional lisence NCM, not in current ENV -> is this included in NKP?
+		- SE didnt make it clear early on
+		- 2.0 able to support multiple PE envs - intelligent ops was limited, we rearchitected, we are releasing addtional features 2.x
+		- How can we better integrate these tools out of the box - blueprint to deploy NKP constructs, coming soon with 2.x journey and AI as well
+		- Is this required for NKP - self-service|Automation|etc. NCM is not a requirement
+		- What are the runbooks written in? Are these internally created? we produce some - its focus is orchestration 
+		- terraform for day 1 and we connect it to self-service for the day 2 ops and management
+		- do we have internal secret management yes, and we can setup external secrets
+	- they have for shorterm lived VMs - initially used terraform -> ansible -> etc. -> netbox call ansible to test - yes, we can test via self-service -> day2 actions for cleanup -> end of CI/CD make a rest call to delete workload -> you can tag with lease day and continually runs runbook to search for vms with a lease up, you can add email as well (customer liked)
+	- NCM ultimate -> automatic schedule and approval, and you can run intelligent ops to schedule runbooks
+	- Can you set quotas in project to manage approval process? Yes, you can via projects and users limited by the project quotas, and you can set global quota
+	- show approval policy process, action day 2 or on launch for policies
+	- can you build tagging into blueprints? yes, via categories
+	- 
