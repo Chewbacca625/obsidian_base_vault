@@ -36,4 +36,80 @@ Self-Service
 	- Can you set quotas in project to manage approval process? Yes, you can via projects and users limited by the project quotas, and you can set global quota
 	- show approval policy process, action day 2 or on launch for policies
 	- can you build tagging into blueprints? yes, via categories
-	- 
+	- james possible advocate for self-service - GDRP requirements - looking for self-service
+	- asks about openshifts - I want to tailor it to where your are currently on?
+		- take a moment to hear where you are at
+		- is that full blown function? let me tailor it to what is interesting
+		- two open shift cluster dev pro 
+		- 3 controlplane 5 working nodes
+		- awx was the drive
+		- customer doesnt want to support native
+		- easier to deploy and team of 4 can support
+		- vascsi storag3
+		- 100 gig network
+		- good on storage
+		- argo for addtional apps - strat
+		- awx to custom helm deployment process
+		- basic kub shop
+		- have much much bigger plans
+		- slerm work nodes
+		- which addtional machine pools
+		- automatic deployment clean
+		- gpu nodes 
+		- possible LLMS
+		- gitlab runners running
+		- code released driven
+			- large portion of underling infra
+		- next year to 2 year goal - fantastic articulation
+		- slinki is what they are testing with in DEV
+		- current footprint compute? pretty modest -> sees growing significantly
+		- we are talking upwards of 100 GPU nodes, significant footprint
+			- Can you roll your own hardware platform
+			- We have an array of compatibility for cloud and edge -> I want to break that down
+		- if we can automatically build those nodes out would be awesome (machine config pools???) - openshift concept
+	- first thing
+		- pure upstream first - opensource concepts and projects
+			- nocli wrappers or proprietary api
+			- Opensource pricing lol
+			- if pricing is a big target and you will be happy that we can help offer, you will be very happy with that topic
+	- limit powerpoint time great
+		- to level set in the room an intended usecase and how we can wrap it into your story
+		- you want a done for you solution
+			- vendor releases
+			- lifecycle management
+			- not diy because it can be a monster and to get it into prod
+			- we are not locked into any vendor ecosystem
+			- we need persistent storage
+			- Challenge
+				- 100-500 node range difficult to manage pods
+				- highlights that CNCF is a monster
+	- provide history lessons we bought d2iq mesosphers was the bedrock of cloud native, it goes back and we got the knowledge and experince
+	- easy to user and solid for mission critical workloads
+	- we pride ourself on our portfolio
+	- NKP is kub and Kub is NKP - no forks no wierdness pureupstream
+		- is our ability to run on any infra and we can take advantage of automation and VM infra and so on
+		- we can deploy and orchestrate baremetal as well
+			- get the most out of GPU workload and you may not need a HV
+		- in the spokes there are the products we curated good mature products talks about democratic process that CNCF uses to rate product
+		- ability to have it lifecycle manage, you get support you need with NKP(who do we call when it breaks?), every one of the projects you get the support (call 855 nutanix - 90+nps 10+ years very few companies have that), everything we see is OPT in, you have the control, your not landlocked you get freedom the choice, lets simplify and deliver a product that delights
+		- Do you have any questions? Is everything clear? Do you want to dive into anything?
+			- this sounds exactly what we are looking for
+			- we have control and mgmt, cost of time vs cost of money, how do we add hardware to the infra (6 nodes) is it an addon what do I need to consider?
+		- Design doctrine is the same across nutanix, it runs in another portal, runs on proxmox in homelab, we can run it anywhere, dedicated interface, you can run it anywhere, physical virtual etc. control plane virtual and worker nodes physical possible
+		- We can hook on any pure upstream kubernetes instance -> we hook onto kubeconfig, and we can talk cluster api hub spoke architecture, you want to integreate you have the control
+		- IAC bring your YAMLS fresh cluster if you want, or you can wizard it (infra providers any - for OS connical support), redhat, ubuntu etc. you can infer to compatability matrix
+		- do you have a cloud presence?
+			- not for something like this
+			- our IP is our data 2 petabytes of data
+			- this would allow me to split my workloads and have an internal cluster for my container workloads or physical that is right our ally
+		- jumps into a cluster, you get RBAC, SSO, etc.
+		- shows workspace levels OU
+		- namespace level for user auth 3 levels based on user type
+		- you can control operators for each workspace
+		- day 0 already hooked and ready and already there (apps)
+		- you set policy at hub and it goes down to spokes you config however you want too in apps specific grafana and have an overlay
+		- freedom of choice and operation this is all day zero setup dashboard, opencost (clicked out to let opencost to load)
+			- whats the cost platform core based licensing specific to nutanix
+			- cpu licensing baed on worker nodes
+		- 2 skus pro or ultimate
+		- shows insights - lot of granular optics, best practice violations, compolation of multiple project, cpu overutilzation, CVE remediation, NKP specific, using opensource projects in the backgournd 
