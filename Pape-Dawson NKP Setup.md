@@ -1,4 +1,4 @@
-- Tory Atkinson, Rabie (Solution Architect) - Customer Advocate
+- Tory Atkinson, Rabie (Solution Architect), Mark (Network Guy) - Customer Advocate
 - Kyle Rabe - SE for customer
 - Rob, James, Satya (Principle Engineer) - CDW
 - NKP Deployment
@@ -42,7 +42,21 @@
 		- Name, ssh keys, provider, keep SSH username konvoy(default), enter PC password, choose which PE, defaults are more then plenty for standard deployment and can be adjusted
 		- ephemeral lots of resources can be upscaled and downscaled
 		- Choose storage container its okay to leave mostly defaults Storage ext4 90% of deployments - customer choose XFS
+			- Networking - select VLAN is for dataplane - wierd issue when you have the same vlans across multiple clusters when you query it it will grab all of them
+				- leave all for now
+				- Customer VLAN doesnt have DHCP server
+			- This cluster has access to WWW - reached out to public repos
+			- registry is optional - leave pod and service network alone for now 
+	- What we need for next call:
+		- VLAN
+		- requires DHCP
+		- a few static IPs in that range for controlplane endpoint IP
+		- K8s load balancer
 	- Based in Fort-Worth / Dallas Multiple Datacenters? 2 datacenters - one has more workload, mass majority GPU workloads for - apps autocad, bently, GPU workloads 196 GPU nodes
 	- 1 data center 128 GPU nodes, not counting NUS cluster, just 8 nodes per data center, 8 compute nodes in cluster, 2 node robo clusters
 	- Data center is colo
 	- One in Atlanta is colo
+	- customer loves our support - easier to not complicate haha
+	- Next steps:
+		- available most of tomorrow
+		- whole holiday afternoon is open 2-3 CST?
