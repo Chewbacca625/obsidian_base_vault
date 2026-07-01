@@ -112,4 +112,65 @@ Self-Service
 			- whats the cost platform core based licensing specific to nutanix
 			- cpu licensing baed on worker nodes
 		- 2 skus pro or ultimate
-		- shows insights - lot of granular optics, best practice violations, compolation of multiple project, cpu overutilzation, CVE remediation, NKP specific, using opensource projects in the backgournd 
+		- shows insights - lot of granular optics, best practice violations, compolation of multiple project, cpu overutilzation, CVE remediation, NKP specific, using opensource projects in the background and is a core feature
+		- You get a GPT 4.0 mini how do I solve CPU throttling baked into NKP - hitting public API for its LLM trained on all KUBE docs, NKP docs, and Nutanix Docs
+		- You can enable NKP AI navigator, info agent that gets depoyed to spokes, and get context another tool in tool box, you get telementy across cluster because it push to hub (control plane)
+		- if you want to bring your own LLM that possible
+		- really needs a solid platform for a team of 4 to manage
+		- Look like a good platfrom the insights, thickish layer of mgmt, somthing to control my worker nodes, if something dies I want a quick rebuild time, I'm looking for somethign that I have to touch less, drive our focus towards deployment and insights, policy want to live in argo, want to nuke rebuild, ephemeral, policy, automation, doesnt want pets
+		- Existing 640 CPU 1.25 TB openshift prod
+			- is that right sized?
+				- cluster is being significantly under utilized, build entire, why wouldnt I use same worker nodes
+				- HPC cluster is looking to replace warewolf with slerm ->slinky and what does NKD look like, significant CPU,GPU,RAM 
+				- We do have NAI which is for dedicated AI orchestartion for AI
+				- NKP is only what we lisence for worker nodes
+				- trying to drive addtional usage but cant with current cluster
+				- utilization is important
+				- happy to run contianer side as VMs 
+				- run exerntal workloads as physical
+				- customer want to right size 500GB Mem and 100-150CPU
+					- customer has hardware for another 5 years trying to figure out what to do?
+					- baremetal or virtual either or
+					- does it make sence to share worker nodes and customer added in growth across 3 replica sets
+					- no soft partion on baremetal we just charge based on VM(Vcpu) cpu
+					- We are consistently far less expensive, we have seen cased 2 and 4x and more flexible with resources just for mgmt cluster
+					- a lot more flexible, we can disable and customize the solution to you
+					- is that something we could build internal nuatanix and run POC?
+						- how can we test and utilize if we want to get rid of dev?
+						- do you have some NKP training resources - how do we get started?
+							- host for you - sandbox for 2 weeks
+							- we can do exploration and NKP workflow wizard in new releases and you can deploy it via clickops
+								- NCI pro and ultimate
+									- comes with starter
+								- POC lisences are available self procured we can extend up to 60 you can have a real one with full lisencing and its your env
+							- nutanix university youtube has great shortform content on highlevel great 101 content
+							- SE said he can help with getting POC
+				- deploy hub cluster masters only
+					- use to effectively 2 spokes
+						- 1 for containter platfomr
+						- 1 for phusical platform
+						- knows rke and Openshift -> ansible for build process currently
+						- driven with machine config pool take these 10 nodes build a cluster and scale as I choose
+						- under the hood we run some ansible????
+				- Lazy and want a single interface - too many tabs haha
+				- can start until august - i need to make a decision by jan-march of next year of what prod will look like if openshift continues 10x will it be in next years budget -> not going to cover next year lisence cost
+				- IDK if they want to add NCM
+					- wanted at the beginning
+					- wants a price on it 
+					- they already have ansible so may not need all the features
+						- 50/50 split on NCM - we config linux all the way up with sudo with ansible product
+						- it would be the frontend interface, blueprint may be helpful, some is already built with packer
+						- Like the produce unsure if its worth the cost
+				- NKD, NCM, NKP see if we can get a package deal???
+					- cost and rightsize - lack flexibility for that right now
+					- how quick is turnaround on scaling cores?
+					- we give you nagware - we can up you mid term - renewal - lisence model is flexible and you will want ultimate - they most certantly are in the advanced user case
+					- 150 no problem to increase 
+					- provide apples to apples cost comparison - will get a direct cost comparison and discount and let the players compete
+					- customer is super happy and thankful
+					- follow up on pricing on NCM and NKP
+						- you want to go over it in early aug
+						- give customer a year of ramp
+						- will have funds next year
+						- housekeeping local account manager michael introduced
+						- let us know if you need a deeper demo
